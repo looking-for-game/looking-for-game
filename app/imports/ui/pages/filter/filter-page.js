@@ -3,14 +3,18 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Genres } from '/imports/api/genre/GenreCollection';
 
 const selectedInterestsKey = 'selectedInterests';
+const selectedGenresKey = 'selectedGenres';
 
 Template.Filter_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
+  this.subscribe(Genres.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedInterestsKey, undefined);
+  this.messageFlags.set(selectedGenresKey, undefined);
 });
 
 Template.Filter_Page.helpers({
@@ -31,6 +35,15 @@ Template.Filter_Page.helpers({
           return {
             label: interest.name,
             selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+          };
+        });
+  },
+  generes() {
+    return _.map(Generes.findAll(),
+        function makeGenreObject(genre) {
+          return {
+            label: genre.name,
+            selected: _.contains(Template.instance().messageFlags.get(selectedGenresKey), genre.name),
           };
         });
   },

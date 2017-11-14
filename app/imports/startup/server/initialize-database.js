@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Interests } from '/imports/api/genre/GenreCollection';
 import { _ } from 'meteor/underscore';
 
 /* global Assets */
@@ -11,6 +12,7 @@ import { _ } from 'meteor/underscore';
  * Returns the definition array associated with collectionName in the restoreJSON structure.
  * @param restoreJSON The restore file contents.
  * @param collection The collection of interest.
+ * @param 
  */
 function getDefinitions(restoreJSON, collection) {
   return _.find(restoreJSON.collections, obj => obj.name === collection).contents;
