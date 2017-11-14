@@ -29,6 +29,8 @@ Template.Filter_Page.helpers({
     return _.filter(allProfiles, profile => _.intersection(profile.interests, selectedInterests).length > 0);
   },
 
+
+
   interests() {
     return _.map(Interests.findAll(),
         function makeInterestObject(interest) {
