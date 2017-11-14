@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating';
 
-Template.Genres_Form_Field.onRendered(function onRendered() {
+Template.Games_Form_Field.onRendered(function onRendered() {
   this.$('.dropdown').dropdown();
 });
 

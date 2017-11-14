@@ -1,7 +1,7 @@
 import SimpleSchema from 'simpl-schema';
 import BaseCollection from '/imports/api/base/BaseCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
-import { Genres } from '/imports/api/genre/GenreCollection';
+import { Games } from '/imports/api/game/GameCollection';
 import { check } from 'meteor/check';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
@@ -75,7 +75,7 @@ class ProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${interests} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, picture, title, github,
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, picture, title, github,
       facebook, instagram });
   }
 
@@ -91,6 +91,7 @@ class ProfileCollection extends BaseCollection {
     const username = doc.username;
     const bio = doc.bio;
     const interests = doc.interests;
+    const games = doc.games;
     const picture = doc.picture;
     const title = doc.title;
     const github = doc.github;

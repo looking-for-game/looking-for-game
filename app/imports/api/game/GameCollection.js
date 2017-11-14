@@ -5,105 +5,105 @@ import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Tracker } from 'meteor/tracker';
 
-/** @module Genre */
+/** @module Game */
 
 /**
- * Represents a specific gaming genre, such as "MMO", "RTS", "".
+ * Represents a specific gaming game, such as "MMO", "RTS", "".
  * @extends module:Base~BaseCollection
  */
-class GenreCollection extends BaseCollection {
+class GameCollection extends BaseCollection {
 
   /**
-   * Creates the Genre collection.
+   * Creates the Game collection.
    */
   constructor() {
-    super('Genre', new SimpleSchema({
+    super('Game', new SimpleSchema({
       name: { type: String },
       description: { type: String, optional: true },
     }, { tracker: Tracker }));
   }
 
   /**
-   * Defines a new Genre.
+   * Defines a new Game.
    * @example
-   * Genres.define({ name: 'MMO', 'RTS',
+   * Games.define({ name: 'MMO', 'RTS',
    *                    description: 'Massively Multiplayer Online' });
    * @param { Object } description Object with keys name and description.
    * Name must be previously undefined. Description is optional.
    * Creates a "slug" for this name and stores it in the slug field.
-   * @throws {Meteor.Error} If the genre definition includes a defined name.
+   * @throws {Meteor.Error} If the game definition includes a defined name.
    * @returns The newly created docID.
    */
   define({ name, description }) {
     check(name, String);
     check(description, String);
     if (this.find({ name }).count() > 0) {
-      throw new Meteor.Error(`${name} is previously defined in another Genre`);
+      throw new Meteor.Error(`${name} is previously defined in another Game`);
     }
     return this._collection.insert({ name, description });
   }
 
   /**
-   * Returns the Genre name corresponding to the passed genre docID.
-   * @param genreID An genre docID.
-   * @returns { String } An genre name.
-   * @throws { Meteor.Error} If the genre docID cannot be found.
+   * Returns the Game name corresponding to the passed game docID.
+   * @param gameID An game docID.
+   * @returns { String } An game name.
+   * @throws { Meteor.Error} If the game docID cannot be found.
    */
-  findName(genreID) {
-    this.assertDefined(genreID);
-    return this.findDoc(genreID).name;
+  findName(gameID) {
+    this.assertDefined(gameID);
+    return this.findDoc(gameID).name;
   }
 
   /**
-   * Returns a list of Genre names corresponding to the passed list of Genre docIDs.
-   * @param genreIDs A list of Genre docIDs.
+   * Returns a list of Game names corresponding to the passed list of Game docIDs.
+   * @param gameIDs A list of Game docIDs.
    * @returns { Array }
    * @throws { Meteor.Error} If any of the instanceIDs cannot be found.
    */
-  findNames(genreIDs) {
-    return genreIDs.map(genreID => this.findName(genreID));
+  findNames(gameIDs) {
+    return gameIDs.map(gameID => this.findName(gameID));
   }
 
   /**
-   * Throws an error if the passed name is not a defined Genre name.
-   * @param name The name of an genre.
+   * Throws an error if the passed name is not a defined Game name.
+   * @param name The name of an game.
    */
   assertName(name) {
     this.findDoc(name);
   }
 
   /**
-   * Throws an error if the passed list of names are not all Genre names.
-   * @param names An array of (hopefully) Genre names.
+   * Throws an error if the passed list of names are not all Game names.
+   * @param names An array of (hopefully) Game names.
    */
   assertNames(names) {
     _.each(names, name => this.assertName(name));
   }
 
   /**
-   * Returns the docID associated with the passed Genre name, or throws an error if it cannot be found.
-   * @param { String } name An genre name.
+   * Returns the docID associated with the passed Game name, or throws an error if it cannot be found.
+   * @param { String } name An game name.
    * @returns { String } The docID associated with the name.
-   * @throws { Meteor.Error } If name is not associated with an Genre.
+   * @throws { Meteor.Error } If name is not associated with an Game.
    */
   findID(name) {
     return (this.findDoc(name)._id);
   }
 
   /**
-   * Returns the docIDs associated with the array of Genre names, or throws an error if any name cannot be found.
+   * Returns the docIDs associated with the array of Game names, or throws an error if any name cannot be found.
    * If nothing is passed, then an empty array is returned.
-   * @param { String[] } names An array of genre names.
+   * @param { String[] } names An array of game names.
    * @returns { String[] } The docIDs associated with the names.
-   * @throws { Meteor.Error } If any instance is not an Genre name.
+   * @throws { Meteor.Error } If any instance is not an Game name.
    */
   findIDs(names) {
     return (names) ? names.map((instance) => this.findID(instance)) : [];
   }
 
   /**
-   * Returns an object representing the Genre docID in a format acceptable to define().
-   * @param docID The docID of an Genre.
+   * Returns an object representing the Game docID in a format acceptable to define().
+   * @param docID The docID of an Game.
    * @returns { Object } An object representing the definition of docID.
    */
   dumpOne(docID) {
@@ -117,4 +117,4 @@ class GenreCollection extends BaseCollection {
 /**
  * Provides the singleton instance of this class to all other entities.
  */
-export const Genres = new GenreCollection();
+export const Games = new GameCollection();

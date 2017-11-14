@@ -4,14 +4,14 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
-import { Genres } from '/imports/api/genre/GenreCollection';
+import { Games } from '/imports/api/game/GameCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
 Template.Profile_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
-  this.subscribe(Genres.getPublicationName());
+  this.subscribe(Games.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
@@ -40,12 +40,12 @@ Template.Profile_Page.helpers({
               return { label: interest.name, selected: _.contains(selectedInterests, interest.name) };
             });
   },
-  genres() {
+  games() {
     const profile = Profiles.findDoc(FlowRouter.getParam('username'));
-    const selectedGenres = profile.genres;
-    return profile && _.map(Genres.findAll(),
-        function makeGenreObject(genre) {
-          return { label: interest.name, selected: _.contains(selectedGenres, genre.name) };
+    const selectedGames = profile.games;
+    return profile && _.map(Games.findAll(),
+        function makeGameObject(game) {
+          return { label: interest.name, selected: _.contains(selectedGames, game.name) };
         });
   },
 });
@@ -65,10 +65,10 @@ Template.Profile_Page.events({
     const bio = event.target.Bio.value;
     const selectedInterests = _.filter(event.target.Interests.selectedOptions, (option) => option.selected);
     const interests = _.map(selectedInterests, (option) => option.value);
-    const selectedGenres = _.filter(event.target.Genres.selectedOptions, (option) => option.selected);
-    const genres = _.map(selectedGenres, (option) => option.value);
+    const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
+    const games = _.map(selectedGames, (option) => option.value);
 
-    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, bio, interests, genres,
+    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, bio, interests, games,
       username };
 
     // Clear out any old validation errors.
