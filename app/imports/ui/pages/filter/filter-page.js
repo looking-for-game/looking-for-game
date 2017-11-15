@@ -40,8 +40,8 @@ Template.Filter_Page.helpers({
           };
         });
   },
-  generes() {
-    return _.map(Generes.findAll(),
+  games() {
+    return _.map(Games.findAll(),
         function makeGameObject(game) {
           return {
             label: game.name,
