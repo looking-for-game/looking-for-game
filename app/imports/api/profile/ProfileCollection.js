@@ -1,6 +1,7 @@
 import SimpleSchema from 'simpl-schema';
 import BaseCollection from '/imports/api/base/BaseCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Games } from '/imports/api/game/GameCollection';
 import { check } from 'meteor/check';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
@@ -26,6 +27,8 @@ class ProfileCollection extends BaseCollection {
       bio: { type: String, optional: true },
       interests: { type: Array, optional: true },
       'interests.$': { type: String },
+      games: { type: Array, optional: true },
+      'games.$': { type: String },
       title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       github: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -55,7 +58,7 @@ class ProfileCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', title = '', github = '',
+  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], picture = '', title = '', github = '',
       facebook = '', instagram = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String,
@@ -68,13 +71,17 @@ class ProfileCollection extends BaseCollection {
 
     // Throw an error if any of the passed Interest names are not defined.
     Interests.assertNames(interests);
+    Games.assertNames(games);
 
     // Throw an error if there are duplicates in the passed interest names.
     if (interests.length !== _.uniq(interests).length) {
       throw new Meteor.Error(`${interests} contains duplicates`);
     }
+    if (games.length !== _.uniq(games).length) {
+      throw new Meteor.Error(`${games} contains duplicates`);
+    }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, picture, title, github,
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, picture, title, github,
       facebook, instagram });
   }
 
@@ -90,12 +97,13 @@ class ProfileCollection extends BaseCollection {
     const username = doc.username;
     const bio = doc.bio;
     const interests = doc.interests;
+    const games = doc.games;
     const picture = doc.picture;
     const title = doc.title;
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, picture, title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, games, picture, title, github, facebook, instagram };
   }
 }
 

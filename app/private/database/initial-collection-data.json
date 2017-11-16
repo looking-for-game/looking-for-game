@@ -82,19 +82,61 @@
         }
       ]
     },
+
+    {
+      "name": "GameCollection",
+      "contents": [
+        {
+          "name": "World of Warcraft",
+          "description": "Blizzard PC MMO RPG Adventure"
+        },
+        {
+          "name": "Baldur's Gate",
+          "description": "Bioware Beamdog PC Mobile D&D Turn-Based Adventure RPG"
+        },
+        {
+          "name": "League of Legends",
+          "description": "Producer? PC RTS MOBA"
+        },
+        {
+          "name": "Hearthstone",
+          "description": "Blizzard PC Mobile Card-Battler Turn-Based"
+        },
+        {
+          "name": "Heroes of the Storm",
+          "description": "Blizzard PC RTS MOBA"
+        },
+        {
+          "name": "Pillars of Eternity",
+          "description": "Producer? Platform(s)? Genre(s)?"
+        },
+        {
+          "name": "Tom Clancy's: The Division",
+          "description": "Activision? PC FPS"
+        },
+        {
+          "name": "Star Wars: Battlefront II",
+          "description": "EA PC Adventure"
+        }
+      ]
+    },
+
     {
       "name": "ProfileCollection",
       "contents": [
         {
-          "firstName": "Lee",
-          "lastName": "Altenberg",
-          "username": "altenber",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "Blake",
+          "lastName": "Wallick",
+          "username": "sageCrown",
+          "bio": "Grew up in NES, SNES, N64, PS1 era.",
           "interests": [
-            "Evolutionary Computation"
+            "Computer Vision"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/altenberg.jpg"
+          "games": [
+            "World of Warcraft"
+          ],
+          "title": "This is a place for a title",
+          "picture": "/images/blakeprofile.jpg"
         },
         {
           "firstName": "Kyungim",
