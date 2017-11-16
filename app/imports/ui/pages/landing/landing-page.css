@@ -1,7 +1,15 @@
 .landing-section-1 {
   padding: 10px 10px 30px 10px;
-  background-color: #00B5AD;
-  color: #E5F9E7;
+  background-image: url("/images/landing/landing_image.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0 !important;
+  color: white;
 }
 
 .landing-section-2 {
@@ -11,18 +19,38 @@
 }
 
 .landing-section-3 {
-  padding: 20px 10px 30px 30px;
-  background-color: #00B5AD;
-  color: #E5F9E7;
+  padding: 10% 0 20% 2%;
+  background-image: url("/images/landing/overwatch_landing.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0 !important;
+  color: white;
+}
+
+.landing-section-4 {
+  padding: 20% 2% 20% 0;
+  background-image: url("/images/landing/diablo3_landing.png");
+  background-repeat: no-repeat;
+  background-position:top;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0 !important;
+  color: white;
 }
 
 .landing-section-5 {
-  padding: 20px 10px 20px 10px;
-  background-color: #00B5AD;
-  color: #E5F9E7;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 72px;
 }
-
-
 .landing-section-1-welcome {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
