@@ -1,1 +1,8 @@
 <!-- Cannot change body padding here due to landing page. -->
+
+.login-style{
+  border-radius: 0;
+  border-width: 3px;
+  color: white;
+  border-color: white;
+}
