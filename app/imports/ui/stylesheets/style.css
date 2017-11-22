@@ -1,6 +1,5 @@
 <!-- Cannot change body padding here due to landing page. -->
 
-
 .magicCard {
   display: flex;
   margin: 5% auto;
@@ -109,4 +108,9 @@
   padding-left: .7rem;
   font-size: x-small;
 }
-
+.login-style{
+  border-radius: 0;
+  border-width: 3px;
+  color: white;
+  border-color: white;
+}

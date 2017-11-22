@@ -1,0 +1,13 @@
+<template name="Games_Form_Field">
+  <div class="{{#if required}}required{{/if}} field">
+    <label>Game(s)</label>
+    <select multiple="" class="ui dropdown" name="games">
+      <option value="">Select Game(s)</option>
+        <option value="Battlefield I">MMORPG</option>
+        <option value="World of Warcraft">RTS</option>
+        <option value="Doom">FPS</option>
+        <option value="Starcraft 2">TBS</option>
+        <option value="D&D 5E">Tabletop</option>
+    </select>
+  </div>
+</template>
