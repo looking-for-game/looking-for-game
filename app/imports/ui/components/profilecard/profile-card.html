@@ -1,0 +1,56 @@
+<template name="Profile_Card">
+
+  <div class="magicCard">
+    <div class="inner">
+
+      <div class="title">
+        {{ player.firstName }} {{ player.lastName }}
+        <div class="cost">
+          10
+
+      </div>
+
+    </div>
+
+    <div class="cardImaged=Div">
+      <img class="cardImage" src="{{ player.picture }}">
+    </div>
+
+    <div class="type">
+      holder
+      <div class="symbol">
+        <i class="mail icon"></i>
+      </div>
+    </div>
+
+    <div class="desc">
+      <div class="description">
+        {{ player.bio }}
+      </div>
+
+      <div class="ui equal width center aligned grid">
+
+        <div class="column"><a href="mailto:{{ player.username}}@hawaii.edu"><i class="big mail icon"></i></a></div>
+        {{#if player.github }}
+          <div class="column"><a href="https://github.com/{{ player.github}}"><i class="big github icon"></i></a></div>
+        {{/if}}
+        {{#if player.facebook }}
+          <div class="column"><a href="https://facebook.com/{{ player.facebook}}"><i class="big facebook icon"></i></a></div>
+        {{/if}}
+        {{#if player.instagram }}
+          <div class="column"><a href="https://instagram.com/{{ player.instagram}}"><i class="big instagram icon"></i></a></div>
+        {{/if}}
+      </div>
+      <div style="margin-top: 10px">
+        {{#each interest in player.interests}}
+          <a style="margin-bottom: 2px" class="ui teal tag small label">{{interest}}</a>
+        {{/each}}
+      </div>
+    </div>
+      <div id="foot">
+        reRoll
+      </div>
+    </div>
+  </div>
+
+</template>
