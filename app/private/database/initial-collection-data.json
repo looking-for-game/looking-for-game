@@ -134,7 +134,7 @@
             "Evolutionary Computation"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/altenberg.jpg"
+          "picture": "/images/back up images/altenberg.jpg"
         },
         {
           "firstName": "Kyungim",
@@ -145,7 +145,7 @@
             "Computer Vision"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/baek.jpg"
+          "picture": "/images/back up images/baek.jpg"
         },
         {
           "firstName": "Edo",
@@ -157,7 +157,7 @@
             "Sailing"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/biagioni.jpg"
+          "picture": "/images/back up images/biagioni.jpg"
         },
         {
           "firstName": "Kim",
@@ -169,7 +169,18 @@
             "Imu Cooking"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/binsted.jpg"
+          "picture": "/images/back up images/binsted.jpg"
+        },
+        {
+          "firstName": "Blake",
+          "lastName": "Wallick",
+          "username": "sageCrown",
+          "bio": "Grew up in NES, SNES, N64, PS1 era.",
+          "interests": [
+            "Computer Vision"
+          ],
+          "title": "This is a place for a title",
+          "picture": "/images/blakeprofile.jpg"
         },
         {
           "firstName": "Henri",
@@ -182,7 +193,7 @@
             "Photography"
           ],
           "title": "Professor, Information and Computer Sciences",
-          "picture": "/images/casanova.jpg"
+          "picture": "/images/back up images/casanova.jpg"
         }
       ]
     },
