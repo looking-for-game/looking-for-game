@@ -1,0 +1,19 @@
+<template name="Search_Page">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  {{#if Template.subscriptionsReady}}
+    <div style="margin-top: 10px" class="ui container">
+
+      <form class="ui equal width form filter-data-form">
+        <div class="field">
+          {{> Select_Form_Control label="Interests" options=interests multiple=true }}
+        </div>
+        <button class="ui teal button" type="submit">Filter</button>
+      </form>
+
+      {{> Search_Page_Directory players=players }}
+
+    </div>
+
+  {{/if}}
+
+</template>
