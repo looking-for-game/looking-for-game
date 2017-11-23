@@ -45,7 +45,7 @@ Template.Profile_Page.helpers({
     const selectedGames = profile.games;
     return profile && _.map(Games.findAll(),
         function makeGameObject(game) {
-          return { label: interest.name, selected: _.contains(selectedGames, game.name) };
+          return { label: game.name, selected: _.contains(selectedGames, game.name) };
         });
   },
 });
