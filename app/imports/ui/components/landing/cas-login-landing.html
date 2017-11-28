@@ -1,0 +1,9 @@
+<template name="Cas_Login_Landing">
+  <div class="ui basic {{size}} inverted button" style="border-radius:0;">
+    {{#if currentUser}}
+    <div class="cas-logout">Logout</div>
+    {{else}}
+    <div class="cas-login">Login</div>
+    {{/if}}
+  </div>
+</template>
