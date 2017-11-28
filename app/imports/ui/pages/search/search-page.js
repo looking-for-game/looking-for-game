@@ -3,6 +3,8 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
 import { Players } from '/imports/api/player/PlayerCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Games } from '/imports/api/game/GameCollection';
+
 
 const selectedInterestsKey = 'selectedInterests';
 
