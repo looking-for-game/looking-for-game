@@ -1,7 +1,7 @@
 <template name="User_Header">
   <div class="ui top fixed borderless inverted teal menu">
     <div class="ui container">
-      <a class="{{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"> <h1>LookingForGame</h1></a>
+      <a class="{{isActiveRoute "Home_Page"}} item" href="{{pathFor "Home_Page" username=routeUserName}}"> <h1>LookingForGame</h1></a>
       <a class="{{isActiveRoute "Profile_Page"}} item" href="{{pathFor "Profile_Page" username=routeUserName}}"> Create Profile</a>
       <a class="{{isActiveRoute "Search_Page"}} item" href="{{pathFor "Search_Page" username=routeUserName}}"> Search</a>
       <a class="{{isActiveRoute "Filter_Page"}} item" href="{{pathFor "Filter_Page" username=routeUserName}}"> Filter</a>
