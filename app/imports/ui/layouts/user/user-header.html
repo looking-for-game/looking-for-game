@@ -1,15 +1,15 @@
 <template name="User_Header">
-  <div class="ui top fixed borderless inverted teal menu">
-    <div class="ui container">
-      <a class="{{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"> <h1>LookingForGame</h1></a>
-      <a class="{{isActiveRoute "Profile_Page"}} item" href="{{pathFor "Profile_Page" username=routeUserName}}"> Create Profile</a>
-      <a class="{{isActiveRoute "Search_Page"}} item" href="{{pathFor "Search_Page" username=routeUserName}}"> Search</a>
-      <a class="{{isActiveRoute "Filter_Page"}} item" href="{{pathFor "Filter_Page" username=routeUserName}}"> Filter</a>
+  <div class="ui top fixed secondary menu menuBackground" style="background-color:white;">
+    <a class="{{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"><div class="logo_black"></div></a>
+    <a class="{{isActiveRoute "Profile_Page"}} item" href="{{pathFor "Profile_Page" username=routeUserName}}"> Create Profile</a>
+    <a class="{{isActiveRoute "Search_Page"}} item" href="{{pathFor "Search_Page" username=routeUserName}}"> Search</a>
+    <a class="{{isActiveRoute "Filter_Page"}} item" href="{{pathFor "Filter_Page" username=routeUserName}}"> Filter</a>
 
+    <div class="right menu">
       <div class="right {{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"> My Profile</div>
-      <a class="aligned item">Edit Profile</a>
-      <a class="aligned item">{{> Cas_Login }}</a>
-
+    <a class="aligned item">Edit Profile</a>
+    <a class="aligned item">{{> Cas_Login }}</a>
     </div>
+
   </div>
 </template>
