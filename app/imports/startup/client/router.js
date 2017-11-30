@@ -13,16 +13,6 @@ FlowRouter.route('/', {
   },
 });
 
-/*                        PUBLIC PROFILE ROUTE                       */
-
-export const publicProfilePageRouteName = 'Public_Profile_Page';
-FlowRouter.route('/public-profile', {
-  name: publicProfilePageRouteName,
-  action() {
-    BlazeLayout.render('Public_Profile_Layout', { main: publicProfilePageRouteName });
-  },
-});
-
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
@@ -94,6 +84,15 @@ userRoutes.route('/home', {
   },
 });
 
+/*                        PUBLIC PROFILE ROUTE                       */
+
+export const publicProfilePageRouteName = 'Public_Profile_Page';
+userRoutes.route('/public-profile', {
+  name: publicProfilePageRouteName,
+  action() {
+    BlazeLayout.render('Public_Profile_Layout', { main: publicProfilePageRouteName });
+  },
+});
 
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
