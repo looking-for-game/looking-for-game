@@ -22,7 +22,6 @@ Accounts.onLogin(function onLogin() {
     } else {
       FlowRouter.go(`/${username}/home`);
     }
-
   }
 });
 
