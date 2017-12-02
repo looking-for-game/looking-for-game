@@ -1,7 +1,7 @@
 <template name="Home_Page">
 
 
-  <table class="ui celled table">
+  <table class="ui selectable celled table">
     <thead>
     <tr>
       <th>Name</th>
@@ -11,23 +11,33 @@
     </thead>
     <tbody>
     <tr>
-      <td>No Name Specified</td>
-      <td>Unknown</td>
-      <td class="negative">None</td>
-    </tr>
-    <tr class="positive">
-      <td>Jimmy</td>
-      <td><i class="icon checkmark"></i> Approved</td>
+      <td>John</td>
+      <td>No Action</td>
       <td>None</td>
     </tr>
     <tr>
       <td>Jamie</td>
-      <td>Unknown</td>
-      <td class="positive"><i class="icon close"></i> Requires call</td>
+      <td>Approved</td>
+      <td>Requires call</td>
     </tr>
-    <tr class="negative">
+    <tr>
       <td>Jill</td>
-      <td>Unknown</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+    <tr class="warning">
+      <td>John</td>
+      <td>No Action</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td class="positive">Approved</td>
+      <td class="warning">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td class="negative">Denied</td>
       <td>None</td>
     </tr>
     </tbody>
