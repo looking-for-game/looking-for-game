@@ -11,6 +11,7 @@ const selectedInterestsKey = 'selectedInterests';
 Template.Search_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
   this.subscribe(Players.getPublicationName());
+  this.subscribe(Games.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedInterestsKey, undefined);
 });
@@ -29,6 +30,15 @@ Template.Search_Page.helpers({
 
   interests() {
     return _.map(Interests.findAll(),
+        function makeInterestObject(interest) {
+          return {
+            label: interest.name,
+            selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+          };
+        });
+  },
+  games() {
+    return _.map(Games.findAll(),
         function makeInterestObject(interest) {
           return {
             label: interest.name,

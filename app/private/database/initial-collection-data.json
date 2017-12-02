@@ -126,6 +126,8 @@
       "name": "PlayerCollection",
       "contents": [
         {
+
+
           "firstName": "Chris",
           "lastName": "Lee",
           "username": "secretg",
@@ -144,6 +146,9 @@
           "interests": [
             "Computer Vision"
           ],
+          "games": [
+            "World of Warcraft"
+          ],
           "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
         },
@@ -157,6 +162,7 @@
             "Surfing",
             "Photography"
           ],
+
           "title": "Here is a title",
           "picture": "/images/back up images/Tallas.jpg"
         },
@@ -243,3 +249,6 @@
     }
   ]
 }
+
+
+

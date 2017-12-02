@@ -1,8 +1,9 @@
 /* eslint prefer-arrow-callback: "off", no-unused-expressions: "off" */
 /* eslint-env mocha */
 
-import { Players} from '/imports/api/player/PlayerCollection';
+import { Players } from '/imports/api/player/PlayerCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Games } from '/imports/api/game/Game';
 import { Meteor } from 'meteor/meteor';
 import { expect } from 'chai';
 import { removeAllEntities } from '/imports/api/base/BaseUtilities';

@@ -11,5 +11,10 @@
       "popupHeight": 610
     },
     "initialDatabaseFileName": "database/initial-collection-data.json"
-  }
+  },
+    "galaxy.meteor.com": {
+      "env": {
+        "MONGO_URL": "mongodb://vpawid:Kakashi123$@ds157475.mlab.com:57475/vpawiddb"
+      }
+    }
 }
