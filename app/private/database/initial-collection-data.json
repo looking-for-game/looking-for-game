@@ -113,7 +113,7 @@
         },
         {
           "name": "Tom Clancy's: The Division",
-          "description": "Activision? PC FPS"
+          "description": "Activision PC FPS"
         },
         {
           "name": "Star Wars: Battlefront II",
@@ -126,62 +126,17 @@
       "name": "PlayerCollection",
       "contents": [
         {
-          "firstName": "Lee",
-          "lastName": "Altenberg",
-          "username": "altenber",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+
+
+          "firstName": "Chris",
+          "lastName": "Lee",
+          "username": "secretg",
+          "bio": "Background in HTML CSS",
           "interests": [
-            "Evolutionary Computation"
+            "Surfing"
           ],
-          "games": [
-            "World of Warcraft"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/back up images/altenberg.jpg"
-        },
-        {
-          "firstName": "Kyungim",
-          "lastName": "Baek",
-          "username": "baek",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Computer Vision"
-          ],
-          "games": [
-            "World of Warcraft"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/back up images/baek.jpg"
-        },
-        {
-          "firstName": "Edo",
-          "lastName": "Biagioni",
-          "username": "esb",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mobile Networks",
-            "Sailing"
-          ],
-          "games": [
-            "World of Warcraft"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/back up images/biagioni.jpg"
-        },
-        {
-          "firstName": "Kim",
-          "lastName": "Binsted",
-          "username": "binsted",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mars",
-            "Imu Cooking"
-          ],
-          "games": [
-            "World of Warcraft"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/back up images/binsted.jpg"
+          "title": "This is a title field",
+          "picture": "/images/back up images/profilePic.jpg"
         },
         {
           "firstName": "Blake",
@@ -198,20 +153,30 @@
           "picture": "/images/blakeprofile.jpg"
         },
         {
-          "firstName": "Henri",
-          "lastName": "Casanova",
-          "username": "henric",
+          "firstName": "Tallas",
+          "lastName": "Goo",
+          "username": "rOgue",
           "github": "henricasanova",
-          "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
+          "bio": "Air Force ROTC",
           "interests": [
             "Surfing",
             "Photography"
           ],
-          "games": [
-            "World of Warcraft"
+
+          "title": "Here is a title",
+          "picture": "/images/back up images/Tallas.jpg"
+        },
+        {
+          "firstName": "Victor",
+          "lastName": "Pawid",
+          "username": "Victory",
+          "bio": "Here is a bio",
+          "interests": [
+            "Surfing",
+            "Photography"
           ],
-          "title": "Professor, Information and Computer Sciences",
-          "picture": "/images/back up images/casanova.jpg"
+          "title": "The title goes here",
+          "picture": "/images/back up images/victor.png"
         }
       ]
     },
