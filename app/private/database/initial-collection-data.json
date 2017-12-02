@@ -133,6 +133,9 @@
           "interests": [
             "Evolutionary Computation"
           ],
+          "games": [
+            "World of Warcraft"
+          ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/back up images/altenberg.jpg"
         },
@@ -143,6 +146,9 @@
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Computer Vision"
+          ],
+          "games": [
+            "World of Warcraft"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/back up images/baek.jpg"
@@ -156,6 +162,9 @@
             "Mobile Networks",
             "Sailing"
           ],
+          "games": [
+            "World of Warcraft"
+          ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/back up images/biagioni.jpg"
         },
@@ -168,6 +177,9 @@
             "Mars",
             "Imu Cooking"
           ],
+          "games": [
+            "World of Warcraft"
+          ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/back up images/binsted.jpg"
         },
@@ -178,6 +190,9 @@
           "bio": "Grew up in NES, SNES, N64, PS1 era.",
           "interests": [
             "Computer Vision"
+          ],
+          "games": [
+            "World of Warcraft"
           ],
           "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
@@ -191,6 +206,9 @@
           "interests": [
             "Surfing",
             "Photography"
+          ],
+          "games": [
+            "World of Warcraft"
           ],
           "title": "Professor, Information and Computer Sciences",
           "picture": "/images/back up images/casanova.jpg"
@@ -266,3 +284,6 @@
     }
   ]
 }
+
+
+
