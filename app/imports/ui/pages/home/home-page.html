@@ -1,36 +1,31 @@
-<template name="Home_Page">
-  <div class="ui container">
-
-    {{#if Template.subscriptionsReady}}
-    <table style="margin-top: 20px" class="ui celled table">
-      <thead>
-      <tr>
-        <th>First</th>
-        <th>Last</th>
-        <th>Address</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>Edit</th>
-
-      </tr>
-      </thead>
-
-      <tbody>
-      {{#each contact in contactsList}}
-      <tr>
-        <td>{{contact.first}}</td>
-        <td>{{contact.last}}</td>
-        <td>{{contact.address}}</td>
-        <td>{{contact.telephone}}</td>
-        <td>{{contact.email}}</td>
-        <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
-
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-    {{else}}
-    {{> Loading}}
-    {{/if}}
-  </div>
-</template>
+<table class="ui celled table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Notes</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>No Name Specified</td>
+    <td>Unknown</td>
+    <td class="negative">None</td>
+  </tr>
+  <tr class="positive">
+    <td>Jimmy</td>
+    <td><i class="icon checkmark"></i> Approved</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Jamie</td>
+    <td>Unknown</td>
+    <td class="positive"><i class="icon close"></i> Requires call</td>
+  </tr>
+  <tr class="negative">
+    <td>Jill</td>
+    <td>Unknown</td>
+    <td>None</td>
+  </tr>
+  </tbody>
+</table>
