@@ -57,6 +57,7 @@
 
 .cardImage {
   max-width: 92%;
+  height: 14rem;
   display: block;
   margin: 0 auto;
 }
