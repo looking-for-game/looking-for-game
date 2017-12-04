@@ -135,6 +135,7 @@
           "interests": [
             "Surfing"
           ],
+          "login": "False",
           "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
         },
@@ -149,6 +150,7 @@
           "games": [
             "World of Warcraft"
           ],
+          "login": "False",
           "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
         },
@@ -162,19 +164,34 @@
             "Surfing",
             "Photography"
           ],
-
+          "friends": [
+            "secretg",
+            "sageCrown"
+          ],
+          "login": "False",
           "title": "Here is a title",
           "picture": "/images/back up images/Tallas.jpg"
         },
         {
           "firstName": "Victor",
           "lastName": "Pawid",
-          "username": "Victory",
+          "username": "viikta",
           "bio": "Here is a bio",
           "interests": [
             "Surfing",
             "Photography"
           ],
+          "games": [
+            "League of Legends",
+            "Hearthstone"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "login": "False",
+          "uhUsername": "vpawid",
           "title": "The title goes here",
           "picture": "/images/back up images/victor.png"
         }
