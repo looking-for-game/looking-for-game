@@ -36,7 +36,6 @@ if (Meteor.isServer) {
       // Define a sample game.
       Games.define({ name: gameName, description: gameDescription });
     });
-
     after(function teardown() {
       removeAllEntities();
     });
