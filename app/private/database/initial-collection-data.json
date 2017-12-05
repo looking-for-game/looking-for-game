@@ -135,6 +135,16 @@
           "interests": [
             "Surfing"
           ],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
           "login": "False",
           "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
@@ -148,7 +158,8 @@
             "Computer Vision"
           ],
           "games": [
-            "World of Warcraft"
+            "World of Warcraft",
+            "Hearthstone"
           ],
           "login": "False",
           "title": "This is a place for a title",
@@ -164,9 +175,14 @@
             "Surfing",
             "Photography"
           ],
+          "games": [
+            "Star Wars: Battlefront II",
+            "Hearthstone"
+          ],
           "friends": [
             "secretg",
-            "sageCrown"
+            "sageCrown",
+            "r0gue"
           ],
           "login": "False",
           "title": "Here is a title",
