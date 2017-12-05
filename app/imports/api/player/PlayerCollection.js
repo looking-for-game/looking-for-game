@@ -27,6 +27,12 @@ class PlayerCollection extends BaseCollection {
       bio: { type: String, optional: true },
       interests: { type: Array, optional: true },
       'interests.$': { type: String },
+      games: { type: Array, optional: true },
+      'games.$': { type: String },
+      friends: { type: Array, optional: true },
+      'friends.$': { type: String },
+      login: { type: String, optional: true },
+      uhUsername: { type: String, optional: true },
       title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       github: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -56,12 +62,12 @@ class PlayerCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', title = '', github = '',
+  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [], login = '', uhUsername = '', picture = '', title = '', github = '',
       facebook = '', instagram = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String,
+    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: String, uhUsername: String, picture: String,
       title: String };
-    check({ firstName, lastName, username, bio, picture, title }, checkPattern);
+    check({ firstName, lastName, username, bio, login, uhUsername, picture, title }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -69,13 +75,22 @@ class PlayerCollection extends BaseCollection {
 
     // Throw an error if any of the passed Interest names are not defined.
     Interests.assertNames(interests);
+    Games.assertNames(games);
 
     // Throw an error if there are duplicates in the passed interest names.
     if (interests.length !== _.uniq(interests).length) {
       throw new Meteor.Error(`${interests} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, picture, title, github,
+    if (games.length !== _.uniq(games).length) {
+      throw new Meteor.Error(`${games} contains duplicates`);
+    }
+
+    if (friends.length !== _.uniq(friends).length) {
+      throw new Meteor.Error(`${friends} contains duplicates`);
+    }
+
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, login, uhUsername, picture, title, github,
       facebook, instagram });
   }
 
@@ -91,12 +106,16 @@ class PlayerCollection extends BaseCollection {
     const username = doc.username;
     const bio = doc.bio;
     const interests = doc.interests;
+    const games = doc.games;
+    const friends = doc.friends;
+    const login = doc.login;
+    const uhUsername = doc.uhUsername;
     const picture = doc.picture;
     const title = doc.title;
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, picture, title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, games, friends, login, uhUsername, picture, title, github, facebook, instagram };
   }
 }
 
