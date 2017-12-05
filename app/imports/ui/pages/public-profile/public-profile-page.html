@@ -1,139 +1,161 @@
 <template name="Public_Profile_Page">
 
-    <div class="ui grid container profile">
+  <div class="ui grid container profile">
 
-        <div class="four wide column">
+    <div class="four wide column">
 
-            <!--Profile picture and username-->
-            <div class="ui fluid raised card">
-                <div class="content">
-                    <img class="ui medium circular image" src="/images/public-profile/master-chief.jpg">
-                </div>
-                <div class="content">
-                    <div class="header" style="text-align: center">r0gue</div>
-                </div>
-            </div>
-
-            <!--Achievements list-->
-            <div class="ui fluid raised card">
-                <div class="content">
-                    <div class="header"><i class="trophy icon"></i>Achievements</div>
-                </div>
-                <!--Add achievements here-->
-                <div class="content"></div>
-            </div>
-
+      <!--Profile picture and username-->
+      <div class="ui fluid raised card">
+        <div class="content">
+          <img class="ui medium circular image" src="/images/public-profile/master-chief.jpg">
         </div>
-
-
-        <div class="eight wide column">
-
-            <div class="ui fluid raised card">
-                <div class="content">
-                    <div class="header"><i class="game icon"></i>Games</div>
-                </div>
-
-                <!--Scrollable game list-->
-                <div class="content game-list">
-                    <div class="ui raised cards">
-                    <!--Note: Descriptions must be roughly the same length as cards share the same height.-->
-
-                        <div class="ui fluid card">
-
-                            <div class="image">
-                                <img src="/images/public-profile/swbf2.png">
-                            </div>
-                            <div class="content">
-                                <div class="header">Star Wars Battlefront II</div>
-                                <div class="meta">Electronic Arts</div>
-                                <div class="description">
-                                    <p>Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and villains, thrilling space combat, and a deep progression and customization system. Or live the untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign.</p>
-                                </div>
-                            </div>
-                            <div class="extra content">
-                                <i class="tags icon"></i>Action, Shooter, FPS, TPS
-                                <span class="right floated"><i class="wait icon"></i>Last played just now</span>
-                            </div>
-                        </div>
-
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="/images/public-profile/division.jpg">
-                            </div>
-                            <div class="content">
-                                <div class="header">Tom Clancy's The Division</div>
-                                <div class="meta">Ubisoft</div>
-                                <div class="description">
-                                    <p>In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by one, and without access to food or water the city descends into chaos. As an agent of The Division, you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York.</p>
-                                </div>
-                            </div>
-                            <div class="extra content">
-                                <i class="tags icon"></i>Action, MMO, RPG, Shooter, TPS
-                                <span class="right floated"><i class="wait icon"></i>Last played 3 days ago</span>
-                            </div>
-                        </div>
-
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="/images/public-profile/lego-batman.jpg">
-                            </div>
-                            <div class="content">
-                                <div class="header">LEGO Batman 2: DC Super Heroes</div>
-                                <div class="meta">Warner Bros. Interactive Entertainment</div>
-                                <div class="description">
-                                    <p>The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex Luthor and The Joker.</p>
-                                </div>
-                            </div>
-                            <div class="extra content">
-                                <i class="tags icon"></i>Action, Adventure
-                                <span class="right floated"><i class="wait icon"></i>Last played 2 years ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div class="content">
+          <div class="header" style="text-align: center">r0gue</div>
         </div>
+      </div>
 
-        <!--Friends list-->
-        <div class="four wide column">
-            <div class="ui fluid raised card">
-                <div class="content">
-                    <div class="header"><i class="users icon"></i>Friends</div>
-                </div>
-
-                <div class="content">
-                    <div class="ui list">
-
-                        <div class="item">
-                            <img class="ui avatar bordered image" style="border-width: thick; border-color: black" src="/images/blakeprofile.jpg">
-                            <div class="content">
-                                <div class="header">sageCrown</div>
-                                Playing Hearthstone
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <img class="ui avatar bordered image" style="border-width: thick; border-color: darkred" src="/images/back up images/profilePic.jpg">
-                            <div class="content">
-                                <div class="header">secretg</div>
-                                Offline
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen" src="/images/back up images/victor.png">
-                            <div class="content">
-                                <div class="header">viikta</div>
-                                Online
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      <!--Achievements list-->
+      <div class="ui fluid raised card">
+        <div class="content">
+          <div class="header"><i class="trophy icon"></i>Achievements</div>
         </div>
+        <!--Add achievements here-->
+        <div class="content"></div>
+      </div>
 
     </div>
+
+
+    <div class="eight wide column">
+
+      <div class="ui fluid raised card">
+        <div class="content">
+          <div class="header"><i class="game icon"></i>Games</div>
+        </div>
+
+        <!--Scrollable game list-->
+        <div class="content game-list">
+          <div class="ui raised cards">
+            <!--Note: Descriptions must be roughly the same length as cards share the same height.-->
+
+            <div class="ui fluid card">
+
+              <div class="image">
+                <img src="/images/public-profile/swbf2.png">
+              </div>
+              <div class="content">
+                <div class="header">Star Wars Battlefront II</div>
+                <div class="meta">Electronic Arts</div>
+                <div class="description">
+                  <p>Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and
+                    villains, thrilling space combat, and a deep progression and customization system. Or live the
+                    untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <i class="tags icon"></i>Action, Shooter, FPS, TPS
+                <span class="right floated"><i class="wait icon"></i>Last played just now</span>
+              </div>
+            </div>
+
+            <div class="ui fluid card">
+              <div class="image">
+                <img src="/images/public-profile/division.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Tom Clancy's The Division</div>
+                <div class="meta">Ubisoft</div>
+                <div class="description">
+                  <p>In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by
+                    one, and without access to food or water the city descends into chaos. As an agent of The Division,
+                    you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <i class="tags icon"></i>Action, MMO, RPG, Shooter, TPS
+                <span class="right floated"><i class="wait icon"></i>Last played 3 days ago</span>
+              </div>
+            </div>
+
+            <div class="ui fluid card">
+              <div class="image">
+                <img src="/images/public-profile/lego-batman.jpg">
+              </div>
+              <div class="content">
+                <div class="header">LEGO Batman 2: DC Super Heroes</div>
+                <div class="meta">Warner Bros. Interactive Entertainment</div>
+                <div class="description">
+                  <p>The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes
+                    of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex
+                    Luthor and The Joker.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <i class="tags icon"></i>Action, Adventure
+                <span class="right floated"><i class="wait icon"></i>Last played 2 years ago</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Friends list-->
+    <div class="four wide column">
+      <div class="ui fluid raised card">
+        <div class="content">
+          <div class="header"><i class="users icon"></i>Friends</div>
+        </div>
+
+        <div class="content">
+          <div class="ui list">
+
+            <div class="item">
+              <img class="ui avatar bordered image" style="border-width: thick; border-color: black"
+                   src="/images/blakeprofile.jpg">
+              <div class="content">
+                <div class="header">sageCrown</div>
+                Playing Hearthstone
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="ui avatar bordered image" style="border-width: thick; border-color: darkred"
+                   src="/images/back up images/profilePic.jpg">
+              <div class="content">
+                <div class="header">secretg</div>
+                Offline
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
+                   src="/images/back up images/victor.png">
+              <div class="content">
+                <div class="header">viikta</div>
+                Online
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="twelve wide column">
+      <div class="ui fluid raised card">
+        <div class="content">
+          <div class="header"><i class="calendar icon"></i>Activity Schedule</div>
+        </div>
+        <div class="content">
+          <iframe
+              src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hawaii.edu_tpo60di35qpesqbqfdr1g9r64s%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Pacific%2FHonolulu"
+              style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </template>
