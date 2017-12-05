@@ -1,3 +1,5 @@
-.profile {
-  margin-top: 100px;
+.game-list {
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

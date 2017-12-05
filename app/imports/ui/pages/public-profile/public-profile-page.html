@@ -1,115 +1,137 @@
 <template name="Public_Profile_Page">
 
-  <div class="profile">
+    <div class="ui grid container profile">
 
-    <div class="ui grid container">
+        <div class="four wide column">
 
-      <div class="five wide column">
-
-        <div class="ui card">
-          <div class="image">
-            <img src="images/public-profile/master-chief.jpg">
-          </div>
-          <div class="content">
-            <div class="header">r0gue</div>
-          </div>
-        </div>
-
-        <div class="ui card">
-          <div class="content">
-            <div class="header">Friends</div>
-          </div>
-          <div class="content">
-            <div class="ui list">
-
-              <div class="item">
-                <img class="ui avatar image" src="/images/blakeprofile.jpg">
+            <!--Profile picture and username-->
+            <div class="ui fluid raised card">
                 <div class="content">
-                  <div class="header">sageCrown</div>
-                  Playing Hearthstone
+                    <img class="ui medium circular image" src="/images/public-profile/master-chief.jpg">
                 </div>
-              </div>
-
+                <div class="content">
+                    <div class="header" style="text-align: center">r0gue</div>
+                </div>
             </div>
-          </div>
+
+            <!--Achievements list-->
+            <div class="ui fluid raised card">
+                <div class="content">
+                    <div class="header"><i class="trophy icon"></i>Achievements</div>
+                </div>
+                <!--Add achievements here-->
+                <div class="content"></div>
+            </div>
 
         </div>
 
-      </div>
 
+        <div class="eight wide column">
 
-      <div class="eleven wide column">
+            <div class="ui fluid raised card">
+                <div class="content">
+                    <div class="header"><i class="game icon"></i>Games</div>
+                </div>
 
-        <div class="ui cards">
+                <!--Scrollable game list-->
+                <div class="content game-list">
+                    <div class="ui raised cards">
 
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="images/public-profile/swbf2.png">
-            </div>
-            <div class="content">
-              <div class="header">Star Wars Battlefront II</div>
-              <div class="meta">
-                <a>Electronic Arts</a>
-              </div>
-              <div class="description">
-                Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and
-                villains, thrilling space combat, and a deep progression and customization system. Or live the untold
-                Star Wars story of Iden, an elite special forces soldier, in an original story campaign.
-              </div>
-            </div>
-            <div class="extra content">
-              <span class="right floated">Last played just now</span>
-              <span>Tags: Action, Shooter, FPS, TPS,</span>
-            </div>
-          </div>
+                        <div class="ui fluid card">
+                            <div class="image">
+                                <img src="/images/public-profile/swbf2.png">
+                            </div>
+                            <div class="content">
+                                <div class="header">Star Wars Battlefront II</div>
+                                <div class="meta">Electronic Arts</div>
+                                <div class="description">
+                                    <p>Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and villains, thrilling space combat, and a deep progression and customization system. Or live the untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign.</p>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Tags: Action, Shooter, FPS, TPS
+                                <span class="right floated"><i class="wait icon"></i>Last played just now</span>
+                            </div>
+                        </div>
 
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="images/public-profile/division.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Tom Clancy's The Division</div>
-              <div class="meta">
-                <span class="date">Ubisoft</span>
-              </div>
-              <div class="description">
-                In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by one,
-                and without access to food or water the city descends into chaos. As an agent of The Division, you’ll
-                specialize, modify, and level up your gear, weapons, and skills to take back New York on your own terms.
-              </div>
-            </div>
-            <div class="extra content">
-              <span class="right floated">Last played 3 days ago</span>
-              <span>Tags: Action, MMO, RPG, Shooter, TPS</span>
-            </div>
-          </div>
+                        <div class="ui fluid card">
+                            <div class="image">
+                                <img src="/images/public-profile/division.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="header">Tom Clancy's The Division</div>
+                                <div class="meta">Ubisoft</div>
+                                <div class="description">
+                                    <p>In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by one, and without access to food or water the city descends into chaos. As an agent of The Division, you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York on your own terms.</p>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Tags: Action, MMO, RPG, Shooter, TPS
+                                <span class="right floated"><i class="wait icon"></i>Last played 3 days ago</span>
+                            </div>
+                        </div>
 
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="images/public-profile/lego-batman.jpg">
+                        <div class="ui fluid card">
+                            <div class="image">
+                                <img src="/images/public-profile/lego-batman.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="header">LEGO Batman 2: DC Super Heroes</div>
+                                <div class="meta">Warner Bros. Interactive Entertainment</div>
+                                <div class="description">
+                                    <p>The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex Luthor and The Joker. Batman fans of all ages can enjoy an original story filled with classic LEGO videogame action and humor as players fight to put the villains back behind bars.</p>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Tags: Action, Adventure
+                                <span class="right floated"><i class="wait icon"></i>Last played 2 years ago</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="content">
-              <div class="header">LEGO Batman 2: DC Super Heroes</div>
-              <div class="meta">
-                <a>Warner Bros. Interactive Entertainment</a>
-              </div>
-              <div class="description">
-                The dynamic duo Batman and Robin™ join Wonder Woman™, Superman™, Green Lantern™, and the other Heroes of
-                the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex Luthor™
-                and The Joker™. Batman fans of all ages can enjoy an original story filled with classic LEGO videogame
-                action and humor as players fight to put the villains back behind bars.
-              </div>
-            </div>
-            <div class="extra content">
-              <span class="right floated">Last played 2 years ago</span>
-              <span>Tags: Action, Adventure</span>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <!--Friends list-->
+        <div class="four wide column">
+            <div class="ui fluid raised card">
+                <div class="content">
+                    <div class="header"><i class="users icon"></i>Friends</div>
+                </div>
+
+                <div class="content">
+                    <div class="ui list">
+
+                        <div class="item">
+                            <img class="ui avatar image" src="/images/blakeprofile.jpg">
+                            <div class="content">
+                                <div class="header">sageCrown</div>
+                                Playing Hearthstone
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="ui avatar image" src="/images/back up images/profilePic.jpg">
+                            <div class="content">
+                                <div class="header">secretg</div>
+                                Offline
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="ui avatar image" src="/images/back up images/victor.png">
+                            <div class="content">
+                                <div class="header">viikta</div>
+                                Online
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
-
-  </div>
 
 </template>
