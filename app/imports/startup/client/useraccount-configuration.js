@@ -18,7 +18,9 @@ Accounts.onLogin(function onLogin() {
   if (initialLogin) {
     const username = Meteor.user().profile.name;
     if (!Profiles.isDefined(username)) {
-      FlowRouter.go(`/${username}/profile`);
+      $('.ui.modal')
+          .modal('show')
+      ;
     } else {
       FlowRouter.go(`/${username}/home`);
     }
