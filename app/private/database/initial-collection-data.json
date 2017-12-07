@@ -112,12 +112,12 @@
           "description": "Producer? Platform(s)? Genre(s)?"
         },
         {
-          "name": "Tom Clancy's: The Division",
-          "description": "Activision PC FPS"
+          "name": "Tom Clancy's The Division",
+          "description": "In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by one, and without access to food or water the city descends into chaos. As an agent of The Division, you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York."
         },
         {
           "name": "Star Wars: Battlefront II",
-          "description": "EA PC Adventure"
+          "description": "Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and villains, thrilling space combat, and a deep progression and customization system. Or live the untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign."
         }
       ]
     },
@@ -126,8 +126,6 @@
       "name": "PlayerCollection",
       "contents": [
         {
-
-
           "firstName": "Chris",
           "lastName": "Lee",
           "username": "secretg",
@@ -141,11 +139,11 @@
             "Pillars of Eternity"
           ],
           "friends": [
-            "secretg",
+            "viikta",
             "sageCrown",
             "r0gue"
           ],
-          "login": "False",
+          "login": false,
           "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
         },
@@ -161,30 +159,32 @@
             "World of Warcraft",
             "Hearthstone"
           ],
-          "login": "False",
+          "login": true,
           "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
         },
         {
           "firstName": "Tallas",
           "lastName": "Goo",
-          "username": "rOgue",
-          "github": "henricasanova",
-          "bio": "Air Force ROTC",
+          "username": "r0gue",
+          "github": "",
+          "bio": "Cybersecurity student",
           "interests": [
             "Surfing",
             "Photography"
           ],
           "games": [
             "Star Wars: Battlefront II",
-            "Hearthstone"
+            "Hearthstone",
+            "Tom Clancy's The Division"
           ],
           "friends": [
-            "secretg",
             "sageCrown",
-            "r0gue"
+            "secretg",
+            "viikta"
           ],
-          "login": "False",
+          "login": true,
+          "uhUsername": "tallas",
           "title": "Here is a title",
           "picture": "/images/public-profile/master-chief.jpg"
         },
@@ -206,7 +206,7 @@
             "sageCrown",
             "r0gue"
           ],
-          "login": "False",
+          "login": false,
           "uhUsername": "vpawid",
           "title": "The title goes here",
           "picture": "/images/back up images/victor.png"
