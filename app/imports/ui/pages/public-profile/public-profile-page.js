@@ -1,5 +1,4 @@
 import { Template } from 'meteor/templating';
-import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Players } from '/imports/api/player/PlayerCollection';
@@ -8,7 +7,6 @@ import { Games } from '/imports/api/game/GameCollection';
 Template.Public_Profile_Page.onCreated(function onCreated() {
   this.subscribe(Players.getPublicationName());
   this.subscribe(Games.getPublicationName());
-  this.messageFlags = new ReactiveDict();
 });
 
 Template.Public_Profile_Page.helpers({

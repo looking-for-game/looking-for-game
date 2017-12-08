@@ -6,7 +6,7 @@
     <div class="four wide column">
 
       <!--Profile picture and username-->
-      <div class="ui fluid raised card">
+      <div class="ui fluid raised link card">
         <div class="content">
           <img class="ui medium circular image" src={{current.picture}}>
         </div>
@@ -16,11 +16,11 @@
       </div>
 
       <!--Commendations list-->
-      <div class="ui fluid raised card">
+      <div class="ui fluid raised link card">
         <div class="content">
           <div class="header"><i class="trophy icon"></i>Commendations</div>
         </div>
-        <!--Add commendations here-->
+        <!--TODO: Add commendations here-->
         <div class="content"></div>
       </div>
 
@@ -31,16 +31,17 @@
     <!--Middle column-->
     <div class="eight wide column">
 
+      <!--Game list-->
       <div class="ui fluid raised card">
         <div class="content">
           <div class="header"><i class="game icon"></i>Games</div>
         </div>
 
-        <!--Scrollable game list-->
         <div class="content game-list">
           <div class="ui raised cards">
-            <!--Note: Descriptions must be roughly the same length as cards share the same height.-->
+            <!--NOTE: Descriptions must be roughly the same length as cards share the same height.-->
 
+            <!--TODO: Update cards from game collection-->
             <div class="ui fluid card">
 
               <div class="image">
@@ -118,8 +119,8 @@
 
         <div class="content">
           <div class="ui list">
-            {{#each friend in friends current}}
-              <div class="item">
+            {{#each friend in (friends current)}}
+              <a class="item" href="#">
                 {{#if online friend}}
                   <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
                        src={{friend.picture}}>
@@ -135,7 +136,7 @@
                     Offline
                   </div>
                 {{/if}}
-              </div>
+              </a>
             {{/each}}
           </div>
         </div>
@@ -148,7 +149,7 @@
     <div class="twelve wide column">
 
       <!--Activity schedule-->
-      <div class="ui fluid raised card">
+      <div class="ui fluid raised link card">
         <div class="content">
           <div class="header"><i class="calendar icon"></i>Activity Schedule</div>
         </div>
