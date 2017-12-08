@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import { FlowRouter } from 'meteor/kadira:flow-router';
+import { $ } from 'meteor/jquery';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 
 /**
