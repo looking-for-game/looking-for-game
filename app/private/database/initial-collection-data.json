@@ -1,7 +1,6 @@
 {
   "comment": "Initial contents for the BowFolios database. For development purposes only.",
   "collections": [
-
     {
       "name": "InterestCollection",
       "contents": [
@@ -83,7 +82,6 @@
         }
       ]
     },
-
     {
       "name": "GameCollection",
       "contents": [
@@ -121,13 +119,10 @@
         }
       ]
     },
-
     {
       "name": "PlayerCollection",
       "contents": [
         {
-
-
           "firstName": "Chris",
           "lastName": "Lee",
           "username": "secretg",
@@ -147,6 +142,29 @@
           "login": "False",
           "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
+        },
+
+
+        {
+          "firstName": "Doom",
+          "lastName": "Guy",
+          "username": "DoomGuy",
+          "bio": "Specialty in thrashing Mars demons",
+          "interests": [
+          ],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "login": "False",
+          "title": "This is a title field",
+          "picture": "/images/back up images/doomguy.jpg"
         },
         {
           "firstName": "Blake",
@@ -185,7 +203,7 @@
           ],
           "login": "False",
           "title": "Here is a title",
-          "picture": "/images/back up images/Tallas.jpg"
+          "picture": "/images/back up images/master-chief.jpg"
         },
         {
           "firstName": "Victor",
