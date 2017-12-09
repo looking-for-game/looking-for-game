@@ -19,6 +19,10 @@ Accounts.onLogin(function onLogin() {
     const username = Meteor.user().profile.name;
     if (!Players.isDefined(username)) {
       $('.ui.modal')
+          .modal({
+            onHide: function () { Meteor.logout(); },
+            closable: false,
+          })
           .modal('show')
       ;
     } else {

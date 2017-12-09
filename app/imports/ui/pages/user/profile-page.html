@@ -2,10 +2,7 @@
 
   {{#if Template.subscriptionsReady}}
 
-  <div class="ui text container segment">
-    <div class="ui dividing header">
-      Profile
-    </div>
+  <div class="ui text container" style="margin: 25px;">
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
       <div class="fields">
@@ -17,8 +14,8 @@
       </div>
 
       <div class="field">
-        {{> Text_Form_Control label="Handle" placeholder="xXendBossXx" value=profile.title errorMessage=(fieldError
-        "title")}}
+        {{> Text_Form_Control label="Username" placeholder="xXendBossXx" value=profile.username errorMessage=(fieldError
+        "username")}}
         {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture
         errorMessage=(fieldError "picture")}}
       </div>
