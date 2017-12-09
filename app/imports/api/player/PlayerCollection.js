@@ -16,12 +16,11 @@ import { Tracker } from 'meteor/tracker';
 class PlayerCollection extends BaseCollection {
 
   /**
-   * Creates the Profile collection.
+   * Creates the Player collection.
    */
   constructor() {
     super('Player', new SimpleSchema({
       username: { type: String },
-      // Remainder are optional
       firstName: { type: String, optional: true },
       lastName: { type: String, optional: true },
       bio: { type: String, optional: true },
@@ -31,7 +30,6 @@ class PlayerCollection extends BaseCollection {
       'games.$': { type: String },
       friends: { type: Array, optional: true },
       'friends.$': { type: String },
-      // Not optional
       endorsement: { type: Object, optional: true, blackbox: true},
       login: { type: Boolean, optional: true },
       uhUsername: { type: String, optional: true },
@@ -64,7 +62,9 @@ class PlayerCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
+
   define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [], endorsement = {}, login = '', uhUsername = '', picture = '', title = '', github = '',
+
       facebook = '', instagram = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean, uhUsername: String, picture: String,

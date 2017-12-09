@@ -1,5 +1,5 @@
 {
-  "comment": "Initial contents for the BowFolios database. For development purposes only.",
+  "comment": "Initial contents for the LFG database. For development purposes only.",
   "collections": [
 
     {
@@ -112,12 +112,16 @@
           "description": "Producer? Platform(s)? Genre(s)?"
         },
         {
-          "name": "Tom Clancy's: The Division",
-          "description": "Activision PC FPS"
+          "name": "Tom Clancy's The Division",
+          "description": "In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by one, and without access to food or water the city descends into chaos. As an agent of The Division, you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York."
         },
         {
           "name": "Star Wars: Battlefront II",
-          "description": "EA PC Adventure"
+          "description": "Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and villains, thrilling space combat, and a deep progression and customization system. Or live the untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign."
+        },
+        {
+          "name": "LEGO Batman 2: DC Super Heroes",
+          "description": "The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex Luthor and The Joker."
         }
       ]
     },
@@ -139,7 +143,7 @@
             "Pillars of Eternity"
           ],
           "friends": [
-            "secretg",
+            "viikta",
             "sageCrown",
             "r0gue"
           ],
@@ -162,7 +166,9 @@
             "tank" : [],
             "team player" : []
           },
+
           "login": false,
+          "uhUsername": "crlee",
           "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
         },
@@ -178,6 +184,11 @@
             "World of Warcraft",
             "Hearthstone"
           ],
+          "friends": [
+            "r0gue",
+            "secretg",
+            "viikta"
+          ],
           "endorsement": {
             "aggressive" : [],
             "casual" : [],
@@ -197,28 +208,30 @@
             "tank" : [],
             "team player" : []
           },
-          "login": false,
+          "login": true,
+          "uhUsername": "bwallick",
           "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
         },
         {
           "firstName": "Tallas",
           "lastName": "Goo",
-          "username": "rOgue",
-          "github": "henricasanova",
-          "bio": "Air Force ROTC",
+          "username": "r0gue",
+          "github": "",
+          "bio": "Cybersecurity student",
           "interests": [
             "Surfing",
             "Photography"
           ],
           "games": [
             "Star Wars: Battlefront II",
-            "Hearthstone"
+            "Hearthstone",
+            "Tom Clancy's The Division"
           ],
           "friends": [
-            "secretg",
             "sageCrown",
-            "r0gue"
+            "secretg",
+            "viikta"
           ],
           "endorsement": {
             "aggressive" : [],
@@ -239,9 +252,12 @@
             "tank" : [],
             "team player" : []
           },
-          "login": false,
+
+          "login": true,
+          "uhUsername": "tallas",
+
           "title": "Here is a title",
-          "picture": "/images/back up images/Tallas.jpg"
+          "picture": "/images/public-profile/master-chief.jpg"
         },
         {
           "firstName": "Victor",
@@ -280,6 +296,7 @@
             "tank" : [],
             "team player" : []
           },
+
           "login": false,
           "uhUsername": "vpawid",
           "title": "The title goes here",
