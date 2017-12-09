@@ -13,7 +13,6 @@ FlowRouter.route('/', {
   },
 });
 
-
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
@@ -36,6 +35,7 @@ FlowRouter.route('/directory', {
 
 
 /*                        USER ROUTES                      */
+
 
 function addUserBodyClass() {
   $('body').addClass('user-layout-body');
@@ -84,7 +84,6 @@ userRoutes.route('/home', {
   },
 });
 
-
 /*                        PUBLIC PROFILE ROUTE                       */
 
 export const publicProfilePageRouteName = 'Public_Profile_Page';
@@ -94,7 +93,6 @@ userRoutes.route('/public-profile', {
     BlazeLayout.render('Public_Profile_Layout', { main: publicProfilePageRouteName });
   },
 });
-
 
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {

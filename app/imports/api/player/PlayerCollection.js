@@ -16,11 +16,12 @@ import { Tracker } from 'meteor/tracker';
 class PlayerCollection extends BaseCollection {
 
   /**
-   * Creates the Player collection.
+   * Creates the Profile collection.
    */
   constructor() {
     super('Player', new SimpleSchema({
       username: { type: String },
+      // Remainder are optional
       firstName: { type: String, optional: true },
       lastName: { type: String, optional: true },
       bio: { type: String, optional: true },
@@ -30,8 +31,7 @@ class PlayerCollection extends BaseCollection {
       'games.$': { type: String },
       friends: { type: Array, optional: true },
       'friends.$': { type: String },
-      endorsement: { type: Object, optional: true, blackbox: true},
-      login: { type: Boolean, optional: true },
+      login: { type: String, optional: true },
       uhUsername: { type: String, optional: true },
       title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -62,12 +62,10 @@ class PlayerCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [], endorsement = {}, login = '', uhUsername = '', picture = '', title = '', github = '',
-
+  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [], login = '', uhUsername = '', picture = '', title = '', github = '',
       facebook = '', instagram = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean, uhUsername: String, picture: String,
+    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: String, uhUsername: String, picture: String,
       title: String };
     check({ firstName, lastName, username, bio, login, uhUsername, picture, title }, checkPattern);
 
@@ -92,7 +90,7 @@ class PlayerCollection extends BaseCollection {
       throw new Meteor.Error(`${friends} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, endorsement, login, uhUsername, picture, title, github,
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, login, uhUsername, picture, title, github,
       facebook, instagram });
   }
 
@@ -110,7 +108,6 @@ class PlayerCollection extends BaseCollection {
     const interests = doc.interests;
     const games = doc.games;
     const friends = doc.friends;
-    const endorsement = doc.endorsement;
     const login = doc.login;
     const uhUsername = doc.uhUsername;
     const picture = doc.picture;
@@ -118,7 +115,7 @@ class PlayerCollection extends BaseCollection {
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, games, friends, endorsement, login, uhUsername, picture, title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, games, friends, login, uhUsername, picture, title, github, facebook, instagram };
   }
 }
 

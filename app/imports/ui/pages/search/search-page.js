@@ -36,7 +36,7 @@ Template.Search_Page.helpers({
             selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
           };
         });
-  }, */
+  },*/
   games() {
     return _.map(Games.findAll(),
         function makeInterestObject(games) {

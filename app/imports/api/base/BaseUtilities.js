@@ -8,4 +8,5 @@ export function removeAllEntities() {
   Interests.removeAll();
   Players.removeAll();
   Games.removeAll();
+
 }

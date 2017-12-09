@@ -1,11 +1,12 @@
 .battle_net {
   background-image: url("/images/battleneticon.svg");
+  margin: 5px;
 }
 
 .xbox {
   background-image: url("/images/xboxicon.svg");
 }
 
-.steamIcon {
+.steam {
   background-image: url("/images/steamicon.svg");
 }

@@ -68,8 +68,8 @@ Template.Profile_Page.events({
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
 
-    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, bio,
-      interests, games, username };
+    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, bio, interests, games,
+      username };
 
     // Clear out any old validation errors.
     instance.context.reset();
@@ -89,3 +89,4 @@ Template.Profile_Page.events({
     }
   },
 });
+

@@ -2,46 +2,42 @@
 
   <div class="ui grid container profile">
 
-    <!--Left column-->
     <div class="four wide column">
 
       <!--Profile picture and username-->
-      <div class="ui fluid raised link card">
+      <div class="ui fluid raised card">
         <div class="content">
-          <img class="ui medium circular image" src={{current.picture}}>
+          <img class="ui medium circular image" src="/images/public-profile/master-chief.jpg">
         </div>
         <div class="content">
-          <div class="header" style="text-align: center">{{current.username}}</div>
+          <div class="header" style="text-align: center">r0gue</div>
         </div>
       </div>
 
-      <!--Commendations list-->
-      <div class="ui fluid raised link card">
+      <!--Achievements list-->
+      <div class="ui fluid raised card">
         <div class="content">
-          <div class="header"><i class="trophy icon"></i>Commendations</div>
+          <div class="header"><i class="trophy icon"></i>Achievements</div>
         </div>
-        <!--TODO: Add commendations here-->
+        <!--Add achievements here-->
         <div class="content"></div>
       </div>
 
     </div>
-    <!--End of left column-->
 
 
-    <!--Middle column-->
     <div class="eight wide column">
 
-      <!--Game list-->
       <div class="ui fluid raised card">
         <div class="content">
           <div class="header"><i class="game icon"></i>Games</div>
         </div>
 
+        <!--Scrollable game list-->
         <div class="content game-list">
           <div class="ui raised cards">
-            <!--NOTE: Descriptions must be roughly the same length as cards share the same height.-->
+            <!--Note: Descriptions must be roughly the same length as cards share the same height.-->
 
-            <!--TODO: Update cards from game collection-->
             <div class="ui fluid card">
 
               <div class="image">
@@ -103,15 +99,10 @@
           </div>
         </div>
       </div>
-
     </div>
-    <!--End of middle column-->
 
-
-    <!--Right column-->
+    <!--Friends list-->
     <div class="four wide column">
-
-      <!--Friends list-->
       <div class="ui fluid raised card">
         <div class="content">
           <div class="header"><i class="users icon"></i>Friends</div>
@@ -119,37 +110,41 @@
 
         <div class="content">
           <div class="ui list">
-            {{#each friend in (friends current)}}
-              <a class="item" href="#">
-                {{#if online friend}}
-                  <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
-                       src={{friend.picture}}>
-                  <div class="content">
-                    <div class="header">{{friend.username}}</div>
-                    Online
-                  </div>
-                {{else}}
-                  <img class="ui avatar bordered image" style="border-width: thick; border-color: red"
-                       src={{friend.picture}}>
-                  <div class="content">
-                    <div class="header">{{friend.username}}</div>
-                    Offline
-                  </div>
-                {{/if}}
-              </a>
-            {{/each}}
+
+            <div class="item">
+              <img class="ui avatar bordered image" style="border-width: thick; border-color: black"
+                   src="/images/blakeprofile.jpg">
+              <div class="content">
+                <div class="header">sageCrown</div>
+                Playing Hearthstone
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="ui avatar bordered image" style="border-width: thick; border-color: darkred"
+                   src="/images/back up images/profilePic.jpg">
+              <div class="content">
+                <div class="header">secretg</div>
+                Offline
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
+                   src="/images/back up images/victor.png">
+              <div class="content">
+                <div class="header">viikta</div>
+                Online
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-
     </div>
-    <!--End of right column-->
-
 
     <div class="twelve wide column">
-
-      <!--Activity schedule-->
-      <div class="ui fluid raised link card">
+      <div class="ui fluid raised card">
         <div class="content">
           <div class="header"><i class="calendar icon"></i>Activity Schedule</div>
         </div>
