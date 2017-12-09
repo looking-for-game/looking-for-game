@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
-import { $ } from 'meteor/jquery';
+// import { $ } from 'meteor/jquery';
 import { Players } from '/imports/api/player/PlayerCollection';
 import { Games } from '/imports/api/game/GameCollection';
 
@@ -11,7 +11,7 @@ Template.Public_Profile_Page.onCreated(function onCreated() {
 });
 
 Template.Public_Profile_Page.helpers({
-  current() {
+  currentUser() {
     return _.find(Players.findAll(), function (player) {
       return player.uhUsername === FlowRouter.getParam('username');
     });
@@ -24,5 +24,8 @@ Template.Public_Profile_Page.helpers({
   },
   online(player) {
     return player.login;
+  },
+  commendations(current) {
+    return Object.keys(current.endorsement);
   },
 });

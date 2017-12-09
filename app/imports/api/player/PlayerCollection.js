@@ -30,7 +30,7 @@ class PlayerCollection extends BaseCollection {
       'games.$': { type: String },
       friends: { type: Array, optional: true },
       'friends.$': { type: String },
-      endorsement: { type: Object, optional: true, blackbox: true},
+      endorsement: { type: Object, optional: true, blackbox: true },
       login: { type: Boolean, optional: true },
       uhUsername: { type: String, optional: true },
       title: { type: String, optional: true },
@@ -63,12 +63,12 @@ class PlayerCollection extends BaseCollection {
    * @returns The newly created docID.
    */
 
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [], endorsement = {}, login = '', uhUsername = '', picture = '', title = '', github = '',
-
-      facebook = '', instagram = '' }) {
+  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [],
+           endorsement = {}, login = '', uhUsername = '', picture = '', title = '', github = '',
+           facebook = '', instagram = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean, uhUsername: String, picture: String,
-      title: String };
+    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean,
+      uhUsername: String, picture: String, title: String };
     check({ firstName, lastName, username, bio, login, uhUsername, picture, title }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
@@ -92,8 +92,8 @@ class PlayerCollection extends BaseCollection {
       throw new Meteor.Error(`${friends} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, endorsement, login, uhUsername, picture, title, github,
-      facebook, instagram });
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, endorsement,
+      login, uhUsername, picture, title, github, facebook, instagram });
   }
 
   /**
@@ -118,7 +118,8 @@ class PlayerCollection extends BaseCollection {
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, games, friends, endorsement, login, uhUsername, picture, title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, games, friends, endorsement, login, uhUsername, picture,
+      title, github, facebook, instagram };
   }
 }
 
