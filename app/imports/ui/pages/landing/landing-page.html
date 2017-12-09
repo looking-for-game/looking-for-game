@@ -59,7 +59,8 @@
       </div>
       <div class="ui center aligned eight wide column">
         <h1 class="landing-section-2-welcome"><b>Connect with other people.</b></h1>
-        <h3 class="landing-section-2-tagline">Playing games together can improve your ability to coordinate with others as well as improve problem solving skills.</h3>
+        <h3 class="landing-section-2-tagline">Playing games together can improve your ability to coordinate with others
+          as well as improve problem solving skills.</h3>
       </div>
       <div class="ui four wide column">
       </div>
@@ -88,12 +89,70 @@
         <div class="ui four wide column">
         </div>
         <div class="ui center aligned eight wide column">
-          <p class="landing-section-2-tagline">reroll.</p>
+          <p class="landing-section-2-tagline"><a href="https://looking-for-game.github.io">reroll.</a></p>
         </div>
         <div class="ui four wide column">
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+      Create Profile
+    </div>
+    {{#if Template.subscriptionsReady}}
+
+    <div class="ui text container vertical segment">
+      <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
+
+        <div class="fields">
+          {{> Text_Form_Control label="First" placeholder="Doom" value=profile.firstName errorMessage=(fieldError
+          "firstName")}}
+          {{> Text_Form_Control label="Last" placeholder="Guy" value=profile.lastName errorMessage=(fieldError
+          "lastName")}}
+
+        </div>
+
+        <div class="field">
+          {{> Text_Form_Control label="Handle" placeholder="xXendBossXx" value=profile.title errorMessage=(fieldError
+          "title")}}
+          {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture
+          errorMessage=(fieldError "picture")}}
+        </div>
+
+        <!--<div class="field">
+          {{> Select_Form_Control label="Interests" options=interests errorMessage=(fieldError "interests") multiple=true }}
+        </div>-->
+
+        <div class="field">
+          {{> Select_Form_Control label="Games" options=games errorMessage=(fieldError "games") multiple=true }}
+        </div>
+
+        <div class="fields">
+
+          {{> Social_Network_Form_Control label="battle_net" icon="battle_net" placeholder="diabloguy" value=profile.github
+          errorMessage=(fieldError "github")}}
+          {{> Social_Network_Form_Control label="xbox" icon="xbox" placeholder="haloguy" value=profile.facebook
+          errorMessage=(fieldError "facebook")}}
+          {{> Social_Network_Form_Control label="steamIcon" icon="steamIcon" placeholder="codguy" value=profile.instagram
+          errorMessage=(fieldError "instagram")}}
+
+        </div>
+
+        {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short bio statement here"
+        errorMessage=(fieldError "bio")}}
+
+        <button class="ui primary button" type="submit">Submit</button>
+        {{#if displaySuccessMessage}}
+        <div class="ui success message">
+          <p>Profile data successfully updated.</p>
+        </div>
+        {{/if}}
+      </form>
+    </div>
+    {{/if}}
   </div>
 
 </template>
