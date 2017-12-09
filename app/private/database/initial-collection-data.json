@@ -126,8 +126,6 @@
       "name": "PlayerCollection",
       "contents": [
         {
-
-
           "firstName": "Chris",
           "lastName": "Lee",
           "username": "secretg",
@@ -145,7 +143,26 @@
             "sageCrown",
             "r0gue"
           ],
-          "login": "False",
+          "endorsement": {
+            "aggressive" : [ "vpawid" ],
+            "casual" : [],
+            "communicator" : [],
+            "competitive" : [],
+            "cqc" : [],
+            "driver" : [],
+            "gunner" : [],
+            "healer" : [],
+            "leader" : [],
+            "lone wolf" : [],
+            "melee" : [],
+            "pilot" : [],
+            "ranged" : [],
+            "sniper" : [],
+            "support" : [],
+            "tank" : [],
+            "team player" : []
+          },
+          "login": false,
           "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
         },
@@ -161,7 +178,26 @@
             "World of Warcraft",
             "Hearthstone"
           ],
-          "login": "False",
+          "endorsement": {
+            "aggressive" : [],
+            "casual" : [],
+            "communicator" : [],
+            "competitive" : [],
+            "cqc" : [],
+            "driver" : [],
+            "gunner" : [],
+            "healer" : [],
+            "leader" : [],
+            "lone wolf" : [],
+            "melee" : [],
+            "pilot" : [],
+            "ranged" : [],
+            "sniper" : [],
+            "support" : [],
+            "tank" : [],
+            "team player" : []
+          },
+          "login": false,
           "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
         },
@@ -184,7 +220,26 @@
             "sageCrown",
             "r0gue"
           ],
-          "login": "False",
+          "endorsement": {
+            "aggressive" : [],
+            "casual" : [],
+            "communicator" : [],
+            "competitive" : [],
+            "cqc" : [],
+            "driver" : [],
+            "gunner" : [],
+            "healer" : [],
+            "leader" : [],
+            "lone wolf" : [],
+            "melee" : [],
+            "pilot" : [],
+            "ranged" : [],
+            "sniper" : [],
+            "support" : [],
+            "tank" : [],
+            "team player" : []
+          },
+          "login": false,
           "title": "Here is a title",
           "picture": "/images/back up images/Tallas.jpg"
         },
@@ -206,7 +261,26 @@
             "sageCrown",
             "r0gue"
           ],
-          "login": "False",
+          "endorsement": {
+            "aggressive" : [],
+            "casual" : [],
+            "communicator" : [],
+            "competitive" : [],
+            "cqc" : [],
+            "driver" : [],
+            "gunner" : [],
+            "healer" : [],
+            "leader" : [],
+            "lone wolf" : [],
+            "melee" : [],
+            "pilot" : [],
+            "ranged" : [],
+            "sniper" : [],
+            "support" : [],
+            "tank" : [],
+            "team player" : []
+          },
+          "login": false,
           "uhUsername": "vpawid",
           "title": "The title goes here",
           "picture": "/images/back up images/victor.png"
