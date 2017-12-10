@@ -2,6 +2,7 @@
   "comment": "Initial contents for the LFG database. For development purposes only.",
   "collections": [
 
+
     {
       "name": "InterestCollection",
       "contents": [
@@ -84,6 +85,7 @@
       ]
     },
 
+
     {
       "name": "GameCollection",
       "contents": [
@@ -126,6 +128,7 @@
       ]
     },
 
+
     {
       "name": "PlayerCollection",
       "contents": [
@@ -150,7 +153,6 @@
           "commendations": [],
           "login": false,
           "uhUsername": "crlee",
-          "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
         },
         {
@@ -173,18 +175,16 @@
           "commendations": [],
           "login": true,
           "uhUsername": "bwallick",
-          "title": "This is a place for a title",
           "picture": "/images/blakeprofile.jpg"
         },
         {
           "firstName": "Tallas",
           "lastName": "Goo",
           "username": "r0gue",
-          "github": "",
           "bio": "Cybersecurity student",
           "interests": [
-            "Surfing",
-            "Photography"
+            "Software Engineering",
+            "Cybersecurity"
           ],
           "games": [
             "Star Wars: Battlefront II",
@@ -202,8 +202,6 @@
           ],
           "login": true,
           "uhUsername": "tallas",
-
-          "title": "Here is a title",
           "picture": "/images/public-profile/master-chief.jpg"
         },
         {
@@ -227,11 +225,12 @@
           "commendations": [],
           "login": false,
           "uhUsername": "vpawid",
-          "title": "The title goes here",
           "picture": "/images/back up images/victor.png"
         }
       ]
     },
+
+
     {
       "name": "ProfileCollection",
       "contents": [
@@ -288,7 +287,6 @@
           "firstName": "Henri",
           "lastName": "Casanova",
           "username": "henric",
-          "github": "henricasanova",
           "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Surfing",
@@ -301,6 +299,3 @@
     }
   ]
 }
-
-
-

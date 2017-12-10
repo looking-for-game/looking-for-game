@@ -34,11 +34,7 @@ class PlayerCollection extends BaseCollection {
       'commendations.$': { type: String },
       login: { type: Boolean, optional: true },
       uhUsername: { type: String, optional: true },
-      title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
-      github: { type: SimpleSchema.RegEx.Url, optional: true },
-      facebook: { type: SimpleSchema.RegEx.Url, optional: true },
-      instagram: { type: SimpleSchema.RegEx.Url, optional: true },
     }, { tracker: Tracker }));
   }
 
@@ -50,11 +46,7 @@ class PlayerCollection extends BaseCollection {
    *                   username: 'johnson',
    *                   bio: 'I have been a professor of computer science at UH since 1990.',
    *                   interests: ['Application Development', 'Software Engineering', 'Databases'],
-   *                   title: 'Professor of Information and Computer Sciences',
    *                   picture: 'http://philipmjohnson.org/headshot.jpg',
-   *                   github: 'https://github.com/philipmjohnson',
-   *                   facebook: 'https://facebook.com/philipmjohnson',
-   *                   instagram: 'https://instagram.com/philipmjohnson' });
    * @param { Object } description Object with required key username.
    * Remaining keys are optional.
    * Username must be unique for all users. It should be the UH email account.
@@ -65,12 +57,11 @@ class PlayerCollection extends BaseCollection {
    */
 
   define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [],
-           commendations = [], login = '', uhUsername = '', picture = '', title = '', github = '',
-           facebook = '', instagram = '' }) {
+           commendations = [], login = '', uhUsername = '', picture = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean,
-      uhUsername: String, picture: String, title: String };
-    check({ firstName, lastName, username, bio, login, uhUsername, picture, title }, checkPattern);
+      uhUsername: String, picture: String };
+    check({ firstName, lastName, username, bio, login, uhUsername, picture }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -94,7 +85,7 @@ class PlayerCollection extends BaseCollection {
     }
 
     return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, commendations,
-      login, uhUsername, picture, title, github, facebook, instagram });
+      login, uhUsername, picture });
   }
 
   /**
@@ -115,12 +106,7 @@ class PlayerCollection extends BaseCollection {
     const login = doc.login;
     const uhUsername = doc.uhUsername;
     const picture = doc.picture;
-    const title = doc.title;
-    const github = doc.github;
-    const facebook = doc.facebook;
-    const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, games, friends, commendations, login, uhUsername, picture,
-      title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, games, friends, commendations, login, uhUsername, picture };
   }
 }
 
