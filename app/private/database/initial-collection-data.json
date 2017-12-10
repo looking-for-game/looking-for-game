@@ -1,6 +1,8 @@
 {
   "comment": "Initial contents for the LFG database. For development purposes only.",
   "collections": [
+
+    
     {
       "name": "InterestCollection",
       "contents": [
@@ -82,6 +84,8 @@
         }
       ]
     },
+
+    
     {
       "name": "GameCollection",
       "contents": [
@@ -123,9 +127,12 @@
         }
       ]
     },
+
+    
     {
       "name": "PlayerCollection",
       "contents": [
+        
         {
           "firstName": "Chris",
           "lastName": "Lee",
@@ -143,29 +150,13 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [
+            {"tag": "Healer", "count": ["r0gue", "sageCrown", "viikta"]},
+            {"tag": "Support", "count": ["sageCrown", "viikta"]},
+            {"tag": "Pilot", "count": ["r0gue"]}
+          ],
           "login": false,
           "uhUsername": "crlee",
-          "title": "This is a title field",
           "picture": "/images/back up images/profilePic.jpg"
         },
 
@@ -174,8 +165,7 @@
           "lastName": "Guy",
           "username": "DoomGuy",
           "bio": "Specialty in thrashing Mars demons",
-          "interests": [
-          ],
+          "interests": [],
           "games": [
             "Heroes of the Storm",
             "Hearthstone",
@@ -186,29 +176,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "doomguy",
-          "title": "Mars demon blaster",
           "picture": "/images/back up images/doomguy.jpg"
         },
 
@@ -229,77 +199,46 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
+          "commendations": [
+            {"tag": "Leader", "count": ["r0gue", "secretg", "viikta"]},
+            {"tag": "Communicator", "count": ["secretg", "viikta"]},
+            {"tag": "Competitive", "count": ["r0gue"]}
+          ],
           "login": true,
           "uhUsername": "bwallick",
-          "title": "This is a place for a title",
           "picture": "/images/back up images/blakeprofile.jpg"
         },
-
+        
         {
           "firstName": "Tallas",
           "lastName": "Goo",
           "username": "r0gue",
           "bio": "Cybersecurity student",
           "interests": [
-            "Surfing",
-            "Photography"
+            "Software Engineering",
+            "Cybersecurity"
           ],
           "games": [
             "Star Wars: Battlefront II",
             "Hearthstone",
-            "Tom Clancy's The Division"
+            "Tom Clancy's The Division",
+            "LEGO Batman 2: DC Super Heroes"
           ],
           "friends": [
             "sageCrown",
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [
+            {"tag": "Attacker", "count": ["sageCrown", "secretg", "viikta"]},
+            {"tag": "Sniper", "count": ["secretg", "viikta"]},
+            {"tag": "Strategist", "count": ["sageCrown"]}
+          ],
           "login": true,
           "uhUsername": "tallas",
-
-          "title": "Here is a title",
           "picture": "/images/back up images/master-chief.jpg"
         },
-
+        
         {
           "firstName": "Victor",
           "lastName": "Pawid",
@@ -318,29 +257,13 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [
+            {"tag": "Tank", "count": ["r0gue", "secretg", "sageCrown"]},
+            {"tag": "Casual", "count": ["secretg", "sageCrown"]},
+            {"tag": "Lone Wolf", "count": ["r0gue"]}
+          ],
           "login": false,
           "uhUsername": "vpawid",
-          "title": "The title goes here",
           "picture": "/images/back up images/victor.png"
         },
 
@@ -349,8 +272,7 @@
           "lastName": "Brother",
           "username": "mBro",
           "bio": "Squash some mushrooms, eat others",
-          "interests": [
-          ],
+          "interests": [],
           "games": [
             "Heroes of the Storm",
             "Hearthstone",
@@ -361,29 +283,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "mBro",
-          "title": "Savior of the mushroom kingdom",
           "picture": "/images/back up images/mario.jpg"
         },
 
@@ -392,8 +294,7 @@
           "lastName": "Hyrule",
           "username": "zeldaGuy",
           "bio": "Specialty solving puzzles",
-          "interests": [
-          ],
+          "interests": [],
           "games": [
             "Heroes of the Storm",
             "Hearthstone",
@@ -404,29 +305,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "zeldaGuy",
-          "title": "Savior of Hyrule",
           "picture": "/images/back up images/link.png"
         },
 
@@ -447,28 +328,9 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
+          "commendations": [],
           "login": true,
           "uhUsername": "bluBomberBomber",
-          "title": "Time person of the year for 20XX",
           "picture": "/images/back up images/drwiley.jpg"
         },
 
@@ -491,74 +353,10 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": true,
           "uhUsername": "ryu",
-          "title": "The perfect warrior",
           "picture": "/images/back up images/ryu.jpg"
-        },
-
-        {
-          "firstName": "Harry",
-          "lastName": "Potter",
-          "username": "theBoyWhoLived",
-          "bio": "I have parent issues",
-          "interests": [
-            "Surfing",
-            "Photography"
-          ],
-          "games": [
-            "League of Legends",
-            "Hearthstone"
-          ],
-          "friends": [
-            "secretg",
-            "sageCrown",
-            "r0gue"
-          ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
-          "login": false,
-          "uhUsername": "hPotter",
-          "title": "Hogwarts Dropout",
-          "picture": "/images/back up images/harrypotter.jpg"
         },
 
         {
@@ -578,29 +376,8 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
           "login": false,
           "uhUsername": "logan",
-          "title": "X-men are overrated",
           "picture": "/images/back up images/wolverine.jpg"
         },
 
@@ -621,29 +398,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "pewpew",
-          "title": "Archmage",
           "picture": "/images/back up images/jaina.png"
         },
 
@@ -664,28 +421,9 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
+          "commendations": [],
           "login": true,
           "uhUsername": "zack",
-          "title": "S.O.L.I.E.R. Dropout",
           "picture": "/images/back up images/cloud.jpg"
         },
 
@@ -708,29 +446,9 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": true,
           "uhUsername": "BillyS",
-          "title": "Queen of England",
           "picture": "/images/back up images/shakespeare.jpg"
         },
 
@@ -752,29 +470,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "kylosDad",
-          "title": "Bounty Hunter",
           "picture": "/images/back up images/hansolo.jpg"
         },
 
@@ -783,8 +481,7 @@
           "lastName": "first name Reginold",
           "username": "drrobotnik",
           "bio": "Roomed with Reginold Wiley at botschool",
-          "interests": [
-          ],
+          "interests": [],
           "games": [
             "Heroes of the Storm",
             "Hearthstone",
@@ -795,29 +492,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "drrobotnik",
-          "title": "PetaBomber",
           "picture": "/images/back up images/drrobotnik.png"
         },
 
@@ -838,29 +515,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [ "vpawid" ],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+         "commendations": [],
           "login": false,
           "uhUsername": "khellendros",
-          "title": "Kitiara was abusive",
           "picture": "/images/back up images/khellendros.jpg"
         },
 
@@ -883,29 +540,9 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": true,
           "uhUsername": "db",
-          "title": "prime",
           "picture": "/images/back up images/db.jpg"
         },
 
@@ -927,29 +564,9 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
-
+          "commendations": [],
           "login": false,
           "uhUsername": "kbone",
-          "title": "Interviewer Extrordinaire",
           "picture": "/images/back up images/kenbone.jpg"
         },
 
@@ -970,32 +587,39 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": {
-            "aggressive" : [],
-            "casual" : [],
-            "communicator" : [],
-            "competitive" : [],
-            "cqc" : [],
-            "driver" : [],
-            "gunner" : [],
-            "healer" : [],
-            "leader" : [],
-            "lone wolf" : [],
-            "melee" : [],
-            "pilot" : [],
-            "ranged" : [],
-            "sniper" : [],
-            "support" : [],
-            "tank" : [],
-            "team player" : []
-          },
+          "commendations": [],
           "login": true,
           "uhUsername": "bansheequeen",
-          "title": "Warchief",
           "picture": "/images/back up images/sylvanas.png"
+        },
+        
+        {
+          "firstName": "Harry",
+          "lastName": "Potter",
+          "username": "theBoyWhoLived",
+          "bio": "I have parent issues",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "games": [
+            "League of Legends",
+            "Hearthstone"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "hPotter",
+          "picture": "/images/back up images/harrypotter.jpg"
         }
       ]
     },
+    
+    
     {
       "name": "ProfileCollection",
       "contents": [
@@ -1004,6 +628,3 @@
     }
   ]
 }
-
-
-

@@ -8,10 +8,10 @@
       <!--Profile picture and username-->
       <div class="ui fluid raised link card">
         <div class="content">
-          <img class="ui medium circular image" src={{current.picture}}>
+          <img class="ui medium circular image" src={{currentUser.picture}}>
         </div>
         <div class="content">
-          <div class="header" style="text-align: center">{{current.username}}</div>
+          <div class="header" style="text-align: center">{{currentUser.username}}</div>
         </div>
       </div>
 
@@ -20,8 +20,17 @@
         <div class="content">
           <div class="header"><i class="trophy icon"></i>Commendations</div>
         </div>
-        <!--TODO: Add commendations here-->
-        <div class="content"></div>
+        <div class="content">
+          <div class="ui divided selection list">
+            {{#each commendation in (commendations currentUser)}}
+              <div class="item">
+                <div class="content">
+                  <div class="header"><i class="empty star icon"></i>{{commendation.tag}} ({{count commendation}})</div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
       </div>
 
     </div>
@@ -118,8 +127,8 @@
         </div>
 
         <div class="content">
-          <div class="ui list">
-            {{#each friend in (friends current)}}
+          <div class="ui divided animated selection list">
+            {{#each friend in (friends currentUser)}}
               <a class="item" href="#">
                 {{#if online friend}}
                   <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
