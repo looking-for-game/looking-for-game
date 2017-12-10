@@ -198,7 +198,7 @@
             "viikta"
           ],
           "commendations": [
-            "Sniper"
+            { "tag": "Sniper" }
           ],
           "login": true,
           "uhUsername": "tallas",

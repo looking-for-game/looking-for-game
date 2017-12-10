@@ -26,6 +26,8 @@ Template.Public_Profile_Page.helpers({
     return player.login;
   },
   commendations(current) {
-    return current.commendations;
+    return _.map(current.commendations, function (commendation) {
+      return commendation.tag;
+    });
   },
 });
