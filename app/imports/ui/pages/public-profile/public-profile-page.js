@@ -25,7 +25,7 @@ Template.Public_Profile_Page.helpers({
   online(player) {
     return player.login;
   },
-  commendations(current) {
-    return current.endorsement;
-  },
+  // commendations(current) {
+  //   return current.endorsement;
+  // },
 });

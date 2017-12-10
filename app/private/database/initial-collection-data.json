@@ -147,7 +147,7 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": [],
+          "commendations": [],
           "login": false,
           "uhUsername": "crlee",
           "title": "This is a title field",
@@ -170,7 +170,7 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": [],
+          "commendations": [],
           "login": true,
           "uhUsername": "bwallick",
           "title": "This is a place for a title",
@@ -197,7 +197,7 @@
             "secretg",
             "viikta"
           ],
-          "endorsement": [
+          "commendations": [
             "Sniper"
           ],
           "login": true,
@@ -224,7 +224,7 @@
             "sageCrown",
             "r0gue"
           ],
-          "endorsement": [],
+          "commendations": [],
           "login": false,
           "uhUsername": "vpawid",
           "title": "The title goes here",

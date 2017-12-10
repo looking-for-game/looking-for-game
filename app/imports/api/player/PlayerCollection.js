@@ -30,8 +30,8 @@ class PlayerCollection extends BaseCollection {
       'games.$': { type: String },
       friends: { type: Array, optional: true },
       'friends.$': { type: String },
-      endorsement: { type: Array, optional: true },
-      'endorsement.$': { type: String },
+      commendations: { type: Array, optional: true },
+      'commendations.$': { type: String },
       login: { type: Boolean, optional: true },
       uhUsername: { type: String, optional: true },
       title: { type: String, optional: true },
@@ -65,7 +65,7 @@ class PlayerCollection extends BaseCollection {
    */
 
   define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [],
-           endorsement = [], login = '', uhUsername = '', picture = '', title = '', github = '',
+           commendations = [], login = '', uhUsername = '', picture = '', title = '', github = '',
            facebook = '', instagram = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean,
@@ -93,7 +93,7 @@ class PlayerCollection extends BaseCollection {
       throw new Meteor.Error(`${friends} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, endorsement,
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, commendations,
       login, uhUsername, picture, title, github, facebook, instagram });
   }
 
@@ -111,7 +111,7 @@ class PlayerCollection extends BaseCollection {
     const interests = doc.interests;
     const games = doc.games;
     const friends = doc.friends;
-    const endorsement = doc.endorsement;
+    const commendations = doc.commendations;
     const login = doc.login;
     const uhUsername = doc.uhUsername;
     const picture = doc.picture;
@@ -119,7 +119,7 @@ class PlayerCollection extends BaseCollection {
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, games, friends, endorsement, login, uhUsername, picture,
+    return { firstName, lastName, username, bio, interests, games, friends, commendations, login, uhUsername, picture,
       title, github, facebook, instagram };
   }
 }
