@@ -20,13 +20,12 @@
         <div class="content">
           <div class="header"><i class="trophy icon"></i>Commendations</div>
         </div>
-        <!--TODO: Add commendations here-->
         <div class="content">
-          <div class="ui selection list">
+          <div class="ui divided selection list">
             {{#each commendation in (commendations currentUser)}}
               <div class="item">
                 <div class="content">
-                  <div class="header">{{commendation}}</div>
+                  <div class="header"><i class="empty star icon"></i>{{commendation.tag}} ({{count commendation}})</div>
                 </div>
               </div>
             {{/each}}

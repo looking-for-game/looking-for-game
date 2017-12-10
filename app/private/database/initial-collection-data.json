@@ -150,7 +150,11 @@
             "sageCrown",
             "r0gue"
           ],
-          "commendations": [],
+          "commendations": [
+            {"tag": "Healer", "count": ["r0gue", "sageCrown", "viikta"]},
+            {"tag": "Support", "count": ["sageCrown", "viikta"]},
+            {"tag": "Pilot", "count": ["r0gue"]}
+          ],
           "login": false,
           "uhUsername": "crlee",
           "picture": "/images/back up images/profilePic.jpg"
@@ -172,7 +176,11 @@
             "secretg",
             "viikta"
           ],
-          "commendations": [],
+          "commendations": [
+            {"tag": "Leader", "count": ["r0gue", "secretg", "viikta"]},
+            {"tag": "Communicator", "count": ["secretg", "viikta"]},
+            {"tag": "Competitive", "count": ["r0gue"]}
+          ],
           "login": true,
           "uhUsername": "bwallick",
           "picture": "/images/blakeprofile.jpg"
@@ -198,7 +206,9 @@
             "viikta"
           ],
           "commendations": [
-            { "tag": "Sniper", "count": ["sageCrown", "secretg", "viikta"] }
+            {"tag": "Attacker", "count": ["sageCrown", "secretg", "viikta"]},
+            {"tag": "Sniper", "count": ["secretg", "viikta"]},
+            {"tag": "Strategist", "count": ["sageCrown"]}
           ],
           "login": true,
           "uhUsername": "tallas",
@@ -222,7 +232,11 @@
             "sageCrown",
             "r0gue"
           ],
-          "commendations": [],
+          "commendations": [
+            {"tag": "Tank", "count": ["r0gue", "secretg", "sageCrown"]},
+            {"tag": "Casual", "count": ["secretg", "sageCrown"]},
+            {"tag": "Lone Wolf", "count": ["r0gue"]}
+          ],
           "login": false,
           "uhUsername": "vpawid",
           "picture": "/images/back up images/victor.png"
