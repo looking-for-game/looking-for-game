@@ -33,6 +33,8 @@ class PlayerCollection extends BaseCollection {
       commendations: { type: Array, optional: true },
       'commendations.$': { type: Object },
       'commendations.$.tag': { type: String },
+      'commendations.$.count': { type: Array },
+      'commendations.$.count.$': { type: String },
       login: { type: Boolean, optional: true },
       uhUsername: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },

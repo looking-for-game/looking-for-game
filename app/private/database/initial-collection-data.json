@@ -198,7 +198,7 @@
             "viikta"
           ],
           "commendations": [
-            { "tag": "Sniper" }
+            { "tag": "Sniper", "count": ["sageCrown", "secretg", "viikta"] }
           ],
           "login": true,
           "uhUsername": "tallas",
