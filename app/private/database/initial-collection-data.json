@@ -2,7 +2,7 @@
   "comment": "Initial contents for the LFG database. For development purposes only.",
   "collections": [
 
-
+    
     {
       "name": "InterestCollection",
       "contents": [
@@ -85,7 +85,7 @@
       ]
     },
 
-
+    
     {
       "name": "GameCollection",
       "contents": [
@@ -128,17 +128,17 @@
       ]
     },
 
-
+    
     {
       "name": "PlayerCollection",
       "contents": [
+        
         {
           "firstName": "Chris",
           "lastName": "Lee",
           "username": "secretg",
           "bio": "Background in HTML CSS",
           "interests": [
-            "Surfing"
           ],
           "games": [
             "Heroes of the Storm",
@@ -159,6 +159,29 @@
           "uhUsername": "crlee",
           "picture": "/images/back up images/profilePic.jpg"
         },
+
+        {
+          "firstName": "Doom",
+          "lastName": "Guy",
+          "username": "DoomGuy",
+          "bio": "Specialty in thrashing Mars demons",
+          "interests": [],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "doomguy",
+          "picture": "/images/back up images/doomguy.jpg"
+        },
+
         {
           "firstName": "Blake",
           "lastName": "Wallick",
@@ -183,8 +206,9 @@
           ],
           "login": true,
           "uhUsername": "bwallick",
-          "picture": "/images/blakeprofile.jpg"
+          "picture": "/images/back up images/blakeprofile.jpg"
         },
+        
         {
           "firstName": "Tallas",
           "lastName": "Goo",
@@ -212,8 +236,9 @@
           ],
           "login": true,
           "uhUsername": "tallas",
-          "picture": "/images/public-profile/master-chief.jpg"
+          "picture": "/images/back up images/master-chief.jpg"
         },
+        
         {
           "firstName": "Victor",
           "lastName": "Pawid",
@@ -240,75 +265,365 @@
           "login": false,
           "uhUsername": "vpawid",
           "picture": "/images/back up images/victor.png"
-        }
-      ]
-    },
+        },
 
-
-    {
-      "name": "ProfileCollection",
-      "contents": [
         {
-          "firstName": "Blake",
-          "lastName": "Wallick",
-          "username": "sageCrown",
+          "firstName": "Mario",
+          "lastName": "Brother",
+          "username": "mBro",
+          "bio": "Squash some mushrooms, eat others",
+          "interests": [],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "viikta",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "mBro",
+          "picture": "/images/back up images/mario.jpg"
+        },
+
+        {
+          "firstName": "Link",
+          "lastName": "Hyrule",
+          "username": "zeldaGuy",
+          "bio": "Specialty solving puzzles",
+          "interests": [],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "zeldaGuy",
+          "picture": "/images/back up images/link.png"
+        },
+
+        {
+          "firstName": "Dr. Wiley",
+          "lastName": "first name Reginold",
+          "username": "BluBomberBomber",
+          "bio": "I like making robots.",
+          "interests": [
+            "Computer Vision"
+          ],
+          "games": [
+            "World of Warcraft",
+            "Hearthstone"
+          ],
+          "friends": [
+            "r0gue",
+            "secretg",
+            "viikta"
+          ],
+          "commendations": [],
+          "login": true,
+          "uhUsername": "bluBomberBomber",
+          "picture": "/images/back up images/drwiley.jpg"
+        },
+
+        {
+          "firstName": "Ryu",
+          "lastName": "Hadoken",
+          "username": "ryu",
+          "bio": "Always seeking the next battle",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "games": [
+            "Star Wars: Battlefront II",
+            "Hearthstone",
+            "Tom Clancy's The Division"
+          ],
+          "friends": [
+            "sageCrown",
+            "secretg",
+            "viikta"
+          ],
+          "commendations": [],
+          "login": true,
+          "uhUsername": "ryu",
+          "picture": "/images/back up images/ryu.jpg"
+        },
+
+        {
+          "firstName": "Wolverine",
+          "lastName": "Logan",
+          "username": "berserkerBarrage",
+          "bio": "I'm not a nice canadian",
+          "interests": [
+          ],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "viikta",
+            "sageCrown",
+            "r0gue"
+          ],
+          "login": false,
+          "uhUsername": "logan",
+          "picture": "/images/back up images/wolverine.jpg"
+        },
+
+        {
+          "firstName": "Jaina",
+          "lastName": "Proudmore",
+          "username": "PewPew",
+          "bio": "I should have listened to my dad",
+          "interests": [
+          ],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "pewpew",
+          "picture": "/images/back up images/jaina.png"
+        },
+
+        {
+          "firstName": "Cloud",
+          "lastName": "Strife",
+          "username": "sephirothCloneX",
           "bio": "Grew up in NES, SNES, N64, PS1 era.",
           "interests": [
             "Computer Vision"
           ],
           "games": [
-            "World of Warcraft"
+            "World of Warcraft",
+            "Hearthstone"
           ],
-          "title": "This is a place for a title",
-          "picture": "/images/blakeprofile.jpg"
-        },
-        {
-          "firstName": "Kyungim",
-          "lastName": "Baek",
-          "username": "baek",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Computer Vision"
+          "friends": [
+            "r0gue",
+            "secretg",
+            "viikta"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/baek.jpg"
+          "commendations": [],
+          "login": true,
+          "uhUsername": "zack",
+          "picture": "/images/back up images/cloud.jpg"
         },
+
         {
-          "firstName": "Edo",
-          "lastName": "Biagioni",
-          "username": "esb",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mobile Networks",
-            "Sailing"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/biagioni.jpg"
-        },
-        {
-          "firstName": "Kim",
-          "lastName": "Binsted",
-          "username": "binsted",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
-            "Mars",
-            "Imu Cooking"
-          ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/binsted.jpg"
-        },
-        {
-          "firstName": "Henri",
-          "lastName": "Casanova",
-          "username": "henric",
-          "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "William",
+          "lastName": "Shakespear",
+          "username": "theBard",
+          "bio": "Cybersecurity student",
           "interests": [
             "Surfing",
             "Photography"
           ],
-          "title": "Professor, Information and Computer Sciences",
-          "picture": "/images/casanova.jpg"
+          "games": [
+            "Star Wars: Battlefront II",
+            "Hearthstone",
+            "Tom Clancy's The Division"
+          ],
+          "friends": [
+            "sageCrown",
+            "secretg",
+            "viikta"
+          ],
+          "commendations": [],
+          "login": true,
+          "uhUsername": "BillyS",
+          "picture": "/images/back up images/shakespeare.jpg"
+        },
+
+        {
+          "firstName": "Han",
+          "lastName": "Solo",
+          "username": "chewiesSidekick",
+          "bio": "My life has had such little meaning",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "games": [
+            "League of Legends",
+            "Hearthstone"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "kylosDad",
+          "picture": "/images/back up images/hansolo.jpg"
+        },
+
+        {
+          "firstName": "Dr. Robotnik",
+          "lastName": "first name Reginold",
+          "username": "drrobotnik",
+          "bio": "Roomed with Reginold Wiley at botschool",
+          "interests": [],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "viikta",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "drrobotnik",
+          "picture": "/images/back up images/drrobotnik.png"
+        },
+
+        {
+          "firstName": "Khellendros",
+          "lastName": "Blue",
+          "username": "Zappy",
+          "bio": "The purge was my favorite part",
+          "interests": [
+          ],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+         "commendations": [],
+          "login": false,
+          "uhUsername": "khellendros",
+          "picture": "/images/back up images/khellendros.jpg"
+        },
+
+        {
+          "firstName": "D",
+          "lastName": "B",
+          "username": "youKnow",
+          "bio": "I was borne of the collective human consciousness ",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "games": [
+            "Star Wars: Battlefront II",
+            "Hearthstone",
+            "Tom Clancy's The Division"
+          ],
+          "friends": [
+            "sageCrown",
+            "secretg",
+            "viikta"
+          ],
+          "commendations": [],
+          "login": true,
+          "uhUsername": "db",
+          "picture": "/images/back up images/db.jpg"
+        },
+
+        {
+          "firstName": "Kenneth",
+          "lastName": "Bone",
+          "username": "kbone",
+          "bio": "Why am I the only real person here?",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "games": [
+            "League of Legends",
+            "Hearthstone"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "kbone",
+          "picture": "/images/back up images/kenbone.jpg"
+        },
+
+        {
+          "firstName": "Sylvanas",
+          "lastName": "the Banshee Queen",
+          "username": "Warchief4",
+          "bio": "I have trust issues",
+          "interests": [
+            "Computer Vision"
+          ],
+          "games": [
+            "World of Warcraft",
+            "Hearthstone"
+          ],
+          "friends": [
+            "r0gue",
+            "secretg",
+            "viikta"
+          ],
+          "commendations": [],
+          "login": true,
+          "uhUsername": "bansheequeen",
+          "picture": "/images/back up images/sylvanas.png"
+        },
+        
+        {
+          "firstName": "Harry",
+          "lastName": "Potter",
+          "username": "theBoyWhoLived",
+          "bio": "I have parent issues",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "games": [
+            "League of Legends",
+            "Hearthstone"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "hPotter",
+          "picture": "/images/back up images/harrypotter.jpg"
         }
+      ]
+    },
+    
+    
+    {
+      "name": "ProfileCollection",
+      "contents": [
+
       ]
     }
   ]
