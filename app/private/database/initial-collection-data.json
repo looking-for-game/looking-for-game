@@ -2,7 +2,7 @@
   "comment": "Initial contents for the LFG database. For development purposes only.",
   "collections": [
 
-    
+
     {
       "name": "InterestCollection",
       "contents": [
@@ -85,7 +85,7 @@
       ]
     },
 
-    
+
     {
       "name": "GameCollection",
       "contents": [
@@ -128,11 +128,11 @@
       ]
     },
 
-    
+
     {
       "name": "PlayerCollection",
       "contents": [
-        
+
         {
           "firstName": "Chris",
           "lastName": "Lee",
@@ -161,28 +161,6 @@
         },
 
         {
-          "firstName": "Doom",
-          "lastName": "Guy",
-          "username": "DoomGuy",
-          "bio": "Specialty in thrashing Mars demons",
-          "interests": [],
-          "games": [
-            "Heroes of the Storm",
-            "Hearthstone",
-            "Pillars of Eternity"
-          ],
-          "friends": [
-            "secretg",
-            "sageCrown",
-            "r0gue"
-          ],
-          "commendations": [],
-          "login": false,
-          "uhUsername": "doomguy",
-          "picture": "/images/back up images/doomguy.jpg"
-        },
-
-        {
           "firstName": "Blake",
           "lastName": "Wallick",
           "username": "sageCrown",
@@ -208,7 +186,7 @@
           "uhUsername": "bwallick",
           "picture": "/images/back up images/blakeprofile.jpg"
         },
-        
+
         {
           "firstName": "Tallas",
           "lastName": "Goo",
@@ -227,7 +205,23 @@
           "friends": [
             "sageCrown",
             "secretg",
-            "viikta"
+            "viikta",
+            "DoomGuy",
+            "mBro",
+            "zeldaGuy",
+            "BluBomberBomber",
+            "ryu",
+            "berserkerBarrage",
+            "PewPew",
+            "sephirothCloneX",
+            "theBard",
+            "chewiesSidekick",
+            "drrobotnik",
+            "Zappy",
+            "youKnow",
+            "kbone",
+            "Warchief4",
+            "theBoyWhoLived"
           ],
           "commendations": [
             {"tag": "Attacker", "count": ["sageCrown", "secretg", "viikta"]},
@@ -238,7 +232,7 @@
           "uhUsername": "tallas",
           "picture": "/images/back up images/master-chief.jpg"
         },
-        
+
         {
           "firstName": "Victor",
           "lastName": "Pawid",
@@ -265,6 +259,28 @@
           "login": false,
           "uhUsername": "vpawid",
           "picture": "/images/back up images/victor.png"
+        },
+
+        {
+          "firstName": "Doom",
+          "lastName": "Guy",
+          "username": "DoomGuy",
+          "bio": "Specialty in thrashing Mars demons",
+          "interests": [],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "secretg",
+            "sageCrown",
+            "r0gue"
+          ],
+          "commendations": [],
+          "login": false,
+          "uhUsername": "doomguy",
+          "picture": "/images/back up images/doomguy.jpg"
         },
 
         {
@@ -386,8 +402,7 @@
           "lastName": "Proudmore",
           "username": "PewPew",
           "bio": "I should have listened to my dad",
-          "interests": [
-          ],
+          "interests": [],
           "games": [
             "Heroes of the Storm",
             "Hearthstone",
@@ -515,7 +530,7 @@
             "sageCrown",
             "r0gue"
           ],
-         "commendations": [],
+          "commendations": [],
           "login": false,
           "uhUsername": "khellendros",
           "picture": "/images/back up images/khellendros.jpg"
@@ -592,7 +607,7 @@
           "uhUsername": "bansheequeen",
           "picture": "/images/back up images/sylvanas.png"
         },
-        
+
         {
           "firstName": "Harry",
           "lastName": "Potter",
@@ -618,13 +633,11 @@
         }
       ]
     },
-    
-    
+
+
     {
       "name": "ProfileCollection",
-      "contents": [
-
-      ]
+      "contents": []
     }
   ]
 }
