@@ -30,7 +30,8 @@ class PlayerCollection extends BaseCollection {
       'games.$': { type: String },
       friends: { type: Array, optional: true },
       'friends.$': { type: String },
-      endorsement: { type: Object, optional: true, blackbox: true },
+      endorsement: { type: Array, optional: true },
+      'endorsement.$': { type: String },
       login: { type: Boolean, optional: true },
       uhUsername: { type: String, optional: true },
       title: { type: String, optional: true },
@@ -64,7 +65,7 @@ class PlayerCollection extends BaseCollection {
    */
 
   define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [],
-           endorsement = {}, login = '', uhUsername = '', picture = '', title = '', github = '',
+           endorsement = [], login = '', uhUsername = '', picture = '', title = '', github = '',
            facebook = '', instagram = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean,
