@@ -57,8 +57,8 @@ Template.Profile_Page.events({
     event.preventDefault();
     const firstName = event.target.First.value;
     const lastName = event.target.Last.value;
-    const username = event.target.Username.value;
     const uhUsername = FlowRouter.getParam('username'); // schema requires username.
+    const username = event.target.Username.value;
     const picture = event.target.Picture.value;
     const github = event.target.battle_net.value;
     const facebook = event.target.xbox.value;
@@ -86,6 +86,11 @@ Template.Profile_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
+    const uhUsername1 = Meteor.user().profile.name;
+    $('.ui.modal')
+        .modal('hide')
+    ;
+    FlowRouter.go(`/${uhUsername1}/home`);
   },
 });
 

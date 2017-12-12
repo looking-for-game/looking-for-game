@@ -43,12 +43,17 @@
       errorMessage=(fieldError "bio")}}
 
 
-      <button class="ui primary button" type="submit">Submit</button>
-      {{#if displaySuccessMessage}}
-      <div class="ui success message">
-        <p>Profile data successfully updated.</p>
+      <div class="actions">
+        <div class="ui black deny button">
+          Cancel
+        </div>
+        <button class="ui primary positive button" type="submit">Submit</button>
+        {{#if displaySuccessMessage}}
+        <div class="ui success message">
+          <p>Profile data successfully updated.</p>
+        </div>
+        {{/if}}
       </div>
-      {{/if}}
     </form>
   </div>
 

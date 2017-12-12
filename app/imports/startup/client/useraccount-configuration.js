@@ -16,17 +16,19 @@ Accounts.onLogin(function onLogin() {
   const onLandingPage = FlowRouter.current().path && (FlowRouter.current().path === '/');
   const initialLogin = (id && onLandingPage);
   if (initialLogin) {
-    const username = Meteor.user().profile.name;
-    if (!Players.isDefined(username)) {
+    const uhUsername = Meteor.user().profile.name;
+    console.log(uhUsername);
+    if (!Players.isDefined(uhUsername)) {
       $('.ui.modal')
           .modal({
-            onHide: function () { Meteor.logout(); },
+            /*onHide: function () { Meteor.logout(); },*/
             closable: false,
+            onDeny: function() { Meteor.logout(); },
           })
           .modal('show')
       ;
     } else {
-      FlowRouter.go(`/${username}/home`);
+      FlowRouter.go(`/${uhUsername}/home`);
     }
   }
 });
