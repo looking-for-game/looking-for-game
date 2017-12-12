@@ -173,9 +173,25 @@
             "Hearthstone"
           ],
           "friends": [
-            "r0gue",
+            "sageCrown",
             "secretg",
-            "viikta"
+            "viikta",
+            "DoomGuy",
+            "mBro",
+            "zeldaGuy",
+            "BluBomberBomber",
+            "ryu",
+            "berserkerBarrage",
+            "PewPew",
+            "sephirothCloneX",
+            "theBard",
+            "chewiesSidekick",
+            "drrobotnik",
+            "Zappy",
+            "youKnow",
+            "kbone",
+            "Warchief4",
+            "theBoyWhoLived"
           ],
           "commendations": [
             {"tag": "Leader", "count": ["r0gue", "secretg", "viikta"]},
@@ -423,7 +439,7 @@
           "firstName": "Cloud",
           "lastName": "Strife",
           "username": "sephirothCloneX",
-          "bio": "Grew up in NES, SNES, N64, PS1 era.",
+          "bio": "SOLDIER dropout.",
           "interests": [
             "Computer Vision"
           ],
@@ -446,7 +462,7 @@
           "firstName": "William",
           "lastName": "Shakespear",
           "username": "theBard",
-          "bio": "Cybersecurity student",
+          "bio": "I'm into D&D, naturally.",
           "interests": [
             "Surfing",
             "Photography"
@@ -471,7 +487,7 @@
           "firstName": "Han",
           "lastName": "Solo",
           "username": "chewiesSidekick",
-          "bio": "My life has had such little meaning",
+          "bio": "Samus is a better bounty hunter than me :(",
           "interests": [
             "Surfing",
             "Photography"
@@ -612,7 +628,7 @@
           "firstName": "Harry",
           "lastName": "Potter",
           "username": "theBoyWhoLived",
-          "bio": "I have parent issues",
+          "bio": "Hogwarts dropout. I have serious parent issues.",
           "interests": [
             "Surfing",
             "Photography"
