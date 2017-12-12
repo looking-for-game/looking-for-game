@@ -19,11 +19,14 @@ Accounts.onLogin(function onLogin() {
     const uhUsername = Meteor.user().profile.name;
     if (!Players.isDefined(uhUsername)) {
       $('.ui.modal')
+          .modal({
+            closable: false,
+            onDeny: function () { Meteor.logout(); },
           })
           .modal('show')
       ;
     } else {
-      FlowRouter.go(`/${username}/home`);
+      FlowRouter.go(`/${uhUsername}/home`);
     }
   }
 });
