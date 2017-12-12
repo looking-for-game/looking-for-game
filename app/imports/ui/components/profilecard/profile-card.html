@@ -18,9 +18,6 @@
 
       <div class="type">
         {{ player.firstName }} {{ player.lastName }}
-        <div class="symbol">
-          <i class="mail icon"></i>
-        </div>
       </div>
 
       <div class="desc">
@@ -30,7 +27,12 @@
 
         <div class="ui equal width center aligned grid">
 
-          <div class="column"><a href="mailto:{{ player.username}}@hawaii.edu"><i class="big mail icon"></i></a></div>
+          <div class="column"><a href="#"><i class="huge battle_net icon" style="background-repeat: no-repeat"></i></a></div>
+
+          <div class="column"><a href="#"><i class="huge steam icon" style=" color: #000;background-repeat: no-repeat"></i></a></div>
+
+          <div class="column"><a href="#"><i class="huge xbox icon" style="background-repeat: no-repeat"></i></a></div>
+
           {{#if player.github }}
             <div class="column"><a href="https://github.com/{{ player.github}}"><i class="big github icon"></i></a>
             </div>
@@ -38,11 +40,6 @@
           {{#if player.facebook }}
             <div class="column"><a href="https://facebook.com/{{ player.facebook}}"><i
                 class="big facebook icon"></i></a></div>
-          {{/if}}
-          {{#if player.instagram }}
-            <div class="column"><a href="https://instagram.com/{{ player.instagram}}"><i
-                class="big instagram icon"></i></a>
-            </div>
           {{/if}}
         </div>
         <div style="margin-top: 10px">
