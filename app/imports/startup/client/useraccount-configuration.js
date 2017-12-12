@@ -1,8 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import { $ } from 'meteor/jquery';
-import { Profiles } from '/imports/api/profile/ProfileCollection';
+import { Players } from '/imports/api/player/PlayerCollection';
 
 /**
  * Define a callback to be run when after a user logs in to redirect them to their home page.
@@ -11,19 +10,23 @@ import { Profiles } from '/imports/api/profile/ProfileCollection';
  * To determine if the function is being invoked during a "true" login, we check to see that the userId is defined and
  * that the user is currently on the landing page. Only then do we redirect to the user's profile page.
  */
+
 Accounts.onLogin(function onLogin() {
   const id = Meteor.userId();
   const onLandingPage = FlowRouter.current().path && (FlowRouter.current().path === '/');
   const initialLogin = (id && onLandingPage);
-
   if (initialLogin) {
-    const username = Meteor.user().profile.name;
-    if (!Profiles.isDefined(username)) {
+    const uhUsername = Meteor.user().profile.name;
+    if (!Players.isDefined(uhUsername)) {
       $('.ui.modal')
+          .modal({
+            closable: false,
+            onDeny: function () { Meteor.logout(); },
+          })
           .modal('show')
       ;
     } else {
-      FlowRouter.go(`/${username}/home`);
+      FlowRouter.go(`/${uhUsername}/home`);
     }
   }
 });
