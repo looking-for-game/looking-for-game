@@ -28,9 +28,9 @@ class PlayerCollection extends BaseCollection {
       'interests.$': { type: String },
       games: { type: Array, optional: true },
       'games.$': { type: String },
-      battlenet: { type: SimpleSchema.RegEx.Url, optional: true },
-      steam: { type: SimpleSchema.RegEx.Url, optional: true },
-      xbox: { type: SimpleSchema.RegEx.Url, optional: true },
+      battlenet: { type: String, optional: true },
+      steam: { type: String, optional: true },
+      xbox: { type: String, optional: true },
       friends: { type: Array, optional: true },
       'friends.$': { type: String },
       commendations: { type: Array, optional: true },
@@ -62,12 +62,12 @@ class PlayerCollection extends BaseCollection {
    * @returns The newly created docID.
    */
 
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], friends = [],
+  define({ firstName = '', lastName = '', username, battlenet = '', steam = '', xbox = '', bio = '', interests = [], games = [], friends = [],
            commendations = [], login = '', uhUsername = '', picture = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, login: Boolean,
+    const checkPattern = { firstName: String, lastName: String, username: String, battlenet: String, steam: String, xbox: String, bio: String, login: Boolean,
       uhUsername: String, picture: String };
-    check({ firstName, lastName, username, bio, login, uhUsername, picture }, checkPattern);
+    check({ firstName, lastName, username, battlenet, steam, xbox, bio, login, uhUsername, picture }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -90,7 +90,7 @@ class PlayerCollection extends BaseCollection {
       throw new Meteor.Error(`${friends} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, games, friends, commendations,
+    return this._collection.insert({ firstName, lastName, username, battlenet, steam, xbox, bio, interests, games, friends, commendations,
       login, uhUsername, picture });
   }
 
@@ -104,6 +104,9 @@ class PlayerCollection extends BaseCollection {
     const firstName = doc.firstName;
     const lastName = doc.lastName;
     const username = doc.username;
+    const battlenet = doc.battlenet;
+    const steam = doc.steam;
+    const xbox = doc.xbox;
     const bio = doc.bio;
     const interests = doc.interests;
     const games = doc.games;
