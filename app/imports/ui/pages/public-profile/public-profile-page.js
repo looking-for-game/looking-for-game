@@ -34,4 +34,13 @@ Template.Public_Profile_Page.helpers({
   count(commendation) {
     return commendation.count.length;
   },
+  games(current) {
+    const games = _.map(current.games, function (listedGame) {
+      return _.find(Games.findAll(), game => (game.name === listedGame));
+    });
+    return _.sortBy(games, 'name');
+  },
+  tags(game) {
+    return game.tags;
+  },
 });
