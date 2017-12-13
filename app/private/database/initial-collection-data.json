@@ -200,6 +200,8 @@
           ],
           "login": true,
           "uhUsername": "bwallick",
+          "battlenet": "drood#1488",
+          "xbox": "BoxB",
           "picture": "/images/back up images/blakeprofile.jpg"
         },
 
@@ -246,6 +248,8 @@
           ],
           "login": true,
           "uhUsername": "tallas",
+          "battlenet": "flappybird",
+          "steam": "geyser",
           "picture": "/images/back up images/master-chief.jpg"
         },
 
@@ -318,6 +322,8 @@
           "commendations": [],
           "login": false,
           "uhUsername": "mBro",
+          "battlenet": "nolovefornes",
+          "xbox": "buzzybeetle",
           "picture": "/images/back up images/mario.jpg"
         },
 

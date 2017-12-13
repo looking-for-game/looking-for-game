@@ -30,7 +30,7 @@ Template.Profile_Page.helpers({
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
   profile() {
-    return Players.findDoc(FlowRouter.getParam('username'));
+    return Players.findDoc();
   },
   interests() {
     const profile = Players.findDoc(FlowRouter.getParam('username'));
