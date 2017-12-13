@@ -14,8 +14,9 @@
       </div>
 
       <div class="field">
-        {{> Text_Form_Control label="Username" placeholder="xXendBossXx" maxlength="16" value=profile.username errorMessage=(fieldError
-        "username")}}
+        {{> Text_Form_Control label="Handle" placeholder="xXendBossXx" value=profile.handle errorMessage=(fieldError
+        "handle")}}
+
         {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture
         errorMessage=(fieldError "picture")}}
       </div>
@@ -42,18 +43,12 @@
       {{> TextArea_Form_Control label="Bio" value=profile.bio maxlength="140" placeholder="Short bio statement here"
       errorMessage=(fieldError "bio")}}
 
-
-      <div class="actions">
-        <div class="ui black deny button">
-          Cancel
-        </div>
-        <button class="ui primary positive button" type="submit">Submit</button>
-        {{#if displaySuccessMessage}}
-        <div class="ui success message">
-          <p>Profile data successfully updated.</p>
-        </div>
-        {{/if}}
+      <button class="ui primary positive button" type="submit">Submit</button>
+      {{#if displaySuccessMessage}}
+      <div class="ui success message">
+        <p>Profile data successfully updated.</p>
       </div>
+      {{/if}}
     </form>
   </div>
 

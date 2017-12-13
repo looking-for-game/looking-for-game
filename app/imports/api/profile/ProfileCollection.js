@@ -29,7 +29,7 @@ class ProfileCollection extends BaseCollection {
       'interests.$': { type: String },
       games: { type: Array, optional: true },
       'games.$': { type: String },
-      title: { type: String, optional: true },
+      handle: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       battlenet: { type: SimpleSchema.RegEx.Url, optional: true },
       steam: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -45,7 +45,7 @@ class ProfileCollection extends BaseCollection {
    *                   username: 'johnson',
    *                   bio: 'I have been a professor of computer science at UH since 1990.',
    *                   interests: ['Application Development', 'Software Engineering', 'Databases'],
-   *                   title: 'Professor of Information and Computer Sciences',
+   *                   handle: 'Professor of Information and Computer Sciences',
    *                   picture: 'http://philipmjohnson.org/headshot.jpg',
    *                   github: 'https://github.com/philipmjohnson',
    *                   facebook: 'https://facebook.com/philipmjohnson',
@@ -58,12 +58,12 @@ class ProfileCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], picture = '', title = '', github = '',
+  define({ firstName = '', lastName = '', username, bio = '', interests = [], games = [], picture = '', handle = '', github = '',
       facebook = '', instagram = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String,
-      title: String };
-    check({ firstName, lastName, username, bio, picture, title }, checkPattern);
+      handle: String };
+    check({ firstName, lastName, username, bio, picture, handle }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -81,7 +81,7 @@ class ProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${games} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, games, picture, title, github,
+    return this._collection.insert({ firstName, lastName, username, bio, interests, games, picture, handle, github,
       facebook, instagram });
   }
 
@@ -99,11 +99,11 @@ class ProfileCollection extends BaseCollection {
     const interests = doc.interests;
     const games = doc.games;
     const picture = doc.picture;
-    const title = doc.title;
+    const handle = doc.handle;
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, games, picture, title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, games, picture, handle, github, facebook, instagram };
   }
 }
 
