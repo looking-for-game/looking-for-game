@@ -31,4 +31,9 @@ Template.Public_Profile_Page.helpers({
   count(commendation) {
     return commendation.count.length;
   },
+  routeUserName(friendName) {
+    const friend =Profiles.findDoc(friendName);
+    console.log(friend.uhUsername);
+    return friend.uhUsername;
+  },
 });
