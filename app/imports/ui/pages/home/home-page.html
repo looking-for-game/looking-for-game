@@ -2,41 +2,45 @@
 
 
   <table class="ui selectable celled table">
+
     <thead>
     <tr>
-      <th>Active Gamers</th>
-      <th>Current Game</th>
+      <th>Player</th>
+      <th>Online</th>
       <th>Developer Network Subscriptions</th>
+      <th>Games</th>
     </tr>
     </thead>
-    <tbody>
-
-    <tr>
-      <td>r0gue</td>
-      <td>Halo 9</td>
-      <td>XBOX Live</td>
+  <tbody>
+    {{#each user in users}}
+    <tr class="selectable">
+      <td>{{user.username}}</td>
+      <td class="{{#if online user}}positive{{else}}negative{{/if}}">{{#if online user}}online{{else}}offline{{/if}}</td>
+      <td>{{#each game in user.games}}{{game}} {{/each}}</td>
+      <td>XBOX Live{{#each game in user.games}}{{game}}{{/each}}</td>
     </tr>
-
-    <tr>
-      <td>viikta</td>
-      <td>Hearthstone</td>
-      <td>Steam, XBOX Live, Battle.net</td>
-    </tr>
-
-    <tr>
-      <td>sageCrown</td>
-      <td>Starcraft II</td>
-      <td>Battle.net, Steam</td>
-    </tr>
-
-    <tr class="error">
-      <td>secretg</td>
-      <td>offline</td>
-      <td>Battle.net, XBOX Live</td>
-    </tr>
-
+    {{/each}}
     </tbody>
 
   </table>
 
 </template>
+
+<!--
+<tr>
+  <td>viikta</td>
+  <td>Hearthstone</td>
+  <td>Steam, XBOX Live, Battle.net</td>
+</tr>
+
+<tr>
+  <td>sageCrown</td>
+  <td>Starcraft II</td>
+  <td>Battle.net, Steam</td>
+</tr>
+
+<tr class="error">
+  <td>secretg</td>
+  <td>offline</td>
+  <td>Battle.net, XBOX Live</td>
+</tr>-->
