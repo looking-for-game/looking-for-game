@@ -26,17 +26,7 @@ Template.Search_Page.helpers({
     const selectedGames = Template.instance().messageFlags.get(selectedGamesKey);
     return _.filter(allPlayers, player => _.intersection(player.games, selectedGames).length > 0);
   },
-
-  /* interests() {
-     return _.map(Interests.findAll(),
-         function makeInterestObject(interest) {
-           return {
-             label: interest.name,
-             selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
-           };
-         });
-   }, */
-
+  
   games() {
 
     return _.map(Games.findAll(),
