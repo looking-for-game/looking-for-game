@@ -19,7 +19,12 @@ class GameCollection extends BaseCollection {
   constructor() {
     super('Game', new SimpleSchema({
       name: { type: String },
+      picture: { type: SimpleSchema.RegEx.Url, optional: true },
+      publisher: { type: String, optional: true },
+      tags: { type: Array, optional: true },
+      'tags.$': { type: String },
       description: { type: String, optional: true },
+      lastPlayed: { type: String, optional: true },
     }, { tracker: Tracker }));
   }
 
