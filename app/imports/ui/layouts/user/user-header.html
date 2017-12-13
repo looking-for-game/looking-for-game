@@ -5,7 +5,7 @@
 
     <div class="right menu">
     <a class="right {{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"> My Profile</a>
-    <a class="aligned item">Edit Profile</a>
+    <a href="{{pathFor "Profile_Page" username=routeUserName}}" class="aligned item">Edit Profile</a>
     <a class="aligned item">{{> Cas_Login }}</a>
     </div>
 

@@ -18,13 +18,7 @@ Accounts.onLogin(function onLogin() {
   if (initialLogin) {
     const uhUsername = Meteor.user().profile.name;
     if (!Players.isDefined(uhUsername)) {
-      $('.ui.modal')
-          .modal({
-            closable: false,
-            onDeny: function () { Meteor.logout(); },
-          })
-          .modal('show')
-      ;
+      FlowRouter.go(`/${uhUsername}/profile`);
     } else {
       FlowRouter.go(`/${uhUsername}/home`);
     }

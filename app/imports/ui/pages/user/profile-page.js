@@ -86,10 +86,5 @@ Template.Profile_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
-    const uhUsername1 = Meteor.user().profile.name;
-    $('.ui.modal')
-        .modal('hide')
-    ;
-    FlowRouter.go(`/${uhUsername1}/home`);
   },
 });
