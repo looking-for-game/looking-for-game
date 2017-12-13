@@ -31,6 +31,7 @@ Template.Profile_Page.helpers({
   },
   profile() {
     return Profiles.findDoc(FlowRouter.getParam('username'));
+
   },
   interests() {
     const profile = Profiles.findDoc(FlowRouter.getParam('username'));

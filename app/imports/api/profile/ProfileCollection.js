@@ -31,9 +31,9 @@ class ProfileCollection extends BaseCollection {
       'games.$': { type: String },
       handle: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
-      github: { type: SimpleSchema.RegEx.Url, optional: true },
-      facebook: { type: SimpleSchema.RegEx.Url, optional: true },
-      instagram: { type: SimpleSchema.RegEx.Url, optional: true },
+      battlenet: { type: SimpleSchema.RegEx.Url, optional: true },
+      steam: { type: SimpleSchema.RegEx.Url, optional: true },
+      xbox: { type: SimpleSchema.RegEx.Url, optional: true },
     }, { tracker: Tracker }));
   }
 

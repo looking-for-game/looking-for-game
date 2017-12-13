@@ -10,6 +10,7 @@
 
 }
 
+
 .title {
   border-radius: .4rem;
   margin: 0 auto;
@@ -98,7 +99,7 @@
 
 .description {
   padding-bottom: .3rem;
-  height: 70px;
+  height: 30px;
 }
 
 
