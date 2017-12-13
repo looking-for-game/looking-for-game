@@ -27,28 +27,39 @@
 
         <div class="ui equal width center aligned grid">
 
-          <div class="column"><a href="#"><i class="huge battle_net icon" style="background-repeat: no-repeat"></i>{{ player.firstName }}</a></div>
-          <div class="column"><a href="#"><i class="huge steamIcon icon" style="background-repeat: no-repeat"></i>{{ player.steam }}</a></div>
-          <div class="column"><a href="#"><i class="huge xbox icon" style="background-repeat: no-repeat"></i>{{ player.xbox }}</a></div>
-
-          {{#if player.github }}
-            <div class="column"><a href="https://github.com/{{ player.github}}"><i class="big github icon"></i></a>
+          {{#if player.battlenet }}
+          <div class="column">
+            <div class="ui list">
+              <div><i class="huge battle_net icon" style="background-repeat: no-repeat"></i></div>
+              <div>{{ player.battlenet }}</div>
             </div>
+          </div>
           {{/if}}
-          {{#if player.facebook }}
-            <div class="column"><a href="https://facebook.com/{{ player.facebook}}"><i
-                class="big facebook icon"></i></a></div>
-          {{/if}}
-        </div>
-        <div style="margin-top: 10px">
-          {{#each game in player.games}}
-            <a style="margin-bottom: 2px" class="ui green basic mini label">{{game}}</a>
-          {{/each}}
-        </div>
 
-      </div>
-      <div id="foot">
-        reRoll
+          {{#if player.steam }}
+          <div class="column">
+            <div class="ui list">
+              <div><i class="huge steamIcon icon" style="background-repeat: no-repeat"></i></div>
+              <div>{{ player.steam }}</div>
+            </div>
+          </div>
+          {{/if}}
+
+
+          {{#if player.xbox }}
+          <div class="column">
+            <div class="ui list">
+              <div><i class="huge xbox icon" style="background-repeat: no-repeat"></i></div>
+              <div>{{ player.xbox }}</div>
+            </div>
+          </div>
+          {{/if}}
+
+
+        </div>
+        <div id="foot">
+          reRoll
+        </div>
       </div>
     </div>
   </div>
