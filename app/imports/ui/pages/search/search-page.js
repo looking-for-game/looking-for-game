@@ -5,7 +5,6 @@ import { Players } from '/imports/api/player/PlayerCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
 import { Games } from '/imports/api/game/GameCollection';
 
-
 const selectedGamesKey = 'selectedGames';
 
 Template.Search_Page.onCreated(function onCreated() {
@@ -28,21 +27,26 @@ Template.Search_Page.helpers({
     return _.filter(allPlayers, player => _.intersection(player.games, selectedGames).length > 0);
   },
 
- /* interests() {
-    return _.map(Interests.findAll(),
-        function makeInterestObject(interest) {
-          return {
-            label: interest.name,
-            selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
-          };
-        });
-  }, */
+  /* interests() {
+     return _.map(Interests.findAll(),
+         function makeInterestObject(interest) {
+           return {
+             label: interest.name,
+             selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+           };
+         });
+   }, */
+
   games() {
+
     return _.map(Games.findAll(),
         function makeInterestObject(games) {
           return {
             label: games.name,
             selected: _.contains(Template.instance().messageFlags.get(selectedGamesKey), games.name),
+            numberOfPlayers: _.size(_.filter(_.map(Players.findAll(), player => {
+               return _.contains(player.games, games.name)
+            }), function(val){return val == true}))
           };
         });
   },
