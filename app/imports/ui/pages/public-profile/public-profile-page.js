@@ -16,11 +16,14 @@ Template.Public_Profile_Page.helpers({
       return player.uhUsername === FlowRouter.getParam('username');
     });
   },
+  // Returns a list of friends alphabetically sorted, case-insensitive
   friends(current) {
     const friends = _.map(current.friends, function (friend) {
       return _.find(Players.findAll(), player => (player.username === friend));
     });
-    return _.sortBy(friends, 'username');
+    return _.sortBy(friends, function (friend) {
+      return friend.username.toLowerCase();
+    });
   },
   online(player) {
     return player.login;
