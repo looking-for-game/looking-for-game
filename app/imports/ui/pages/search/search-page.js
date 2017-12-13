@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
-import { Players } from '/imports/api/player/PlayerCollection';
+import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
 import { Games } from '/imports/api/game/GameCollection';
 
@@ -9,7 +9,7 @@ const selectedGamesKey = 'selectedGames';
 
 Template.Search_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
-  this.subscribe(Players.getPublicationName());
+  this.subscribe(Profiles.getPublicationName());
   this.subscribe(Games.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedGamesKey, undefined);
@@ -22,21 +22,11 @@ Template.Search_Page.helpers({
       Template.instance().messageFlags.set(selectedGamesKey, _.map(Games.findAll(), game => game.name));
     }
     // Find all profiles with the currently selected games.
-    const allPlayers = Players.findAll();
+    const allProfiles = Profiles.findAll();
     const selectedGames = Template.instance().messageFlags.get(selectedGamesKey);
-    return _.filter(allPlayers, player => _.intersection(player.games, selectedGames).length > 0);
+    return _.filter(allProfiles, player => _.intersection(player.games, selectedGames).length > 0);
   },
-
-  /* interests() {
-     return _.map(Interests.findAll(),
-         function makeInterestObject(interest) {
-           return {
-             label: interest.name,
-             selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
-           };
-         });
-   }, */
-
+  
   games() {
 
     return _.map(Games.findAll(),
@@ -44,7 +34,7 @@ Template.Search_Page.helpers({
           return {
             label: games.name,
             selected: _.contains(Template.instance().messageFlags.get(selectedGamesKey), games.name),
-            numberOfPlayers: _.size(_.filter(_.map(Players.findAll(), player => {
+            numberOfProfiles: _.size(_.filter(_.map(Profiles.findAll(), player => {
                return _.contains(player.games, games.name)
             }), function(val){return val == true}))
           };

@@ -11,7 +11,7 @@
           <img class="ui medium circular image" src={{currentUser.picture}}>
         </div>
         <div class="content">
-          <div class="header" style="text-align: center">{{currentUser.username}}</div>
+          <div class="header" style="text-align: center">{{currentUser.handle}}</div>
         </div>
       </div>
 
@@ -94,7 +94,7 @@
         <div class="content">
           <div class="ui divided animated selection list">
             {{#each friend in (friends currentUser)}}
-              <a class="item" href="#">
+              <a class="item" href="{{pathFor "Public_Profile_Page" username= (routeUserName friend.username)}}">
                 {{#if online friend}}
                   <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
                        src={{friend.picture}}>

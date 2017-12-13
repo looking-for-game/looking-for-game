@@ -192,6 +192,8 @@
     {
       "name": "PlayerCollection",
       "contents": [
+      ]
+    },
 
         {
           "firstName": "Chris",
@@ -236,10 +238,14 @@
           "picture": "/images/back up images/profilePic.jpg"
         },
 
+
+    {
+      "name": "ProfileCollection",
+      "contents": [
         {
           "firstName": "Blake",
           "lastName": "Wallick",
-          "username": "sageCrown",
+          "handle": "sageCrown",
           "bio": "Grew up in NES, SNES, N64, PS1 era.",
           "interests": [
             "Computer Vision"
@@ -275,14 +281,16 @@
             {"tag": "Competitive", "count": ["r0gue"]}
           ],
           "login": true,
-          "uhUsername": "bwallick",
+          "username": "bwallick",
+          "battlenet": "drood#1488",
+          "xbox": "BoxB",
           "picture": "/images/back up images/blakeprofile.jpg"
         },
 
         {
           "firstName": "Tallas",
           "lastName": "Goo",
-          "username": "r0gue",
+          "handle": "r0gue",
           "bio": "Cybersecurity student",
           "interests": [
             "Software Engineering",
@@ -320,14 +328,16 @@
             {"tag": "Strategist", "count": ["sageCrown"]}
           ],
           "login": true,
-          "uhUsername": "tallas",
+          "username": "tallas",
+          "battlenet": "flappybird",
+          "steam": "geyser",
           "picture": "/images/back up images/master-chief.jpg"
         },
 
         {
           "firstName": "Victor",
           "lastName": "Pawid",
-          "username": "viikta",
+          "handle": "viikta",
           "bio": "Here is a bio",
           "interests": [
             "Surfing",
@@ -364,14 +374,14 @@
             {"tag": "Lone Wolf", "count": ["r0gue"]}
           ],
           "login": false,
-          "uhUsername": "vpawid",
+          "username": "vpawid",
           "picture": "/images/back up images/victor.png"
         },
 
         {
           "firstName": "Doom",
           "lastName": "Guy",
-          "username": "DoomGuy",
+          "handle": "DoomGuy",
           "bio": "Specialty in thrashing Mars demons",
           "interests": [],
           "games": [
@@ -386,14 +396,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "doomguy",
+          "username": "doomguy",
           "picture": "/images/back up images/doomguy.jpg"
         },
 
         {
           "firstName": "Mario",
           "lastName": "Brother",
-          "username": "mBro",
+          "handle": "mBro",
           "bio": "Squash some mushrooms, eat others",
           "interests": [],
           "games": [
@@ -408,14 +418,16 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "mBro",
+          "username": "mBro",
+          "battlenet": "nolovefornes",
+          "xbox": "buzzybeetle",
           "picture": "/images/back up images/mario.jpg"
         },
 
         {
           "firstName": "Link",
           "lastName": "Hyrule",
-          "username": "zeldaGuy",
+          "handle": "zeldaGuy",
           "bio": "Specialty solving puzzles",
           "interests": [],
           "games": [
@@ -430,14 +442,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "zeldaGuy",
+          "username": "zeldaGuy",
           "picture": "/images/back up images/link.png"
         },
 
         {
           "firstName": "Dr. Wiley",
           "lastName": "first name Reginold",
-          "username": "BluBomberBomber",
+          "handle": "BluBomberBomber",
           "bio": "I like making robots.",
           "interests": [
             "Computer Vision"
@@ -453,14 +465,14 @@
           ],
           "commendations": [],
           "login": true,
-          "uhUsername": "bluBomberBomber",
+          "username": "bluBomberBomber",
           "picture": "/images/back up images/drwiley.jpg"
         },
 
         {
           "firstName": "Ryu",
           "lastName": "Hadoken",
-          "username": "ryu",
+          "handle": "ryu",
           "bio": "Always seeking the next battle",
           "interests": [
             "Surfing",
@@ -478,14 +490,14 @@
           ],
           "commendations": [],
           "login": true,
-          "uhUsername": "ryu",
+          "username": "ryu",
           "picture": "/images/back up images/ryu.jpg"
         },
 
         {
           "firstName": "Wolverine",
           "lastName": "Logan",
-          "username": "berserkerBarrage",
+          "handle": "berserkerBarrage",
           "bio": "I'm not a nice canadian",
           "interests": [
           ],
@@ -500,14 +512,14 @@
             "r0gue"
           ],
           "login": false,
-          "uhUsername": "logan",
+          "username": "logan",
           "picture": "/images/back up images/wolverine.jpg"
         },
 
         {
           "firstName": "Jaina",
           "lastName": "Proudmore",
-          "username": "PewPew",
+          "handle": "PewPew",
           "bio": "I should have listened to my dad",
           "interests": [],
           "games": [
@@ -522,14 +534,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "pewpew",
+          "username": "pewpew",
           "picture": "/images/back up images/jaina.png"
         },
 
         {
           "firstName": "Cloud",
           "lastName": "Strife",
-          "username": "sephirothCloneX",
+          "handle": "sephirothCloneX",
           "bio": "SOLDIER dropout.",
           "interests": [
             "Computer Vision"
@@ -545,14 +557,14 @@
           ],
           "commendations": [],
           "login": true,
-          "uhUsername": "zack",
+          "username": "zack",
           "picture": "/images/back up images/cloud.jpg"
         },
 
         {
           "firstName": "William",
           "lastName": "Shakespear",
-          "username": "theBard",
+          "handle": "theBard",
           "bio": "I'm into D&D, naturally.",
           "interests": [
             "Surfing",
@@ -570,14 +582,14 @@
           ],
           "commendations": [],
           "login": true,
-          "uhUsername": "BillyS",
+          "username": "BillyS",
           "picture": "/images/back up images/shakespeare.jpg"
         },
 
         {
           "firstName": "Han",
           "lastName": "Solo",
-          "username": "chewiesSidekick",
+          "handle": "chewiesSidekick",
           "bio": "Samus is a better bounty hunter than me :(",
           "interests": [
             "Surfing",
@@ -594,14 +606,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "kylosDad",
+          "username": "kylosDad",
           "picture": "/images/back up images/hansolo.jpg"
         },
 
         {
           "firstName": "Dr. Robotnik",
           "lastName": "first name Reginold",
-          "username": "drrobotnik",
+          "handle": "drrobotnik",
           "bio": "Roomed with Reginold Wiley at botschool",
           "interests": [],
           "games": [
@@ -616,14 +628,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "drrobotnik",
+          "username": "drrobotnik",
           "picture": "/images/back up images/drrobotnik.png"
         },
 
         {
           "firstName": "Khellendros",
           "lastName": "Blue",
-          "username": "Zappy",
+          "handle": "Zappy",
           "bio": "The purge was my favorite part",
           "interests": [
           ],
@@ -639,14 +651,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "khellendros",
+          "username": "khellendros",
           "picture": "/images/back up images/khellendros.jpg"
         },
 
         {
           "firstName": "D",
           "lastName": "B",
-          "username": "youKnow",
+          "handle": "youKnow",
           "bio": "I was borne of the collective human consciousness ",
           "interests": [
             "Surfing",
@@ -664,14 +676,14 @@
           ],
           "commendations": [],
           "login": true,
-          "uhUsername": "db",
+          "username": "db",
           "picture": "/images/back up images/db.jpg"
         },
 
         {
           "firstName": "Kenneth",
           "lastName": "Bone",
-          "username": "kbone",
+          "handle": "kbone",
           "bio": "Why am I the only real person here?",
           "interests": [
             "Surfing",
@@ -688,14 +700,14 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "kbone",
+          "username": "kbone",
           "picture": "/images/back up images/kenbone.jpg"
         },
 
         {
           "firstName": "Sylvanas",
           "lastName": "the Banshee Queen",
-          "username": "Warchief4",
+          "handle": "Warchief4",
           "bio": "I have trust issues",
           "interests": [
             "Computer Vision"
@@ -711,14 +723,14 @@
           ],
           "commendations": [],
           "login": true,
-          "uhUsername": "bansheequeen",
+          "username": "bansheequeen",
           "picture": "/images/back up images/sylvanas.png"
         },
 
         {
           "firstName": "Harry",
           "lastName": "Potter",
-          "username": "theBoyWhoLived",
+          "handle": "theBoyWhoLived",
           "bio": "Hogwarts dropout. I have serious parent issues.",
           "interests": [
             "Surfing",
@@ -735,16 +747,10 @@
           ],
           "commendations": [],
           "login": false,
-          "uhUsername": "hPotter",
+          "username": "hPotter",
           "picture": "/images/back up images/harrypotter.jpg"
         }
       ]
-    },
-
-
-    {
-      "name": "ProfileCollection",
-      "contents": []
     }
   ]
 }

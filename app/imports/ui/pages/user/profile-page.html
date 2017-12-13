@@ -6,7 +6,7 @@
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
       <div class="fields">
-        {{> Text_Form_Control label="First" placeholder="Doom" value=profile.firstName errorMessage=(fieldError
+        {{> Text_Form_Control label="First" placeholder="Doom" maxlength="16" value=profile.firstName errorMessage=(fieldError
         "firstName")}}
         {{> Text_Form_Control label="Last" placeholder="Guy" value=profile.lastName errorMessage=(fieldError
         "lastName")}}
@@ -14,8 +14,9 @@
       </div>
 
       <div class="field">
-        {{> Text_Form_Control label="Username" placeholder="xXendBossXx" value=profile.username errorMessage=(fieldError
-        "username")}}
+        {{> Text_Form_Control label="Handle" placeholder="xXendBossXx" value=profile.handle errorMessage=(fieldError
+        "handle")}}
+
         {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture
         errorMessage=(fieldError "picture")}}
       </div>
@@ -30,30 +31,24 @@
 
       <div class="fields">
 
-        {{> Social_Network_Form_Control label="battle_net" icon="battle_net" placeholder="diabloguy" value=profile.github
+        {{> Social_Network_Form_Control label="battlenet" icon="battle_net" maxlength="16" placeholder="diabloguy" value=profile.github
         errorMessage=(fieldError "github")}}
-        {{> Social_Network_Form_Control label="xbox" icon="xbox" placeholder="haloguy" value=profile.facebook
+        {{> Social_Network_Form_Control label="xbox" icon="xbox" maxlength="16" placeholder="haloguy" value=profile.facebook
         errorMessage=(fieldError "facebook")}}
-        {{> Social_Network_Form_Control label="steamIcon" icon="steamIcon" placeholder="codeguy" value=profile.instagram
+        {{> Social_Network_Form_Control label="steam" icon="steamIcon" maxlength="16" placeholder="codeguy" value=profile.instagram
         errorMessage=(fieldError "instagram")}}
 
       </div>
 
-      {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short bio statement here"
+      {{> TextArea_Form_Control label="Bio" value=profile.bio maxlength="140" placeholder="Short bio statement here"
       errorMessage=(fieldError "bio")}}
 
-
-      <div class="actions">
-        <div class="ui black deny button">
-          Cancel
-        </div>
-        <button class="ui primary positive button" type="submit">Submit</button>
-        {{#if displaySuccessMessage}}
-        <div class="ui success message">
-          <p>Profile data successfully updated.</p>
-        </div>
-        {{/if}}
+      <button class="ui primary positive button" type="submit">Submit</button>
+      {{#if displaySuccessMessage}}
+      <div class="ui success message">
+        <p>Profile data successfully updated.</p>
       </div>
+      {{/if}}
     </form>
   </div>
 
