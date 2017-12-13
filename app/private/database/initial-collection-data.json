@@ -89,6 +89,13 @@
     {
       "name": "GameCollection",
       "contents": [
+        /*{
+          "name": "",
+          "picture": "/images/games/",
+          "publisher": "",
+          "tags": [],
+          "description": ""
+        },*/
         {
           "name": "World of Warcraft",
           "description": "Blizzard PC MMO RPG Adventure"
@@ -103,7 +110,17 @@
         },
         {
           "name": "Hearthstone",
-          "description": "Blizzard PC Mobile Card-Battler Turn-Based"
+          "picture": "/images/games/hearthstone.jpg",
+          "publisher": "Blizzard Entertainment",
+          "tags": [
+            "Single-Player",
+            "Multiplayer",
+            "Card-Battler",
+            "Turn-Based",
+            "PC",
+            "Mobile"
+          ],
+          "description": "Sheathe your sword, draw your deck, and get ready for Hearthstone - the fast-paced strategy card game that's easy to learn and massively fun. Start a free game and play your cards to sling spells, summon creatures, and command the heroes of Warcraft in duels of epic strategy."
         },
         {
           "name": "Heroes of the Storm",
@@ -114,7 +131,28 @@
           "description": "Producer? Platform(s)? Genre(s)?"
         },
         {
+          "name": "Overwatch",
+          "picture": "/images/games/overwatch-square.jpg",
+          "publisher": "Blizzard Entertainment",
+          "tags": [
+            "FPS",
+            "Team-Based Shooter"
+          ],
+          "description": "The world needs heroes. Join over 30 million players as you clash on the battlefields of tomorrow. Choose your hero from a diverse cast of soldiers, scientists, adventurers, and oddities. Bend time, defy physics, and unleash an array of extraordinary powers and weapons. Engage your enemies in iconic locations from around the globe in the ultimate team-based shooter. In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory."
+        },
+        {
           "name": "Tom Clancy's The Division",
+          "picture": "/images/games/division.jpg",
+          "publisher": "Ubisoft",
+          "tags": [
+            "MMORPG",
+            "TPS",
+            "Open World",
+            "Tactical",
+            "Survival",
+            "PC",
+            "Console"
+          ],
           "description": "In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by one, and without access to food or water the city descends into chaos. As an agent of The Division, you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York."
         },
         {
@@ -122,18 +160,30 @@
           "picture": "/images/games/swbf2.jpg",
           "publisher": "Electronic Arts",
           "tags": [
-            "Action",
-            "Adventure",
             "FPS",
             "TPS",
             "Multiplayer",
-            "Singleplayer"
+            "Single-Player",
+            "PC",
+            "Console"
           ],
           "description": "Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and villains, thrilling space combat, and a deep progression and customization system. Or live the untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign."
         },
         {
           "name": "LEGO Batman 2: DC Super Heroes",
-          "description": "The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex Luthor and The Joker."
+          "picture": "/images/games/lego-batman-2.jpg",
+          "publisher": "Warner Bros. Interactive Entertainment",
+          "tags": [
+            "Open World",
+            "Action",
+            "Adventure",
+            "Single-Player",
+            "Local Co-Op",
+            "PC",
+            "Console",
+            "Mobile"
+          ],
+          "description": "The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex Luthor and The Joker. Batman fans of all ages can enjoy an original story filled with classic LEGO videogame action and humor as players fight to put the villains back behind bars."
         }
       ]
     },
@@ -199,7 +249,7 @@
             "Hearthstone"
           ],
           "friends": [
-            "sageCrown",
+            "r0gue",
             "secretg",
             "viikta",
             "DoomGuy",
@@ -239,7 +289,9 @@
             "Cybersecurity"
           ],
           "games": [
-            "Star Wars: Battlefront II"
+            "Star Wars: Battlefront II",
+            "Tom Clancy's The Division",
+            "LEGO Batman 2: DC Super Heroes"
           ],
           "friends": [
             "sageCrown",

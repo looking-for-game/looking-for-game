@@ -21,9 +21,7 @@ Template.Public_Profile_Page.helpers({
     const friends = _.map(current.friends, function (friend) {
       return _.find(Players.findAll(), player => (player.username === friend));
     });
-    return _.sortBy(friends, function (friend) {
-      return friend.username.toLowerCase();
-    });
+    return _.sortBy(friends, friend => friend.username.toLowerCase());
   },
   online(player) {
     return player.login;
@@ -41,6 +39,6 @@ Template.Public_Profile_Page.helpers({
     return _.sortBy(games, 'name');
   },
   tags(game) {
-    return game.tags;
+    return game.tags.sort();
   },
 });
