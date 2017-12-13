@@ -2,7 +2,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
-import { Profiles } from '/imports/api/profile/ProfileCollection';
+import { Players } from '/imports/api/player/PlayerCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
 import { Games } from '/imports/api/game/GameCollection';
 
@@ -12,11 +12,11 @@ const displayErrorMessages = 'displayErrorMessages';
 Template.Profile_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
   this.subscribe(Games.getPublicationName());
-  this.subscribe(Profiles.getPublicationName());
+  this.subscribe(Players.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
-  this.context = Profiles.getSchema().namedContext('Profile_Page');
+  this.context = Players.getSchema().namedContext('Profile_Page');
 });
 
 Template.Profile_Page.helpers({
@@ -30,10 +30,10 @@ Template.Profile_Page.helpers({
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
   profile() {
-    return Profiles.findDoc(FlowRouter.getParam('username'));
+    return Players.findDoc(FlowRouter.getParam('username'));
   },
   interests() {
-    const profile = Profiles.findDoc(FlowRouter.getParam('username'));
+    const profile = Players.findDoc(FlowRouter.getParam('username'));
     const selectedInterests = profile.interests;
     return profile && _.map(Interests.findAll(),
             function makeInterestObject(interest) {
@@ -41,7 +41,7 @@ Template.Profile_Page.helpers({
             });
   },
   games() {
-    const profile = Profiles.findDoc(FlowRouter.getParam('username'));
+    const profile = Players.findDoc(FlowRouter.getParam('username'));
     const selectedGames = profile.games;
     return profile && _.map(Games.findAll(),
         function makeGameObject(game) {
@@ -53,39 +53,43 @@ Template.Profile_Page.helpers({
 
 Template.Profile_Page.events({
   'submit .profile-data-form'(event, instance) {
+    console.log('This is working!');
     event.preventDefault();
     const firstName = event.target.First.value;
     const lastName = event.target.Last.value;
-    const title = event.target.Title.value;
-    const username = FlowRouter.getParam('username'); // schema requires username.
+    const uhUsername = FlowRouter.getParam('username'); // schema requires username.
+    const username = event.target.Username.value;
     const picture = event.target.Picture.value;
-    const github = event.target.Github.value;
-    const facebook = event.target.Facebook.value;
-    const instagram = event.target.Instagram.value;
+    const github = event.target.battle_net.value;
+    const facebook = event.target.xbox.value;
+    const instagram = event.target.steamIcon.value;
     const bio = event.target.Bio.value;
-    const selectedInterests = _.filter(event.target.Interests.selectedOptions, (option) => option.selected);
-    const interests = _.map(selectedInterests, (option) => option.value);
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
 
-    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, bio,
-      interests, games, username };
+    const updatedProfileData = { firstName, lastName, picture, github, facebook, instagram, bio, games,
+      username, uhUsername };
 
     // Clear out any old validation errors.
     instance.context.reset();
     // Invoke clean so that updatedProfileData reflects what will be inserted.
-    const cleanData = Profiles.getSchema().clean(updatedProfileData);
+    const cleanData = Players.getSchema().clean(updatedProfileData);
     // Determine validity.
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
-      const id = Profiles.update(docID, { $set: cleanData });
+      const docID = Players.findDoc(FlowRouter.getParam('username'))._id;
+      const id = Players.update(docID, { $set: cleanData });
       instance.messageFlags.set(displaySuccessMessage, id);
       instance.messageFlags.set(displayErrorMessages, false);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
+    const uhUsername1 = Meteor.user().profile.name;
+    $('.ui.modal')
+        .modal('hide')
+    ;
+    FlowRouter.go(`/${uhUsername1}/home`);
   },
 });
