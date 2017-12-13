@@ -16,11 +16,12 @@ Template.Public_Profile_Page.helpers({
       return player.username === FlowRouter.getParam('username');
     });
   },
+  // Returns a list of friends alphabetically sorted, case-insensitive
   friends(current) {
     const friends = _.map(current.friends, function (friend) {
       return _.find(Profiles.findAll(), player => (player.handle === friend));
     });
-    return _.sortBy(friends, 'username');
+    return _.sortBy(friends, friend => friend.username.toLowerCase());
   },
   online(player) {
     return player.login;
@@ -31,9 +32,18 @@ Template.Public_Profile_Page.helpers({
   count(commendation) {
     return commendation.count.length;
   },
-  routeUserName(friendName) {
+  games(current) {
+    const games = _.map(current.games, function (listedGame) {
+      return _.find(Games.findAll(), game => (game.name === listedGame));
+    });
+    return _.sortBy(games, 'name');
+  },
+  tags(game) {
+    return game.tags.sort();
+
+  /*routeUserName(friendName) {
     const friend =Profiles.findDoc(friendName);
     console.log(friend.uhUsername);
-    return friend.uhUsername;
+    return friend.uhUsername;*/
   },
 });

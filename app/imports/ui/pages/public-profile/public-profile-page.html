@@ -50,64 +50,29 @@
           <div class="ui raised cards">
             <!--NOTE: Descriptions must be roughly the same length as cards share the same height.-->
 
-            <!--TODO: Update cards from game collection-->
-            <div class="ui fluid card">
+            {{#each game in (games currentUser)}}
+              <div class="ui fluid card">
 
-              <div class="image">
-                <img src="/images/public-profile/swbf2.png">
-              </div>
-              <div class="content">
-                <div class="header">Star Wars Battlefront II</div>
-                <div class="meta">Electronic Arts</div>
-                <div class="description">
-                  <p>Battle on land and in space in a vastly-expanded multiplayer experience with legendary heroes and
-                    villains, thrilling space combat, and a deep progression and customization system. Or live the
-                    untold Star Wars story of Iden, an elite special forces soldier, in an original story campaign.</p>
+                <div class="image">
+                  <img src={{game.picture}}>
+                </div>
+                <div class="content">
+                  <div class="header">{{game.name}}</div>
+                  <div class="meta">{{game.publisher}}</div>
+                  <div class="description">
+                    <p>{{game.description}}</p>
+                  </div>
+                </div>
+                <div class="extra content">
+                  <i class="tags icon"></i>
+                  <div class="ui horizontal list">
+                    {{#each tag in (tags game)}}
+                      <div class="item">{{tag}}</div>
+                    {{/each}}
+                  </div>
                 </div>
               </div>
-              <div class="extra content">
-                <i class="tags icon"></i>Action, Shooter, FPS, TPS
-                <span class="right floated"><i class="wait icon"></i>Last played just now</span>
-              </div>
-            </div>
-
-            <div class="ui fluid card">
-              <div class="image">
-                <img src="/images/public-profile/division.jpg">
-              </div>
-              <div class="content">
-                <div class="header">Tom Clancy's The Division</div>
-                <div class="meta">Ubisoft</div>
-                <div class="description">
-                  <p>In the wake of a devastating pandemic that sweeps through New York City, basic services fail one by
-                    one, and without access to food or water the city descends into chaos. As an agent of The Division,
-                    you’ll specialize, modify, and level up your gear, weapons, and skills to take back New York.</p>
-                </div>
-              </div>
-              <div class="extra content">
-                <i class="tags icon"></i>Action, MMO, RPG, Shooter, TPS
-                <span class="right floated"><i class="wait icon"></i>Last played 3 days ago</span>
-              </div>
-            </div>
-
-            <div class="ui fluid card">
-              <div class="image">
-                <img src="/images/public-profile/lego-batman.jpg">
-              </div>
-              <div class="content">
-                <div class="header">LEGO Batman 2: DC Super Heroes</div>
-                <div class="meta">Warner Bros. Interactive Entertainment</div>
-                <div class="description">
-                  <p>The dynamic duo Batman and Robin join Wonder Woman, Superman, Green Lantern, and the other Heroes
-                    of the DC Universe to save Gotham City from destruction at the hands of the notorious villains Lex
-                    Luthor and The Joker.</p>
-                </div>
-              </div>
-              <div class="extra content">
-                <i class="tags icon"></i>Action, Adventure
-                <span class="right floated"><i class="wait icon"></i>Last played 2 years ago</span>
-              </div>
-            </div>
+            {{/each}}
 
           </div>
         </div>
