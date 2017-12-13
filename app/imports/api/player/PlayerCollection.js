@@ -1,4 +1,4 @@
-import SimpleSchema from 'simpl-schema';
+ import SimpleSchema from 'simpl-schema';
 import BaseCollection from '/imports/api/base/BaseCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
 import { Games } from '/imports/api/game/GameCollection';
