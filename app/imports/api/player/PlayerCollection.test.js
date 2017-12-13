@@ -20,6 +20,9 @@ if (Meteor.isServer) {
     const games = [gameName];
     const picture = 'http://philipmjohnson.org/headshot.jpg';
     const title = 'Professor Computer Science';
+
+
+
     const github = 'http://github.com/philipjohnson';
     const facebook = 'http://github.com/philipjohnson';
     const instagram = 'http://github.com/philipjohnson';
