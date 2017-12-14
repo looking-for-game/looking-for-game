@@ -195,49 +195,6 @@
       ]
     },
 
-        {
-          "firstName": "Chris",
-          "lastName": "Lee",
-          "username": "secretg",
-          "bio": "Background in HTML CSS",
-          "interests": [
-          ],
-          "games": [
-            "Heroes of the Storm",
-            "Hearthstone",
-            "Pillars of Eternity"
-          ],
-          "friends": [
-            "sageCrown",
-            "r0gue",
-            "viikta",
-            "DoomGuy",
-            "mBro",
-            "zeldaGuy",
-            "BluBomberBomber",
-            "ryu",
-            "berserkerBarrage",
-            "PewPew",
-            "sephirothCloneX",
-            "theBard",
-            "chewiesSidekick",
-            "drrobotnik",
-            "Zappy",
-            "youKnow",
-            "kbone",
-            "Warchief4",
-            "theBoyWhoLived"
-          ],
-          "commendations": [
-            {"tag": "Healer", "count": ["r0gue", "sageCrown", "viikta"]},
-            {"tag": "Support", "count": ["sageCrown", "viikta"]},
-            {"tag": "Pilot", "count": ["r0gue"]}
-          ],
-          "login": false,
-          "uhUsername": "crlee",
-          "picture": "/images/back up images/profilePic.jpg"
-        },
-
 
     {
       "name": "ProfileCollection",
@@ -280,11 +237,58 @@
             {"tag": "Communicator", "count": ["secretg", "viikta"]},
             {"tag": "Competitive", "count": ["r0gue"]}
           ],
-          "login": true,
+          "isOnline": true,
           "username": "bwallick",
           "battlenet": "drood#1488",
+          "steam": "",
           "xbox": "BoxB",
           "picture": "/images/back up images/blakeprofile.jpg"
+        },
+
+        {
+          "firstName": "Chris",
+          "lastName": "Lee",
+          "handle": "secretg",
+          "bio": "Background in HTML CSS",
+          "interests": [
+          ],
+          "games": [
+            "Heroes of the Storm",
+            "Hearthstone",
+            "Pillars of Eternity"
+          ],
+          "friends": [
+            "sageCrown",
+            "r0gue",
+            "viikta",
+            "DoomGuy",
+            "mBro",
+            "zeldaGuy",
+            "BluBomberBomber",
+            "ryu",
+            "berserkerBarrage",
+            "PewPew",
+            "sephirothCloneX",
+            "theBard",
+            "chewiesSidekick",
+            "drrobotnik",
+            "Zappy",
+            "youKnow",
+            "kbone",
+            "Warchief4",
+            "theBoyWhoLived"
+          ],
+          "commendations": [
+            {"tag": "Healer", "count": ["r0gue", "sageCrown", "viikta"]},
+            {"tag": "Support", "count": ["sageCrown", "viikta"]},
+            {"tag": "Pilot", "count": ["r0gue"]}
+          ],
+          "isOnline": false,
+          "username": "crlee",
+          "battlenet": "",
+          "steam": "",
+          "xbox": "",
+          "picture": "/images/back up images/profilePic.jpg"
         },
 
         {
@@ -327,10 +331,11 @@
             {"tag": "Sniper", "count": ["secretg", "viikta"]},
             {"tag": "Strategist", "count": ["sageCrown"]}
           ],
-          "login": true,
+          "isOnline": true,
           "username": "tallas",
           "battlenet": "flappybird",
           "steam": "geyser",
+          "xbox": "",
           "picture": "/images/back up images/master-chief.jpg"
         },
 
@@ -373,10 +378,13 @@
             {"tag": "Casual", "count": ["secretg", "sageCrown"]},
             {"tag": "Lone Wolf", "count": ["r0gue"]}
           ],
-          "login": false,
+          "isOnline": false,
           "username": "vpawid",
+          "battlenet": "",
+          "steam": "",
+          "xbox": "",
           "picture": "/images/back up images/victor.png"
-        },
+        }
 
         {
           "firstName": "Doom",
@@ -395,7 +403,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "doomguy",
           "picture": "/images/back up images/doomguy.jpg"
         },
@@ -417,7 +425,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "mBro",
           "battlenet": "nolovefornes",
           "xbox": "buzzybeetle",
@@ -441,7 +449,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "zeldaGuy",
           "picture": "/images/back up images/link.png"
         },
@@ -464,7 +472,7 @@
             "viikta"
           ],
           "commendations": [],
-          "login": true,
+          "isOnline": true,
           "username": "bluBomberBomber",
           "picture": "/images/back up images/drwiley.jpg"
         },
@@ -489,7 +497,7 @@
             "viikta"
           ],
           "commendations": [],
-          "login": true,
+          "isOnline": true,
           "username": "ryu",
           "picture": "/images/back up images/ryu.jpg"
         },
@@ -511,7 +519,7 @@
             "sageCrown",
             "r0gue"
           ],
-          "login": false,
+          "isOnline": false,
           "username": "logan",
           "picture": "/images/back up images/wolverine.jpg"
         },
@@ -533,7 +541,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "pewpew",
           "picture": "/images/back up images/jaina.png"
         },
@@ -556,7 +564,7 @@
             "viikta"
           ],
           "commendations": [],
-          "login": true,
+          "isOnline": true,
           "username": "zack",
           "picture": "/images/back up images/cloud.jpg"
         },
@@ -581,7 +589,7 @@
             "viikta"
           ],
           "commendations": [],
-          "login": true,
+          "isOnline": true,
           "username": "BillyS",
           "picture": "/images/back up images/shakespeare.jpg"
         },
@@ -605,7 +613,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "kylosDad",
           "picture": "/images/back up images/hansolo.jpg"
         },
@@ -627,7 +635,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "drrobotnik",
           "picture": "/images/back up images/drrobotnik.png"
         },
@@ -650,7 +658,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "khellendros",
           "picture": "/images/back up images/khellendros.jpg"
         },
@@ -675,7 +683,7 @@
             "viikta"
           ],
           "commendations": [],
-          "login": true,
+          "isOnline": true,
           "username": "db",
           "picture": "/images/back up images/db.jpg"
         },
@@ -699,7 +707,7 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "kbone",
           "picture": "/images/back up images/kenbone.jpg"
         },
@@ -722,7 +730,7 @@
             "viikta"
           ],
           "commendations": [],
-          "login": true,
+          "isOnline": true,
           "username": "bansheequeen",
           "picture": "/images/back up images/sylvanas.png"
         },
@@ -746,10 +754,11 @@
             "r0gue"
           ],
           "commendations": [],
-          "login": false,
+          "isOnline": false,
           "username": "hPotter",
           "picture": "/images/back up images/harrypotter.jpg"
         }
+
       ]
     }
   ]

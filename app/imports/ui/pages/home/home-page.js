@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 // import { FlowRouter } from 'meteor/kadira:flow-router';
 // import { _ } from 'meteor/underscore';
-import { Profiles } from '/imports/api/profile/ProfilesCollection';
+import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Games } from '/imports/api/game/GameCollection';
 
 Template.Home_Page.onCreated(function onCreated() {
@@ -24,7 +24,7 @@ Template.Home_Page.helpers({
   },
   routeUserName(friendName) {
     const friend = Profiles.findDoc(friendName);
-    console.log(friend.uhUsername);
-    return friend.uhUsername;
+    console.log(friend.username);
+    return friend.username;
   },
 });

@@ -40,10 +40,10 @@ Template.Public_Profile_Page.helpers({
   },
   tags(game) {
     return game.tags.sort();
-
-  /*routeUserName(friendName) {
-    const friend =Profiles.findDoc(friendName);
-    console.log(friend.uhUsername);
-    return friend.uhUsername;*/
+  },
+  routeUserName(friendName) {
+    const friend = Profiles.findDoc(friendName);
+    console.log(friend.username);
+    return friend.username;
   },
 });
