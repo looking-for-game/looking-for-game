@@ -14,7 +14,7 @@
   },
     "galaxy.meteor.com": {
       "env": {
-        "MONGO_URL": "mongodb://vpawid:Kakashi123$@ds157475.mlab.com:57475/vpawiddb"
+        "MONGO_URL": "mongodb://vpawid:&UJM6yhn@ds157475.mlab.com:57475/vpawiddb"
       }
     }
 }

@@ -129,6 +129,19 @@ class BaseCollection {
   }
 
   /**
+   * Returns true if the passed entity is in this collection.
+   * @param { String | Object } name The docID, or an object specifying a document, or the name, or the username.
+   * @returns {boolean} True if name exists in this collection.
+   */
+  isDefine(name) {
+    console.log(!!this._collection.findOne({ username: name, handle:{"$exists" : true, "$ne" : ""} }));
+    return (
+        !!this._collection.findOne({ username: name, handle: {"$exists" : true, "$ne" : ""} })
+    );
+  }
+
+
+  /**
    * A stricter form of remove that throws an error if the document or docID could not be found in this collection.
    * @param { String | Object } name A document or docID in this collection.
    */
