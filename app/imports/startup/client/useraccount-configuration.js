@@ -10,6 +10,7 @@ import { Profiles } from '/imports/api/profile/ProfileCollection';
  * To determine if the function is being invoked during a "true" login, we check to see that the userId is defined and
  * that the user is currently on the landing page. Only then do we redirect to the user's profile page.
  */
+let thisUser = '';
 
 Accounts.onLogin(function onLogin() {
   const id = Meteor.userId();
@@ -17,15 +18,22 @@ Accounts.onLogin(function onLogin() {
   const initialLogin = (id && onLandingPage);
   if (initialLogin) {
     const username = Meteor.user().profile.name;
+    thisUser = username;
     console.log(username);
     if (!Profiles.isDefined(username)) {
       FlowRouter.go(`/${username}/profile`);
     } else {
       FlowRouter.go(`/${username}/home`);
+      const docID = Profiles.findDoc(username)._id;
+      const ad = Profiles.update(docID, { $set: { 'isOnline': true } });
+      console.log(ad + '12341234');
     }
   }
 });
 
 Accounts.onLogout(function logout() {
+  const docID = Profiles.findDoc(thisUser)._id;
+  const ad = Profiles.update(docID, { $set: { 'isOnline': false } });
+  console.log(ad + '12341234');
   FlowRouter.go('/');
 });
