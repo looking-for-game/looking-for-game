@@ -19,12 +19,12 @@ Template.Public_Profile_Page.helpers({
   // Returns a list of friends alphabetically sorted, case-insensitive
   friends(current) {
     const friends = _.map(current.friends, function (friend) {
-      return _.find(Profiles.findAll(), player => (player.handle === friend));
+      return _.find(Profiles.findAll(), profile => (profile.handle === friend));
     });
-    return _.sortBy(friends, friend => friend.username.toLowerCase());
+    return _.sortBy(friends, friend => friend.handle.toLowerCase());
   },
   online(player) {
-    return player.login;
+    return player.isOnline;
   },
   commendations(current) {
     return current.commendations;
@@ -40,10 +40,9 @@ Template.Public_Profile_Page.helpers({
   },
   tags(game) {
     return game.tags.sort();
-
-  /*routeUserName(friendName) {
-    const friend =Profiles.findDoc(friendName);
-    console.log(friend.uhUsername);
-    return friend.uhUsername;*/
+  },
+  routeUserName(friendName) {
+    const friend = Profiles.findDoc(friendName);
+    return friend.username;
   },
 });
