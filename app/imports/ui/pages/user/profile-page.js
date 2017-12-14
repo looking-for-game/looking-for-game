@@ -60,9 +60,9 @@ Template.Profile_Page.events({
     const username = FlowRouter.getParam('username'); // schema requires username.
     const handle = event.target.Handle.value;
     const picture = event.target.Picture.value;
-    const github = event.target.battle_net.value;
+    const github = event.target.battlenet.value;
     const facebook = event.target.xbox.value;
-    const instagram = event.target.steamIcon.value;
+    const instagram = event.target.steam.value;
     const bio = event.target.Bio.value;
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
