@@ -193,6 +193,7 @@
     {
       "name": "ProfileCollection",
       "contents": [
+
         {
           "firstName": "Blake",
           "lastName": "Wallick",
@@ -297,7 +298,8 @@
           "games": [
             "Star Wars: Battlefront II",
             "Tom Clancy's The Division",
-            "LEGO Batman 2: DC Super Heroes"
+            "LEGO Batman 2: DC Super Heroes",
+            "Hearthstone"
           ],
           "friends": [
             "sageCrown",
@@ -327,8 +329,8 @@
           ],
           "isOnline": true,
           "username": "tallas",
-          "battlenet": "flappybird",
-          "steam": "geyser",
+          "battlenet": "",
+          "steam": "",
           "xbox": "",
           "picture": "/images/back up images/master-chief.jpg"
         },
