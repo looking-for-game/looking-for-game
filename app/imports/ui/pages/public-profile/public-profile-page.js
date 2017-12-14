@@ -46,3 +46,12 @@ Template.Public_Profile_Page.helpers({
     return friend.username;
   },
 });
+
+Template.Public_Profile_Page.events({
+  'click .clickAble'(event, instance) {
+    event.preventDefault();
+    const name = instance[0];
+    const a = instance;
+    console.log(name + 'hello' + a);
+  },
+});

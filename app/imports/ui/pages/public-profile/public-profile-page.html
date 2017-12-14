@@ -25,14 +25,15 @@
             {{#each commendation in (commendations currentUser)}}
               <div class="item">
                 <div class="content">
-                  <div class="header"><i class="empty star icon"></i>{{commendation.tag}} ({{count commendation}})</div>
+                  <div class="clickAble">
+                    <div class="header"><i class="empty star icon"></i>{{commendation.tag}} ({{count commendation}})</div>
+                  </div>
                 </div>
               </div>
             {{/each}}
           </div>
         </div>
       </div>
-
     </div>
     <!--End of left column-->
 
@@ -93,30 +94,30 @@
           <div class="ui divided animated selection list">
             {{#each friend in (friends currentUser)}}
               <a class="item" href="{{pathFor "Public_Profile_Page" username=(routeUserName friend.username)}}">
-              {{#if online friend}}
-                <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
-                     src={{friend.picture}}>
-                <div class="content">
-                  <div class="header">{{friend.handle}}</div>
-                  Online
-                </div>
-              {{else}}
-                <img class="ui avatar bordered image" style="border-width: thick; border-color: red"
-                     src={{friend.picture}}>
-                <div class="content">
-                  <div class="header">{{friend.handle}}</div>
-                  Offline
-                </div>
-              {{/if}}
+                {{#if online friend}}
+                  <img class="ui avatar bordered image" style="border-width: thick; border-color: limegreen"
+                       src={{friend.picture}}>
+                  <div class="content">
+                    <div class="header">{{friend.handle}}</div>
+                    Online
+                  </div>
+                {{else}}
+                  <img class="ui avatar bordered image" style="border-width: thick; border-color: red"
+                       src={{friend.picture}}>
+                  <div class="content">
+                    <div class="header">{{friend.handle}}</div>
+                    Offline
+                  </div>
+                {{/if}}
               </a>
             {{/each}}
-            </div>
           </div>
         </div>
-
       </div>
-      <!--End of right column-->
 
     </div>
+    <!--End of right column-->
+
+  </div>
 
 </template>

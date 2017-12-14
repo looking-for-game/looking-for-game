@@ -115,6 +115,8 @@
 }
 
 #foot {
+  position : absolute;
+  bottom: 0;
   padding-left: .7rem;
   font-size: x-small;
 }
