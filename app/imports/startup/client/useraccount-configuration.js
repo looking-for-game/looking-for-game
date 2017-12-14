@@ -25,15 +25,14 @@ Accounts.onLogin(function onLogin() {
     } else {
       FlowRouter.go(`/${username}/home`);
       const docID = Profiles.findDoc(username)._id;
-      const ad = Profiles.update(docID, { $set: { 'isOnline': true } });
-      console.log(ad + '12341234');
+      Profiles.update(docID, { $set: { 'isOnline': true } });
+
     }
   }
 });
 
 Accounts.onLogout(function logout() {
   const docID = Profiles.findDoc(thisUser)._id;
-  const ad = Profiles.update(docID, { $set: { 'isOnline': false } });
-  console.log(ad + '12341234');
+  Profiles.update(docID, { $set: { 'isOnline': false } });
   FlowRouter.go('/');
 });
