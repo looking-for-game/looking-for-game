@@ -28,7 +28,7 @@
       <option value="" disabled selected></option>
       {{#each option in options}}
         <option value="{{#if option.value}}{{option.value}}{{else}}{{option.label}}{{/if}}"
-                >{{option.label}}&emsp;&emsp;{{option.numberOfPlayers}}Players</option>
+                >{{option.label}}&emsp;&emsp;{{option.numberOfProfiles}} Players</option>
       {{/each}}
     </select>
     {{> Form_Error_Message errorMessage=errorMessage}}
