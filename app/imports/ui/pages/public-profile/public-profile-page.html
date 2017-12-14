@@ -22,6 +22,7 @@
         </div>
         <div class="content">
           <div class="ui divided selection list">
+
             {{#each commendation in (commendations currentUser)}}
               <div class="item">
                 <div class="content">
@@ -29,6 +30,7 @@
                 </div>
               </div>
             {{/each}}
+
           </div>
         </div>
       </div>
@@ -46,8 +48,8 @@
           <div class="header"><i class="game icon"></i>Games</div>
         </div>
 
-        <div class="content game-list">
-          <div class="ui four stackable doubling raised cards">
+        <div class="content ">
+          <div class="ui four stackable doubling raised link cards">
 
             {{#each game in (games currentUser)}}
               <div class="card">
