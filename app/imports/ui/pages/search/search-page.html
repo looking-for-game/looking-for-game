@@ -2,26 +2,31 @@
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
   {{#if Template.subscriptionsReady}}
 
-      <div style="margin-top: 10px" class="ui padded relaxed grid">
-        <div style="padding-left: 75px" class="five wide column">
-          <form class="ui equal width form filter-data-form">
+  <div style="margin-top: 10px" class="ui padded relaxed grid">
 
-            <!--<div class="field">
-              {{> Select_Form_Control label="Interests" options=interests errorMessage=(fieldError "interests") multiple=true }}
-            </div>-->
+    <div style="padding-left: 125px" class="sixteen wide column">
 
-            <div class="field">
-              {{> Search_Form_Control label="Games" options=games errorMessage=(fieldError "games") multiple=false }}
-            </div>
+      <div style="padding-left: 125px" class="ui grid">
+        <form class="ui equal width form filter-data-form">
 
-            <button class="ui white button" type="submit">Search</button>
-          </form>
+        <!--<div class="field">
+          {{> Select_Form_Control label="Interests" options=interests errorMessage=(fieldError "interests") multiple=true }}
+        </div>-->
+
+        <div class="field">
+          {{> Search_Form_Control label="Games" options=games errorMessage=(fieldError "games") multiple=false }}
         </div>
-        <div style="padding-left: 125px" class="ten wide column">
-          {{> Search_Page_Directory players=players }}
-        </div>
+        <button class="ui white button" type="submit">Search</button>
+      </form>
 
-      </div>
+    </div>
+
+    </div>
+
+    <div style="padding-left: 125px" class="sixteen wide column">
+      {{> Search_Page_Directory players=players }}
+    </div>
+  </div>
 
 
   {{/if}}
