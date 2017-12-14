@@ -13,6 +13,33 @@
         <div class="content">
           <div class="header" style="text-align: center">{{currentUser.handle}}</div>
         </div>
+
+        <div class="content">
+
+          <div class="ui equal width center aligned grid">
+            {{#if currentUser.battlenet }}
+            <div class="column">
+              <div class="ui list">
+                <div><i class="big battle_net icon" style="background-repeat: no-repeat"></i></div>
+              </div>
+            </div>
+            {{/if}}
+            {{#if currentUser.steam }}
+            <div class="column">
+              <div class="ui list">
+                <div><i class="big steamIcon icon" style="background-repeat: no-repeat"></i></div>
+              </div>
+            </div>
+            {{/if}}
+            {{#if currentUser.xbox }}
+            <div class="column">
+              <div class="ui list">
+                <div><i class="big xbox icon" style="background-repeat: no-repeat"></i></div>
+              </div>
+            </div>
+            {{/if}}
+          </div>
+        </div>
       </div>
 
       <!--Commendations list-->
