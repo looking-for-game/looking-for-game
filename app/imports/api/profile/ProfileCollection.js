@@ -22,7 +22,7 @@ class ProfileCollection extends BaseCollection {
     super('Profile', new SimpleSchema({
       firstName: { type: String, optional: true },
       lastName: { type: String, optional: true },
-      handle: { type: String },
+      handle: { type: String , optional: true },
       bio: { type: String, optional: true },
       interests: { type: Array, optional: true },
       'interests.$': { type: String },
@@ -36,7 +36,7 @@ class ProfileCollection extends BaseCollection {
       'commendations.$.count': { type: Array },
       'commendations.$.count.$': { type: String },
       isOnline: { type: Boolean, optional: true },
-      username: { type: String, optional: true },
+      username: { type: String},
       battlenet: { type: String, optional: true },
       steam: { type: String, optional: true },
       xbox: { type: String, optional: true },

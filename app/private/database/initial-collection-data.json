@@ -89,18 +89,53 @@
     {
       "name": "GameCollection",
       "contents": [
-
         {
-          "name": "World of Warcraft",
-          "description": "Blizzard PC MMO RPG Adventure"
+          "name": "Halo 5: Guardians",
+          "picture": "/images/games/halo5.jpg",
+          "publisher": "Microsoft Studios",
+          "tags": [
+            "FPS",
+            "Xbox",
+            "Singleplayer",
+            "Multiplayer",
+            "Local Co-Op"
+          ],
+          "description": "A mysterious and unstoppable force threatens the galaxy, the Master Chief is missing and his loyalty questioned. Experience the most dramatic Halo story to date in a 4-player cooperative epic that spans three worlds. Challenge friends and rivals in new multiplayer modes: Warzone, massive 24-player battles, and Arena, pure 4-vs-4 competitive combat."
         },
         {
-          "name": "Baldur's Gate",
-          "description": "Bioware Beamdog PC Mobile D&D Turn-Based Adventure RPG"
+          "name": "PlayerUnknown's Battlegrounds",
+          "picture": "/images/games/pubg.jpg",
+          "publisher": "PUBG Corporation",
+          "tags": [
+            "FPS",
+            "TPS",
+            "Survival",
+            "PC",
+            "Open World",
+            "MMO"
+          ],
+          "description": "Our BATTLE ROYALE game-mode will put up to 100 players on a remote island for a winner-takes-allshowdown where strategic gameplay is as important as shooting skills. Players will enter a last-man-standing battle where they try to locate weapons, vehicles and supplies in a graphically and tactically rich battleground that eventually forces players into a shrinking play zone as they engage in a tense and spectacular fight to the death."
+        },
+        {
+          "name": "World of Warcraft",
+          "picture": "/images/games/wow.jpg",
+          "publisher": "Blizzard Entertainment",
+          "tags": [
+            "MMORPG",
+            "PC"
+          ],
+          "description": "(Description currently unavailable)"
         },
         {
           "name": "League of Legends",
-          "description": "Producer? PC RTS MOBA"
+          "picture": "/images/games/lol.jpg",
+          "publisher": "Riot Games",
+          "tags": [
+            "MOBA",
+            "F2P",
+            "PC"
+          ],
+          "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes. With an ever-expanding roster of champions, frequent updates and a thriving tournament scene, League of Legends offers endless replayability for players of every skill level."
         },
         {
           "name": "Hearthstone",
@@ -112,17 +147,35 @@
             "Card-Battler",
             "Turn-Based",
             "PC",
-            "Mobile"
+            "Mobile",
+            "F2P"
           ],
           "description": "Sheathe your sword, draw your deck, and get ready for Hearthstone - the fast-paced strategy card game that's easy to learn and massively fun. Start a free game and play your cards to sling spells, summon creatures, and command the heroes of Warcraft in duels of epic strategy."
         },
         {
           "name": "Heroes of the Storm",
-          "description": "Blizzard PC RTS MOBA"
+          "picture": "/images/games/heroes-of-the-storm.jpg",
+          "publisher": "Blizzard Entertainment",
+          "tags": [
+            "MOBA",
+            "PC",
+            "F2P",
+            "Singleplayer"
+          ],
+          "description": "(Description currently unavailable)"
         },
         {
           "name": "Pillars of Eternity",
-          "description": "Producer? Platform(s)? Genre(s)?"
+          "picture": "/images/games/pillars-of-eternity.jpg",
+          "publisher": "Paradox Interactive",
+          "tags": [
+            "RPG",
+            "Isometric",
+            "Singleplayer",
+            "PC",
+            "Console"
+          ],
+          "description": "The god Eothas, once thought to be destroyed, returns to life in the form of a titanic statue – nearly killing you as he destroys everything in his path. It’s up to you, the Watcher of Caed Nua, to discover Eothas’ purpose and decide to help or hinder his efforts. With an enormous open world, a massive cast of characters, beautiful hand-painted backgrounds, and a story you can play your way, Obsidian Entertainment is proud to bring you Pillars of Eternity II: Deadfire."
         },
         {
           "name": "Overwatch",
@@ -130,7 +183,8 @@
           "publisher": "Blizzard Entertainment",
           "tags": [
             "FPS",
-            "Team-Based Shooter"
+            "Team-Based Shooter",
+            "Multiplayer"
           ],
           "description": "The world needs heroes. Join over 30 million players as you clash on the battlefields of tomorrow. Choose your hero from a diverse cast of soldiers, scientists, adventurers, and oddities. Bend time, defy physics, and unleash an array of extraordinary powers and weapons. Engage your enemies in iconic locations from around the globe in the ultimate team-based shooter. In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory."
         },
@@ -157,7 +211,7 @@
             "FPS",
             "TPS",
             "Multiplayer",
-            "Single-Player",
+            "Singleplayer",
             "PC",
             "Console"
           ],
@@ -171,7 +225,7 @@
             "Open World",
             "Action",
             "Adventure",
-            "Single-Player",
+            "Singleplayer",
             "Local Co-Op",
             "PC",
             "Console",
@@ -232,7 +286,7 @@
             {"tag": "Communicator", "count": ["secretg", "viikta"]},
             {"tag": "Competitive", "count": ["r0gue"]}
           ],
-          "isOnline": true,
+          "isOnline": false,
           "username": "bwallick",
           "battlenet": "drood#1488",
           "steam": "",
@@ -299,7 +353,14 @@
             "Star Wars: Battlefront II",
             "Tom Clancy's The Division",
             "LEGO Batman 2: DC Super Heroes",
-            "Hearthstone"
+            "Hearthstone",
+            "Overwatch",
+            "League of Legends",
+            "Heroes of the Storm",
+            "Pillars of Eternity",
+            "World of Warcraft",
+            "PlayerUnknown's Battlegrounds",
+            "Halo 5: Guardians"
           ],
           "friends": [
             "sageCrown",
@@ -327,7 +388,7 @@
             {"tag": "Sniper", "count": ["secretg", "viikta"]},
             {"tag": "Strategist", "count": ["sageCrown"]}
           ],
-          "isOnline": true,
+          "isOnline": false,
           "username": "tallas",
           "battlenet": "",
           "steam": "",
@@ -468,7 +529,7 @@
             "viikta"
           ],
           "commendations": [],
-          "isOnline": true,
+          "isOnline": false,
           "username": "bluBomberBomber",
           "picture": "/images/back up images/drwiley.jpg"
         },
@@ -493,7 +554,7 @@
             "viikta"
           ],
           "commendations": [],
-          "isOnline": true,
+          "isOnline": false,
           "username": "ryu",
           "picture": "/images/back up images/ryu.jpg"
         },
@@ -560,7 +621,7 @@
             "viikta"
           ],
           "commendations": [],
-          "isOnline": true,
+          "isOnline": false,
           "username": "zack",
           "picture": "/images/back up images/cloud.jpg"
         },
@@ -585,7 +646,7 @@
             "viikta"
           ],
           "commendations": [],
-          "isOnline": true,
+          "isOnline": false,
           "username": "BillyS",
           "picture": "/images/back up images/shakespeare.jpg"
         },
@@ -679,7 +740,7 @@
             "viikta"
           ],
           "commendations": [],
-          "isOnline": true,
+          "isOnline": false,
           "username": "db",
           "picture": "/images/back up images/db.jpg"
         },
@@ -726,7 +787,7 @@
             "viikta"
           ],
           "commendations": [],
-          "isOnline": true,
+          "isOnline": false,
           "username": "bansheequeen",
           "picture": "/images/back up images/sylvanas.png"
         },
