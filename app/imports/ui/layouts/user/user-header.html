@@ -1,13 +1,13 @@
 <template name="User_Header">
 
   <div class="header_background">
-    <div class="ui top fixed secondary pointing menu" style="background-image:url(/images/landing/header_image.png);">
+    <div class="ui top fixed secondary pointing inverted menu" style="background-image:url(/images/landing/header_image.png);">
     <a class="{{isActiveRoute "Home_Page"}} item" href="{{pathFor "Home_Page" username=routeUserName}}"><div class="logo_black"></div></a>
-    <h2 class="{{isActiveRoute "Search_Page"}} item" href="{{pathFor "Search_Page" username=routeUserName}}"> Search</h2>
+    <a class="{{isActiveRoute "Search_Page"}} item" href="{{pathFor "Search_Page" username=routeUserName}}"><h2>Search</h2></a>
 
-    <div class="right menu">
-    <h2 class="right {{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"> My Profile</h2>
-    <h2 href="{{pathFor "Profile_Page" username=routeUserName}}" class="aligned item">Edit Profile</h2>
+    <div class="right inverted menu">
+      <a class="right {{isActiveRoute "Public_Profile_Page"}} item" href="{{pathFor "Public_Profile_Page" username=routeUserName}}"><h2>My Profile</h2></a>
+    <a href="{{pathFor "Profile_Page" username=routeUserName}}" class="aligned item"><h2>Edit Profile</h2></a>
     <a class="aligned item">{{> Cas_Login }}</a>
     </div>
 
