@@ -27,7 +27,7 @@ Template.Home_Page.helpers({
   },
   routeUserName(friendName) {
     const friend = Profiles.findDoc(friendName);
-    console.log(friend.username);
+    //console.log(friend.username);
     return friend.username;
   },
 });
