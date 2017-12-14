@@ -130,7 +130,8 @@
           "publisher": "Blizzard Entertainment",
           "tags": [
             "FPS",
-            "Team-Based Shooter"
+            "Team-Based Shooter",
+            "Multiplayer"
           ],
           "description": "The world needs heroes. Join over 30 million players as you clash on the battlefields of tomorrow. Choose your hero from a diverse cast of soldiers, scientists, adventurers, and oddities. Bend time, defy physics, and unleash an array of extraordinary powers and weapons. Engage your enemies in iconic locations from around the globe in the ultimate team-based shooter. In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory."
         },
@@ -299,7 +300,8 @@
             "Star Wars: Battlefront II",
             "Tom Clancy's The Division",
             "LEGO Batman 2: DC Super Heroes",
-            "Hearthstone"
+            "Hearthstone",
+            "Overwatch"
           ],
           "friends": [
             "sageCrown",
