@@ -89,13 +89,7 @@
     {
       "name": "GameCollection",
       "contents": [
-        /*{
-          "name": "",
-          "picture": "/images/games/",
-          "publisher": "",
-          "tags": [],
-          "description": ""
-        },*/
+
         {
           "name": "World of Warcraft",
           "description": "Blizzard PC MMO RPG Adventure"
@@ -384,7 +378,7 @@
           "steam": "",
           "xbox": "",
           "picture": "/images/back up images/victor.png"
-        }
+        },
 
         {
           "firstName": "Doom",

@@ -21,10 +21,10 @@ Template.Public_Profile_Page.helpers({
     const friends = _.map(current.friends, function (friend) {
       return _.find(Profiles.findAll(), player => (player.handle === friend));
     });
-    return _.sortBy(friends, friend => friend.username.toLowerCase());
+    return _.sortBy(friends, friend => friend.handle.toLowerCase());
   },
   online(player) {
-    return player.login;
+    return player.isOnline;
   },
   commendations(current) {
     return current.commendations;
@@ -41,9 +41,9 @@ Template.Public_Profile_Page.helpers({
   tags(game) {
     return game.tags.sort();
   },
-  routeUserName(friendName) {
-    const friend = Profiles.findDoc(friendName);
-    console.log(friend.username);
-    return friend.username;
-  },
+  // routeUserName(friendName) {
+  //   const friend = Profiles.findDoc(friendName);
+  //   console.log(friend.username);
+  //   return friend.username;
+  // },
 });
