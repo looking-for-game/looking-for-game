@@ -134,8 +134,9 @@ class BaseCollection {
    * @returns {boolean} True if name exists in this collection.
    */
   isDefine(name) {
+    console.log(!!this._collection.findOne({ username: name, handle:{"$exists" : true, "$ne" : ""} }));
     return (
-        !!this._collection.findOne({ username: name, handle: '' })
+        !!this._collection.findOne({ username: name, handle: {"$exists" : true, "$ne" : ""} })
     );
   }
 
