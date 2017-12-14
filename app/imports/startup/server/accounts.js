@@ -6,9 +6,12 @@ import { Profiles } from '/imports/api/profile/ProfileCollection';
 /* Create a profile document for this user if none exists already. */
 Accounts.validateNewUser(function validate(user) {
   if (user) {
+    console.log(user);
     const username = user.services.cas.id;
     if (!Profiles.isDefined(username)) {
-      Profiles.define({ username });
+      console.log(username);
+
+      Profiles.define({ username : username, handle : '',isOnline : true});
     }
   }
   // All UH users are valid for BowFolios.
