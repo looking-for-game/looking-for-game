@@ -47,34 +47,45 @@
         </div>
 
         <div class="content game-list">
-          <div class="ui raised cards">
-            <!--NOTE: Descriptions must be roughly the same length as cards share the same height.-->
+          <div class="ui four stackable raised link cards">
 
             {{#each game in (games currentUser)}}
-              <div class="ui fluid card">
+              <div class="card">
 
                 <div class="image">
                   <img src={{game.picture}}>
                 </div>
                 <div class="content">
-                  <div class="header">{{game.name}}</div>
-                  <div class="meta">{{game.publisher}}</div>
-                  <div class="description">
-                    <p>{{game.description}}</p>
-                  </div>
+                  <h5 class="ui header">{{game.name}}</h5>
+                  <!--<div class="meta">{{game.publisher}}</div>-->
+                  <!--<div class="description">-->
+                    <!--<p>{{game.description}}</p>-->
+                  <!--</div>-->
                 </div>
-                <div class="extra content">
-                  <i class="tags icon"></i>
-                  <div class="ui horizontal list">
-                    {{#each tag in (tags game)}}
-                      <div class="item">{{tag}}</div>
-                    {{/each}}
-                  </div>
-                </div>
+                <!--<div class="extra content">-->
+                  <!--<i class="tags icon"></i>-->
+                  <!--<div class="ui horizontal list">-->
+                    <!--{{#each tag in (tags game)}}-->
+                      <!--<div class="item">{{tag}}</div>-->
+                    <!--{{/each}}-->
+                  <!--</div>-->
+                <!--</div>-->
               </div>
             {{/each}}
 
           </div>
+        </div>
+      </div>
+
+      <!--Activity schedule-->
+      <div class="ui fluid raised link card">
+        <div class="content">
+          <div class="header"><i class="calendar icon"></i>Activity Schedule</div>
+        </div>
+        <div class="content">
+          <iframe
+              src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hawaii.edu_tpo60di35qpesqbqfdr1g9r64s%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Pacific%2FHonolulu"
+              style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
 
@@ -118,22 +129,6 @@
 
       </div>
       <!--End of right column-->
-
-
-      <div class="twelve wide column">
-
-        <!--Activity schedule-->
-        <div class="ui fluid raised link card">
-          <div class="content">
-            <div class="header"><i class="calendar icon"></i>Activity Schedule</div>
-          </div>
-          <div class="content">
-            <iframe
-                src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hawaii.edu_tpo60di35qpesqbqfdr1g9r64s%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Pacific%2FHonolulu"
-                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
-        </div>
-      </div>
 
     </div>
 
