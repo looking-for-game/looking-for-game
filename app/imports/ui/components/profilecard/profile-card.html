@@ -8,24 +8,24 @@
         <div class="cost">
 
 
+
+
+
+
+
           {{#if player.battlenet }}
-          <div>
-            <div><i class="large battle_net icon" style="background-repeat: no-repeat"></i></div>
-          </div>
-          {{/if}}
-
-          {{#if player.steam }}
-          <div>
-            <div><i class="large steamIcon icon" style="background-repeat: no-repeat"></i></div>
+          <div class="column">
+            <div class="ui list">
+              <div><i class="large battle_net icon" style="background-repeat: no-repeat"></i></div>
+            </div>
           </div>
           {{/if}}
 
 
-          {{#if player.xbox }}
-          <div>
-            <div><i class="large xbox icon" style="background-repeat: no-repeat"></i></div>
-          </div>
-          {{/if}}
+
+
+
+
 
 
         </div>
@@ -41,16 +41,31 @@
       </div>
 
       <div class="desc">
-        <div class="description">
-          {{ player.bio }}
-        </div>
-
         <div class="ui equal width center aligned grid">
-
-
-        </div>
-        <div id="foot">
-          reRoll
+          {{#if player.battlenet }}
+          <div class="column">
+            <div class="ui list">
+              <div><i class="huge battle_net icon" style="background-repeat: no-repeat"></i></div>
+              <div>{{ player.battlenet }}</div>
+            </div>
+          </div>
+          {{/if}}
+          {{#if player.steam }}
+          <div class="column">
+            <div class="ui list">
+              <div><i class="huge steamIcon icon" style="background-repeat: no-repeat"></i></div>
+              <div>{{ player.steam }}</div>
+            </div>
+          </div>
+          {{/if}}
+          {{#if player.xbox }}
+          <div class="column">
+            <div class="ui list">
+              <div><i class="huge xbox icon" style="background-repeat: no-repeat"></i></div>
+              <div>{{ player.xbox }}</div>
+            </div>
+          </div>
+          {{/if}}
         </div>
       </div>
     </div>
