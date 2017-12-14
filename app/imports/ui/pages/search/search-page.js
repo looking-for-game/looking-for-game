@@ -26,17 +26,15 @@ Template.Search_Page.helpers({
     const selectedGames = Template.instance().messageFlags.get(selectedGamesKey);
     return _.filter(allProfiles, player => _.intersection(player.games, selectedGames).length > 0);
   },
-  
   games() {
-
     return _.map(Games.findAll(),
         function makeInterestObject(games) {
           return {
             label: games.name,
             selected: _.contains(Template.instance().messageFlags.get(selectedGamesKey), games.name),
-            numberOfProfiles: _.size(_.filter(_.map(Profiles.findAll(), player => {
-               return _.contains(player.games, games.name)
-            }), function(val){return val == true}))
+            numberOfProfiles: _.size(_.filter(_.map(Profiles.findAll(), function (player) {
+              return _.contains(player.games, games.name);
+            }), function (val) { return val === true; })),
           };
         });
   },
