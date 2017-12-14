@@ -6,7 +6,7 @@
     <div class="three wide column">
 
       <!--Profile picture and username-->
-      <div class="ui fluid raised link card">
+      <div class="ui fluid raised card">
         <div class="content">
           <img class="ui medium circular image" src={{currentUser.picture}}>
         </div>
@@ -16,7 +16,7 @@
       </div>
 
       <!--Commendations list-->
-      <div class="ui fluid raised link card">
+      <div class="ui fluid raised card">
         <div class="content">
           <div class="header"><i class="trophy icon"></i>Commendations</div>
         </div>
@@ -47,29 +47,16 @@
         </div>
 
         <div class="content game-list">
-          <div class="ui four stackable raised link cards">
+          <div class="ui four stackable doubling raised cards">
 
             {{#each game in (games currentUser)}}
               <div class="card">
-
                 <div class="image">
                   <img src={{game.picture}}>
                 </div>
                 <div class="content">
                   <h5 class="ui header">{{game.name}}</h5>
-                  <!--<div class="meta">{{game.publisher}}</div>-->
-                  <!--<div class="description">-->
-                    <!--<p>{{game.description}}</p>-->
-                  <!--</div>-->
                 </div>
-                <!--<div class="extra content">-->
-                  <!--<i class="tags icon"></i>-->
-                  <!--<div class="ui horizontal list">-->
-                    <!--{{#each tag in (tags game)}}-->
-                      <!--<div class="item">{{tag}}</div>-->
-                    <!--{{/each}}-->
-                  <!--</div>-->
-                <!--</div>-->
               </div>
             {{/each}}
 
@@ -78,7 +65,7 @@
       </div>
 
       <!--Activity schedule-->
-      <div class="ui fluid raised link card">
+      <div class="ui fluid raised card">
         <div class="content">
           <div class="header"><i class="calendar icon"></i>Activity Schedule</div>
         </div>
