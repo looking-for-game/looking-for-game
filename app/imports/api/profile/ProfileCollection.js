@@ -65,12 +65,12 @@ class ProfileCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-  define({ firstName = '', lastName = '', handle, bio = '', interests = [], games = [], friends = [], username = '',
-           battlenet = '', steam = '', xbox = '', picture = '' }) {
+  define({ firstName = '', lastName = '', handle, bio = '', interests = [], games = [], friends = [],
+           commendations = [], isOnline = '', username = '', battlenet = '', steam = '', xbox = '', picture = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, handle: String, bio: String, username: String,
-      picture: String };
-    check({ firstName, lastName, handle, bio, username, picture }, checkPattern);
+    const checkPattern = { firstName: String, lastName: String, handle: String, bio: String, isOnline: Boolean,
+      username: String, picture: String };
+    check({ firstName, lastName, handle, bio, isOnline, username, picture }, checkPattern);
 
     if (this.find({ handle }).count() > 0) {
       throw new Meteor.Error(`${handle} is previously defined in another Profile`);
@@ -92,8 +92,8 @@ class ProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${friends} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, handle, bio, interests, games, friends, username, battlenet,
-      steam, xbox, picture });
+    return this._collection.insert({ firstName, lastName, handle, bio, interests, games, friends, commendations,
+      isOnline, username, battlenet, steam, xbox, picture });
   }
 
   /**

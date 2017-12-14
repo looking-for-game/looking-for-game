@@ -8,8 +8,7 @@ Template.Profile_Card.events({
   'click .magicCard'(event, instance) {
     event.preventDefault();
     //may need to change uhusername
-    const name = instance.data.player.uhUsername;
-    console.log(name);
+    const name = instance.data.player.username;
     FlowRouter.go(`/${name}/public-profile`);
   },
  /* 'mouseover .magicCard'(event, instance) {

@@ -1,29 +1,63 @@
 <template name="Home_Page">
 
+  <div class="ui container">
+    <table class="ui selectable celled table">
 
-  <table class="ui selectable celled table">
+      <thead>
+      <tr>
+        <th>Player</th>
+        <th>Online</th>
+        <th>Games</th>
+        <th>Developer Network Subscriptions</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each user in users}}
+        <tr>
 
-    <thead>
-    <tr>
-      <th>Player</th>
-      <th>Online</th>
-      <th>Developer Network Subscriptions</th>
-      <th>Games</th>
-    </tr>
-    </thead>
-  <tbody>
-    {{#each user in users}}
-    <tr class="selectable">
-      <td>{{user.username}}</td>
-      <td class="{{#if online user}}positive{{else}}negative{{/if}}">{{#if online user}}online{{else}}offline{{/if}}</td>
-      <td>{{#each game in user.games}}{{game}} {{/each}}</td>
-      <td>XBOX Live{{#each game in user.games}}{{game}}{{/each}}</td>
-    </tr>
-    {{/each}}
-    </tbody>
+          <td class="selectable">
+            <a class="item" href="{{pathFor "Public_Profile_Page" username= (routeUserName user.username)}}">
+              <img class="ui mini avatar image" style="border-width: thick"
+                   src={{user.picture}}>
+              {{user.username}}
+            </a>
+          </td>
 
-  </table>
+          <td class="{{#if online user}}positive{{else}}negative{{/if}}">{{#if online user}}
+            online{{else}}offline{{/if}}</td>
 
+          <td>
+            <div class="ui horizontal list">
+              {{#each game in user.games}}
+                <div class="item">
+                  {{game}}
+                </div>
+              {{/each}}
+            </div>
+          </td>
+
+          <td>
+            <div class="ui horizontal list">
+              <div class="item">
+                {{#if platform user.battlenet}}
+                  <i class="large battle_net icon" style="background-repeat: no-repeat"></i>{{/if}}
+              </div>
+              <div class="item">
+                {{#if platform user.steam}}
+                  <i class="large steamIcon icon" style="background-repeat: no-repeat"></i>{{/if}}
+              </div>
+              <div class="item">
+                {{#if platform user.xbox}}<i class="large xbox icon" style="background-repeat: no-repeat"></i>{{/if}}
+              </div>
+            </div>
+          </td>
+
+        </tr>
+      {{/each}}
+      </tbody>
+
+    </table>
+  </div>
 </template>
 
 <!--

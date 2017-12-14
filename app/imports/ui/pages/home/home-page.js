@@ -14,13 +14,16 @@ Template.Home_Page.helpers({
     return Profiles.findAll();
   },
   online(player) {
-    return player.login;
+    return player.isOnline;
   },
   commendations(current) {
     return current.commendations;
   },
-  count(commendation) {
-    return commendation.count.length;
+  platform(platform) {
+    if(platform) {
+      return true;
+    }
+    return false;
   },
   routeUserName(friendName) {
     const friend = Profiles.findDoc(friendName);

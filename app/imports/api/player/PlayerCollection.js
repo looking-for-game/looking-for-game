@@ -62,11 +62,11 @@ class PlayerCollection extends BaseCollection {
    * @returns The newly created docID.
    */
 
-  define({ firstName = '', lastName = '', username, battlenet = '', steam = '', xbox = '', bio = '', interests = [], games = [], friends = [],
-           commendations = [], login = '', uhUsername = '', picture = '' }) {
+  define({ firstName = '', lastName = '', username, battlenet = '', steam = '', xbox = '', bio = '', interests = [],
+           games = [], friends = [], commendations = [], login = '', uhUsername = '', picture = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, battlenet: String, steam: String, xbox: String, bio: String, login: Boolean,
-      uhUsername: String, picture: String };
+    const checkPattern = { firstName: String, lastName: String, username: String, battlenet: String, steam: String,
+      xbox: String, bio: String, login: Boolean, uhUsername: String, picture: String };
     check({ firstName, lastName, username, battlenet, steam, xbox, bio, login, uhUsername, picture }, checkPattern);
 
     if (this.find({ username }).count() > 0) {

@@ -19,7 +19,7 @@ Template.Public_Profile_Page.helpers({
   // Returns a list of friends alphabetically sorted, case-insensitive
   friends(current) {
     const friends = _.map(current.friends, function (friend) {
-      return _.find(Profiles.findAll(), player => (player.handle === friend));
+      return _.find(Profiles.findAll(), profile => (profile.handle === friend));
     });
     return _.sortBy(friends, friend => friend.handle.toLowerCase());
   },
@@ -41,9 +41,8 @@ Template.Public_Profile_Page.helpers({
   tags(game) {
     return game.tags.sort();
   },
-  // routeUserName(friendName) {
-  //   const friend = Profiles.findDoc(friendName);
-  //   console.log(friend.username);
-  //   return friend.username;
-  // },
+  routeUserName(friendName) {
+    const friend = Profiles.findDoc(friendName);
+    return friend.username;
+  },
 });
